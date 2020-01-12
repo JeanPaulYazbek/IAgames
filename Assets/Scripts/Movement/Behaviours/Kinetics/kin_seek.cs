@@ -13,7 +13,6 @@ public class kin_seek : MonoBehaviour
     //Estructuras estaticas del agente
     public Kinetics kineticsAgent;
     public SteeringOutput steeringAgent;
-    float maxspeed;
     public Kinetics kineticsEnemy;
 
 
@@ -32,7 +31,6 @@ public class kin_seek : MonoBehaviour
 
         kineticsAgent = agent.kineticsAgent;
         steeringAgent = agent.steeringAgent;
-        maxspeed = agent.maxspeed;
 
         //Inicializamos movimientos
         kinematicSeek = new KinematicSeek(kineticsAgent, kineticsEnemy, maxSeekSpeed);

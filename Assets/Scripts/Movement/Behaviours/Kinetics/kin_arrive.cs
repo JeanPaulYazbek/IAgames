@@ -9,11 +9,12 @@ public class kin_arrive : MonoBehaviour
     //Los objetos necesarios enemigo y agente
     static_data enemy;
     public static_data agent;
+    
+    float maxspeed;
 
     //Estructuras estaticas del agente
     public Kinetics kineticsAgent;
     public SteeringOutput steeringAgent;
-    float maxspeed;
     public Kinetics kineticsEnemy;
 
 

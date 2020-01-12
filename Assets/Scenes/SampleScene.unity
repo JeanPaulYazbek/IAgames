@@ -539,6 +539,7 @@ GameObject:
   - component: {fileID: 1569259168}
   - component: {fileID: 1569259169}
   - component: {fileID: 1569259170}
+  - component: {fileID: 1569259171}
   m_Layer: 0
   m_Name: Agent
   m_TagString: Untagged
@@ -644,7 +645,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1162422a7cb934c4bb671c1e2686d667, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultSpeed: {x: 0, y: 0, z: 0}
+  defaultSpeed: {x: 10, y: 10, z: 0}
   defaultRotation: 0
   defaultLinear: {x: 0, y: 0, z: 0}
   defaultAngular: 0
@@ -704,17 +705,32 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1569259160}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 383912ae1d4134a30800e5ff1457abe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 1569259166}
-  maxAngularAccel: 100
-  maxRotation: 360
+  maxAngularAccel: 10
+  maxRotation: 40
   targetRadius: 2
   slowRadius: 10
   timeToTarget: 0.1
+--- !u!114 &1569259171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1569259160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80fc1c271d2494fb087e2bb39f31ca89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 1569259166}
+  timeTotarget: 0.1
+  MaxAcceleration: 20
 --- !u!1 &1668730736
 GameObject:
   m_ObjectHideFlags: 0
@@ -801,13 +817,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1668730736}
-  m_LocalRotation: {x: 0, y: -0, z: 0.34201995, w: -0.93969274}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 11.72, y: -1.84, z: -1}
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -400}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1668730741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -815,7 +831,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1668730736}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d4c8bd2c731aa43b49febfea5993e2c7, type: 3}
   m_Name: 
@@ -837,7 +853,7 @@ MonoBehaviour:
   defaultRotation: 10
   defaultLinear: {x: 0, y: 0, z: 0}
   defaultAngular: 0
-  maxspeed: 0
+  maxspeed: 10
 --- !u!1 &1867485965
 GameObject:
   m_ObjectHideFlags: 0

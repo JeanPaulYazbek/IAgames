@@ -12,8 +12,6 @@ public class kin_wander : MonoBehaviour
     //Estructuras estaticas del agente
     public Kinetics kineticsAgent;
     public SteeringOutput steeringAgent;
-    float maxspeed;
-
 
 
     //Movimientos
@@ -25,7 +23,6 @@ public class kin_wander : MonoBehaviour
         //Inicializamos las estructuras necesarias de otros componentes
         kineticsAgent = agent.kineticsAgent;
         steeringAgent = agent.steeringAgent;
-        maxspeed = agent.maxspeed;
 
         //iniciamos wandering
         kinWander = new KinematicWandering(kineticsAgent,2f,100f);

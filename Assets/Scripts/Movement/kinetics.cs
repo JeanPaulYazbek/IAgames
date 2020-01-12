@@ -52,16 +52,16 @@ public class Kinetics
 
         //Debug.Log(Transform.eulerAngles);
         if (velocity.magnitude > 0) {
-            //hay que multiplicar 
-            transform.eulerAngles = zVector*50* Convert.ToSingle(Math.Atan2(-velocity.x, velocity.y));
+            //hay que multiplicar por 53 para convertir los radianes a angulos
+            transform.eulerAngles = zVector*53* Convert.ToSingle(Math.Atan2(-velocity.x, velocity.y));
         }
     }
 
     //funcion que convierte orientacion en vector
     public Vector3 OrientationToVector(){
 
-        
-        return new Vector3(-(float)Math.Sin(transform.eulerAngles.z), (float)Math.Cos(transform.eulerAngles.z),0f);
+        //hay que dividir entre 53 para convertir los angulos a radianes
+        return new Vector3(-(float)Math.Sin(transform.eulerAngles.z/53), (float)Math.Cos(transform.eulerAngles.z/53),0f);
 
     }
 }

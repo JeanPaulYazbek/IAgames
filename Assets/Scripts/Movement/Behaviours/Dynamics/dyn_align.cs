@@ -12,7 +12,7 @@ public class dyn_align : MonoBehaviour
     //Estructuras estaticas del agente
     public Kinetics kineticsAgent;
     public SteeringOutput steeringAgent;
-    float maxspeed;
+
     public Kinetics kineticsEnemy;
 
     //valores por defecto del align
@@ -36,7 +36,6 @@ public class dyn_align : MonoBehaviour
 
         kineticsAgent = agent.kineticsAgent;
         steeringAgent = agent.steeringAgent;
-        maxspeed = agent.maxspeed;
 
         //Inicializamos movimientos
         align = new Align(kineticsAgent, kineticsEnemy, maxAngularAccel, maxRotation, targetRadius, slowRadius, timeToTarget);

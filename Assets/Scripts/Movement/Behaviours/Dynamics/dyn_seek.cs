@@ -13,7 +13,6 @@ public class dyn_seek : MonoBehaviour
     //Estructuras estaticas del agente
     public Kinetics kineticsAgent;
     public SteeringOutput steeringAgent;
-    float maxspeed;
     public Kinetics kineticsEnemy;
 
 
@@ -33,7 +32,6 @@ public class dyn_seek : MonoBehaviour
 
         kineticsAgent = agent.kineticsAgent;
         steeringAgent = agent.steeringAgent;
-        maxspeed = agent.maxspeed;
 
         //Inicializamos movimientos
         seek = new Seek(kineticsAgent, kineticsEnemy, maxSeekAccel);
