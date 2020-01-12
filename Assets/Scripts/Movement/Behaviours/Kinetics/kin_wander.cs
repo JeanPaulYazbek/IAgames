@@ -35,8 +35,6 @@ public class kin_wander : MonoBehaviour
     void Update (){
 
         
-        kineticsAgent.UpdateKinetics(steeringAgent, Time.deltaTime,maxspeed);
-
         //hacemos wandering
         kineticsAgent.UpdateSteeringOutput(kinWander.getSteering());
         

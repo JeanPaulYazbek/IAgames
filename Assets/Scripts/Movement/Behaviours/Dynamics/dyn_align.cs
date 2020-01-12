@@ -45,7 +45,7 @@ public class dyn_align : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        kineticsAgent.UpdateKinetics(steeringAgent, Time.deltaTime,maxspeed);
+ 
 
         // igualamos orietacion
         steeringAgent.UpdateSteering(align.getSteering());

@@ -46,8 +46,6 @@ public class dyn_arrive : MonoBehaviour
     void Update (){
 
         
-        kineticsAgent.UpdateKinetics(steeringAgent, Time.deltaTime,maxspeed);
-
         //Perseguimos al enemigo
         // con arrive accels
         steeringAgent.UpdateSteering(arrive.getSteering());

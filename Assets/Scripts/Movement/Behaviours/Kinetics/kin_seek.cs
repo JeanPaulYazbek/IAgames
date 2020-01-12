@@ -43,7 +43,6 @@ public class kin_seek : MonoBehaviour
     void Update (){
 
         
-        kineticsAgent.UpdateKinetics(steeringAgent, Time.deltaTime,maxspeed);
 
         //Perseguimos al enemigo
         // con seek velocidad

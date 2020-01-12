@@ -27,6 +27,10 @@ public class static_data : MonoBehaviour
 
     }
 
+    void Update() {
+        kineticsAgent.UpdateKinetics(steeringAgent, Time.deltaTime,maxspeed);
+    }
+
 
 
 }
