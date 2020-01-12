@@ -58,6 +58,7 @@
      <Compile Include="Assets\Scripts\Movement\arrive.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\Dynamics\dyn_align.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\Dynamics\dyn_arrive.cs" />
+     <Compile Include="Assets\Scripts\Movement\Behaviours\Dynamics\dyn_pursue.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\Dynamics\dyn_seek.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\Dynamics\dyn_vel_match.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\Kinetics\kin_arrive.cs" />
@@ -70,6 +71,7 @@
      <Compile Include="Assets\Scripts\Movement\kinematic_steering_output.cs" />
      <Compile Include="Assets\Scripts\Movement\kinematic_wandering.cs" />
      <Compile Include="Assets\Scripts\Movement\kinetics.cs" />
+     <Compile Include="Assets\Scripts\Movement\pursue.cs" />
      <Compile Include="Assets\Scripts\Movement\seek.cs" />
      <Compile Include="Assets\Scripts\Movement\steering_output.cs" />
      <Compile Include="Assets\Scripts\Movement\velocity_match.cs" />

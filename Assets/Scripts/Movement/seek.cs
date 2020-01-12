@@ -36,4 +36,24 @@ public class Seek
         return steering;
 
     }
+
+    //funcion que realiza seeking de un punto que le pases
+    public SteeringOutput getSteering2(Vector3 seekedPos){
+
+       
+        //velocidades de salida
+        SteeringOutput steering = new SteeringOutput(Vector3.zero, 0f);
+
+        steering.linear = seekedPos - character.transform.position;
+
+             
+        steering.linear.Normalize();
+        //Debug.Log(newVelocity);
+        steering.linear *= maxAcceleration;
+
+        steering.angular = 0f;
+        //Debug.Log(newVelocity);
+        return steering;
+
+    }
 }
