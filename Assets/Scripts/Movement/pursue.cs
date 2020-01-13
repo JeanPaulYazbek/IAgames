@@ -10,7 +10,7 @@ public class Pursue : Seek {
         maxPrediction = MaxPrediction;
     }
 
-    public SteeringOutput getSteeringP(){
+    public SteeringOutput getSteeringP(int seek_or_flee){
 
 
         Vector3 direction = pTarget.transform.position - character.transform.position;
@@ -32,7 +32,7 @@ public class Pursue : Seek {
         }
 
         //la posicion que estamos pasando es como ver prediction segs en el futuro
-        return getSteering2(pTarget.transform.position + pTarget.velocity * prediction);
+        return getSteering2(pTarget.transform.position + pTarget.velocity * prediction, seek_or_flee);
     }
 
 

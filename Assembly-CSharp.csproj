@@ -58,23 +58,29 @@
      <Compile Include="Assets\Scripts\Movement\arrive.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\Dynamics\dyn_align.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\Dynamics\dyn_arrive.cs" />
+     <Compile Include="Assets\Scripts\Movement\Behaviours\Dynamics\dyn_face.cs" />
+     <Compile Include="Assets\Scripts\Movement\Behaviours\Dynamics\dyn_look_where.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\Dynamics\dyn_pursue.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\Dynamics\dyn_seek.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\Dynamics\dyn_vel_match.cs" />
+     <Compile Include="Assets\Scripts\Movement\Behaviours\Dynamics\dyn_wander.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\Kinetics\kin_arrive.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\Kinetics\kin_seek.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\Kinetics\kin_wander.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\static_data.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\static_enemy.cs" />
+     <Compile Include="Assets\Scripts\Movement\face.cs" />
      <Compile Include="Assets\Scripts\Movement\kinematic_arrive.cs" />
      <Compile Include="Assets\Scripts\Movement\kinematic_seek.cs" />
      <Compile Include="Assets\Scripts\Movement\kinematic_steering_output.cs" />
      <Compile Include="Assets\Scripts\Movement\kinematic_wandering.cs" />
      <Compile Include="Assets\Scripts\Movement\kinetics.cs" />
+     <Compile Include="Assets\Scripts\Movement\look_where_you_are_going.cs" />
      <Compile Include="Assets\Scripts\Movement\pursue.cs" />
      <Compile Include="Assets\Scripts\Movement\seek.cs" />
      <Compile Include="Assets\Scripts\Movement\steering_output.cs" />
      <Compile Include="Assets\Scripts\Movement\velocity_match.cs" />
+     <Compile Include="Assets\Scripts\Movement\wander.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>/Users/capi/Desktop/mini_desktop/Universidad/Inteligencia Video Juegos/Pratica/Project Unity A/New Unity Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>

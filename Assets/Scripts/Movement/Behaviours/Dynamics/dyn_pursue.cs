@@ -22,6 +22,8 @@ public class dyn_pursue : MonoBehaviour
     //Movimientos
     public Pursue pursue; 
 
+    public int seek_or_flee = 1;
+
 
     void Start (){
 
@@ -40,11 +42,9 @@ public class dyn_pursue : MonoBehaviour
     void Update (){
 
         
-        
-
         //Perseguimos al enemigo
         // con seek aceleracion
-        steeringAgent.UpdateSteering(pursue.getSteeringP());
+        steeringAgent.UpdateSteering(pursue.getSteeringP(seek_or_flee));
 
         
         

@@ -43,11 +43,20 @@ public class Align
 
     public SteeringOutput getSteering(){
 
+        return getSteering2(target.transform.eulerAngles.z);
+
+    }
+
+    //funcion que toma una orientacion objetivo y trata de que 
+    //el character tenga la misma orientacion cambiando su 
+    //acelarion angular
+    public SteeringOutput getSteering2(float targetOrientation){
+
         SteeringOutput steering = new SteeringOutput(Vector3.zero, 0f);
 
         //sacamos la resta de los angulos para intentar conseguir 
         //lo que nos tenemos que rodar
-        float rotation = target.transform.eulerAngles.z - character.transform.eulerAngles.z;
+        float rotation = targetOrientation - character.transform.eulerAngles.z;
 
         rotation = mapToRange(rotation);
         float rotationSize = Math.Abs(rotation);
@@ -90,4 +99,6 @@ public class Align
 
 
     }
+
+    
 }
