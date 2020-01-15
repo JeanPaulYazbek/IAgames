@@ -17,7 +17,7 @@ public class FollowPath : Seek {
 
         currentParam = path.GetParam(character.transform.position.x);
 
-        float targetParam = currentParam + pathOffset;
+        float targetParam = currentParam - pathOffset;
 
         Vector3 targetPosition = path.GetPosition(targetParam);
 

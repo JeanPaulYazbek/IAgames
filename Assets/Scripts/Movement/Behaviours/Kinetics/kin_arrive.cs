@@ -7,6 +7,7 @@ public class kin_arrive : MonoBehaviour
 
 
     //Los objetos necesarios enemigo y agente
+    public string enemyName;
     static_data enemy;
     public static_data agent;
     
@@ -30,7 +31,7 @@ public class kin_arrive : MonoBehaviour
     void Start (){
 
         //Inicializamos las estructuras necesarias de otros componentes
-        enemy = GameObject.Find("Enemy").GetComponent<static_data>();
+        enemy = GameObject.Find(enemyName).GetComponent<static_data>();
         kineticsEnemy = enemy.kineticsAgent;
 
         kineticsAgent = agent.kineticsAgent;

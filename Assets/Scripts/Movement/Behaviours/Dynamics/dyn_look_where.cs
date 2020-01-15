@@ -25,6 +25,7 @@ public class dyn_look_where : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //miramos hacia donde vayamos
         steeringAgent.UpdateSteering(look.getSteeringL());
         
     }

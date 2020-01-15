@@ -10,6 +10,8 @@ public class Pursue : Seek {
         maxPrediction = MaxPrediction;
     }
 
+    //funcion que intenta predecir a donde se movera el target e ir
+    //antes que el ahi
     public SteeringOutput getSteeringP(int seek_or_flee){
 
 
