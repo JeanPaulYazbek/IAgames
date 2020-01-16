@@ -398,6 +398,7 @@ GameObject:
   - component: {fileID: 949220005}
   - component: {fileID: 949220004}
   - component: {fileID: 949220011}
+  - component: {fileID: 949220012}
   m_Layer: 0
   m_Name: Leafeon
   m_TagString: Untagged
@@ -463,11 +464,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1162422a7cb934c4bb671c1e2686d667, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultSpeed: {x: 0, y: 0, z: 0}
+  defaultSpeed: {x: -5, y: 0, z: 0}
   defaultRotation: 0
   defaultLinear: {x: 0, y: 0, z: 0}
   defaultAngular: 0
-  maxspeed: 10
+  maxspeed: 20
 --- !u!212 &949220008
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -537,7 +538,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 949220003}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.19, y: -2.87, z: 0}
+  m_LocalPosition: {x: 16.19, y: 1.09, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -550,7 +551,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 949220003}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7c9385adbacce46d6b29e6f45706fb5d, type: 3}
   m_Name: 
@@ -560,7 +561,25 @@ MonoBehaviour:
   - Rocket
   agent: {fileID: 949220007}
   threshold: 20
-  maxAccel: 5
+  maxAccel: 10
+--- !u!114 &949220012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 949220003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69c2efd08064a4e5ba9e9be15f57cd35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targets_names:
+  - Trainer
+  - Rocket
+  agent: {fileID: 949220007}
+  radius: 20
+  maxAccel: 50
 --- !u!1 &1220114047
 GameObject:
   m_ObjectHideFlags: 0
@@ -884,7 +903,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1162422a7cb934c4bb671c1e2686d667, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultSpeed: {x: 1, y: 1, z: 0}
+  defaultSpeed: {x: 0, y: 0, z: 0}
   defaultRotation: 0
   defaultLinear: {x: 0, y: 0, z: 0}
   defaultAngular: 0
@@ -958,7 +977,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1330056644}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17.6, y: 4.58, z: 0}
+  m_LocalPosition: {x: -13.88, y: -2.82, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1102,7 +1121,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyName: Leafeon
   agent: {fileID: 1347758963}
-  maxSeekAccel: 1
+  maxSeekAccel: 5
   seek_or_flee: 1
 --- !u!114 &1347758960
 MonoBehaviour:
@@ -1196,11 +1215,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1162422a7cb934c4bb671c1e2686d667, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultSpeed: {x: 1, y: 1, z: 0}
+  defaultSpeed: {x: 0, y: 0, z: 0}
   defaultRotation: 0
   defaultLinear: {x: 0, y: 0, z: 0}
   defaultAngular: 0
-  maxspeed: 20
+  maxspeed: 50
 --- !u!65 &1347758964
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1222,7 +1241,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1347758952}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17.6, y: -1.75, z: 0}
+  m_LocalPosition: {x: -17.6, y: 1.23, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

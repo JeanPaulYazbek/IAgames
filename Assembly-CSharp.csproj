@@ -58,6 +58,7 @@
      <Compile Include="Assets\Scripts\Movement\arrive.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\Dynamics\dyn_align.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\Dynamics\dyn_arrive.cs" />
+     <Compile Include="Assets\Scripts\Movement\Behaviours\Dynamics\dyn_collision_avoid.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\Dynamics\dyn_face.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\Dynamics\dyn_follow_path.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\Dynamics\dyn_look_where.cs" />
@@ -71,6 +72,7 @@
      <Compile Include="Assets\Scripts\Movement\Behaviours\Kinetics\kin_wander.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\static_data.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\static_enemy.cs" />
+     <Compile Include="Assets\Scripts\Movement\collision_avoidance.cs" />
      <Compile Include="Assets\Scripts\Movement\face.cs" />
      <Compile Include="Assets\Scripts\Movement\follow_path.cs" />
      <Compile Include="Assets\Scripts\Movement\kinematic_arrive.cs" />
