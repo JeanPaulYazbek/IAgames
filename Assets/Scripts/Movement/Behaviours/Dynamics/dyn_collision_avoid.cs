@@ -19,7 +19,7 @@ public class dyn_collision_avoid : MonoBehaviour
     public SteeringOutput steeringAgent;
 
 
-    //valores por defecto de separation
+    //valores por defecto de avoid
     public float radius = 5f;    
     public float maxAccel = 5f;
 
