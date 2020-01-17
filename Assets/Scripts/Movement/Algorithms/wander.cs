@@ -27,15 +27,16 @@ public class Wander : Face
         //ajustamos una orientacion al azar dentro del rango
         wanderOrientation += (UnityEngine.Random.Range(-1.0f, 1.0f))*wanderRate;
 
+    
         float targetOrientation = wanderOrientation + character.transform.eulerAngles.z;
 
-        // el comienzo del circulo va a estar al frente
+        // el centro del circulo va a estar al frente
         // de nuestro character 
         Vector3 targetPos = character.transform.position + 
                             wanderOffset*character.OrientationToVector();
 
         // giramos un poco mas las posicion en base al radio
-        Vector3 orienAsVector = new Vector3(-(float)Math.Sin(targetOrientation/53), (float)Math.Cos(targetOrientation/53),0f);
+        Vector3 orienAsVector = new Vector3(-(float)Math.Sin(targetOrientation/57), (float)Math.Cos(targetOrientation/57),0f);
         targetPos += wanderRadius *  orienAsVector;
 
         //actualiza aceleracion angular
@@ -44,6 +45,7 @@ public class Wander : Face
         //despues de unas llamadas ya tendremos velocidad angular
         //osea que la orientacion cambia, aceleramos hacia esa direccion
         steering.linear = maxAccel*character.OrientationToVector();
+
 
         return steering;
 

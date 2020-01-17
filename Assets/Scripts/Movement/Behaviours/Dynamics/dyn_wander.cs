@@ -14,11 +14,11 @@ public class dyn_wander : MonoBehaviour
 
     //datos del wander
 
-    public float wanderOffset = 5f;
-    public float wanderRadius = 2f;
-    public float wanderRate = 10f;//lo mas que puedes cambair la orientacion
-    public float wanderOrientation = 0f;//la orientacion de target
-    public float maxAccel = 30f;
+    public float wanderOffset = 0f;
+    public float wanderRadius = 20f;
+    public float wanderRate = 20f;//lo mas que puedes cambair la orientacion
+    float wanderOrientation;//la orientacion de target
+    public float maxAccel = 1f;
 
 
     public Wander wander;
@@ -28,6 +28,13 @@ public class dyn_wander : MonoBehaviour
         kineticsAgent = agent.kineticsAgent;
         steeringAgent = agent.steeringAgent;
 
+        //el target ficticio empieza con una orientacion al azar
+        wanderOrientation = (UnityEngine.Random.Range(-1.0f, 1.0f))*360;
+
+        //comenzamos con una orientacion del personaje al azar
+        kineticsAgent.SetRandomOrientation();
+
+        
         wander = new Wander(kineticsAgent, wanderOffset, wanderRadius, wanderRate, wanderOrientation, maxAccel);
         
     }

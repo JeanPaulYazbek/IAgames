@@ -64,4 +64,9 @@ public class Kinetics
         return new Vector3(-(float)Math.Sin(transform.eulerAngles.z/57), (float)Math.Cos(transform.eulerAngles.z/57),0f);
 
     }
+
+    public void SetRandomOrientation(){
+        
+        transform.eulerAngles = new Vector3 (0f, 0f, UnityEngine.Random.Range(-360f, 360f));
+    }
 }
