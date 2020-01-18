@@ -55,8 +55,8 @@ public class CollisionDetector {
         for (int i = 0; i< obstacles.Length; i++ ){
 
             obstacle = obstacles[i];
-            obstacleWidth = obstacle.localScale.x;
-            obstacleHeight = obstacle.localScale.y;
+            obstacleWidth = obstacle.localScale.x * 1.1f /(float) Math.Sqrt(2);//dividimos entre la raiz de 2 para hacer el ovalo mas ajustado
+            obstacleHeight = obstacle.localScale.y * 1.1f /(float) Math.Sqrt(2);
             obstacleCenter = obstacle.position;
 
             
@@ -155,13 +155,13 @@ public class CollisionDetector {
         float xB = (-B - disc)/(2*A);
 
         //posibles intersecciones
-        Vector3 intersectionA = new Vector3(xA, y1+m*xA-m*x1 ,0f);
-        Vector3 intersectionB = new Vector3(xB, y1+m*xB-m*x1 ,0f);
+        Vector3 intersectionA = new Vector3(xA, y0+m*xA-m*x0 ,0f);
+        Vector3 intersectionB = new Vector3(xB, y0+m*xB-m*x0 ,0f);
 
         //buscamos la interseccion mas cercana la cual es el objetivo
         //el que este mas cerca del centro de character (point) es nuestra respuesta
-        float distanceA = (float)Math.Sqrt((x0-intersectionA.x)+(y0-intersectionA.y));
-        float distanceB = (float)Math.Sqrt((x0-intersectionB.x)+(y0-intersectionB.y));
+        float distanceA = (float)Math.Sqrt(Math.Pow((x0-intersectionA.x),2)+Math.Pow((y0-intersectionA.y),2));
+        float distanceB = (float)Math.Sqrt(Math.Pow((x0-intersectionB.x),2)+Math.Pow((y0-intersectionB.y),2));
 
         if(distanceA < distanceB){
             return intersectionA;

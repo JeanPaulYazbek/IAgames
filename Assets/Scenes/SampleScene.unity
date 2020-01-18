@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 29679534}
   - component: {fileID: 29679533}
   - component: {fileID: 29679532}
+  - component: {fileID: 29679536}
   m_Layer: 0
   m_Name: Wall4
   m_TagString: Obstacle
@@ -203,6 +204,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &29679536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29679531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8c69d79541a544ccb37cf2d4b2c559a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Segments: 32
+  Color: {r: 0, g: 0, b: 1, a: 1}
+  XRadius: 2
+  YRadius: 1
 --- !u!1 &516432520
 GameObject:
   m_ObjectHideFlags: 0
@@ -485,6 +502,7 @@ GameObject:
   - component: {fileID: 845848422}
   - component: {fileID: 845848421}
   - component: {fileID: 845848420}
+  - component: {fileID: 845848424}
   m_Layer: 0
   m_Name: Wall1
   m_TagString: Obstacle
@@ -564,6 +582,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &845848424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 845848419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8c69d79541a544ccb37cf2d4b2c559a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Segments: 32
+  Color: {r: 0, g: 0, b: 1, a: 1}
+  XRadius: 2
+  YRadius: 1
 --- !u!1 &912716102
 GameObject:
   m_ObjectHideFlags: 0
@@ -576,6 +610,7 @@ GameObject:
   - component: {fileID: 912716105}
   - component: {fileID: 912716104}
   - component: {fileID: 912716103}
+  - component: {fileID: 912716107}
   m_Layer: 0
   m_Name: Wall3
   m_TagString: Obstacle
@@ -655,6 +690,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &912716107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912716102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8c69d79541a544ccb37cf2d4b2c559a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Segments: 32
+  Color: {r: 0, g: 0, b: 1, a: 1}
+  XRadius: 2
+  YRadius: 1
 --- !u!1 &949220003
 GameObject:
   m_ObjectHideFlags: 0
@@ -1384,7 +1435,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1347758952}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e4b2e82e01784420aa61c9760892f989, type: 3}
   m_Name: 
@@ -1966,6 +2017,7 @@ GameObject:
   - component: {fileID: 1704731522}
   - component: {fileID: 1704731521}
   - component: {fileID: 1704731520}
+  - component: {fileID: 1704731524}
   m_Layer: 0
   m_Name: Wall2
   m_TagString: Obstacle
@@ -2045,3 +2097,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1704731524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1704731519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8c69d79541a544ccb37cf2d4b2c559a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Segments: 32
+  Color: {r: 0, g: 0, b: 1, a: 1}
+  XRadius: 2
+  YRadius: 1

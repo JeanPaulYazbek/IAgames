@@ -88,6 +88,7 @@
      <Compile Include="Assets\Scripts\Movement\Behaviours\static_enemy.cs" />
      <Compile Include="Assets\Scripts\Movement\collision.cs" />
      <Compile Include="Assets\Scripts\Movement\collision_detector.cs" />
+     <Compile Include="Assets\Scripts\Movement\draw_elipse.cs" />
      <Compile Include="Assets\Scripts\Movement\kinematic_steering_output.cs" />
      <Compile Include="Assets\Scripts\Movement\kinetics.cs" />
      <Compile Include="Assets\Scripts\Movement\path.cs" />

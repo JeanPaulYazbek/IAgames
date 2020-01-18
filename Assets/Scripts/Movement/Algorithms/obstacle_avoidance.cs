@@ -42,7 +42,7 @@ public class ObstacleAvoidance : Seek {
 
         character.velocity /= 10;//disminuimos mucho la velocidad a la que vamos para 
         //que el seek tenga tiempo de acelerar bien
-        
+
         //calculamos la posicion del target ficticio
         Vector3 targetPos = collision.position+collision.normal*avoidDistance;
 
@@ -54,6 +54,8 @@ public class ObstacleAvoidance : Seek {
         }
         //Debug.Log("Posicion seek");
         //Debug.Log(targetPos);
+        //Debug.DrawLine(character.transform.position,targetPos,  Color.blue, 10.0f,true);
+        //Debug.DrawLine(Vector3.zero,collision.position,  Color.black, 10.0f,true);
         return getSteering2(targetPos,1);
         
 
