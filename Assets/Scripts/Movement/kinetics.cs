@@ -67,6 +67,6 @@ public class Kinetics
 
     public void SetRandomOrientation(){
         
-        transform.eulerAngles = new Vector3 (0f, 0f, UnityEngine.Random.Range(-360f, 360f));
+        transform.eulerAngles = new Vector3 (0f, 0f, UnityEngine.Random.Range(0f, 360f));
     }
 }

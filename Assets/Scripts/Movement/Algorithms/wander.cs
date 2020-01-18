@@ -4,8 +4,8 @@ using System;
 public class Wander : Face
 {
 
-    public float wanderOffset;
-    public float wanderRadius;
+    public float wanderOffset;//que tan lejos esta el circulo
+    public float wanderRadius;//radio del circulo de wander
     public float wanderRate;//lo mas que puedes cambair la orientacion
     public float wanderOrientation;//la orientacion de target
     public float maxAccel;

@@ -33,10 +33,10 @@ public class CollisionDetector {
         //este vector representa al punto del rayo que pudiera caer dentro de la elipse
         Vector3 rayPosition = position + rayVector;
         
-        float m = -1;
-        if(rayVector.x != 0){//si no es 0 x podemos seguir normal , sino mas adelante cableamos la respuesta
-            m = rayVector.y / rayVector.x;//pendiente del rayo
-        }
+        //ojo con el caso en que x == 0 o algo muy cercano a 0
+        // m da infinito
+        float m = rayVector.y / rayVector.x;//calculamos la pendiente
+        
 
 
         //algunos datos que necesitaremos de cada obstaculo para 
@@ -77,7 +77,7 @@ public class CollisionDetector {
             //Para poder saber la normal necesitamos el punto de interseccion
             // btw tambien necesitamos devolver el punto de interseccion
 
-            if(m==-1){//si x era 0 cableamos la respuestas
+            if(float.IsInfinity(m)){//si x era 0 cableamos la respuestas
                 collision.position = obstacleCenter + new Vector3(0f, -rayVector.y, 0f);
                 collision.normal = new Vector3(0f, -rayVector.y/rayVector.y, 0f);
                 return collision;
@@ -113,7 +113,7 @@ public class CollisionDetector {
         return ((deltaY*deltaY)/(radius2*radius2) + (deltaX*deltaX)/(radius1*radius1) )<=1;
     }
 
-    // funcion que toma 
+    // funcion que toma una recta y una elipse y devuelve el punto de interseccion entre ambos
     // UNA RECTA
     // point : punto a traves del cual pasa la recta
     // m : pendiente de la regla
@@ -126,8 +126,9 @@ public class CollisionDetector {
         //NOTA: toda las cuentas las saque calculando la formula interseccion
         // entre la formula de la elipse y de recta
 
+        //Debug.Log("Datos Intersecion");
         //Debug.Log(point);
-        //Debug.Log(m);
+        //Debug.Log(Math.Round(m,2));
         //Debug.Log(radius1);
         //Debug.Log(radius2);
         //Debug.Log(center);
