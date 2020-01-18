@@ -10,7 +10,7 @@ public class draw_elipse : MonoBehaviour
  
     void Start()
     {
-        DrawEllipse(transform.position, transform.forward, transform.up, (float)transform.localScale.x /(float) Math.Sqrt(2) , (float)transform.localScale.y /(float) Math.Sqrt(2), Segments, Color, 10f);
+        DrawEllipse(transform.position, transform.forward, transform.up, (float)transform.localScale.x *1.1f /(float) Math.Sqrt(2) , (float)transform.localScale.y *1.1f/(float) Math.Sqrt(2), Segments, Color, 20f);
     }
  
     private static void DrawEllipse(Vector3 pos, Vector3 forward, Vector3 up, float radiusX, float radiusY, int segments, Color color, float duration = 0)

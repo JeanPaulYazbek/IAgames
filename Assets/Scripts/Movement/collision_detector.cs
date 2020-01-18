@@ -35,7 +35,7 @@ public class CollisionDetector {
         
         //ojo con el caso en que x == 0 o algo muy cercano a 0
         // m da infinito
-        float m = rayVector.y / rayVector.x;//calculamos la pendiente
+        float m = (float)Math.Round(rayVector.y / rayVector.x, 2) ;//calculamos la pendiente
         
 
 
@@ -55,8 +55,8 @@ public class CollisionDetector {
         for (int i = 0; i< obstacles.Length; i++ ){
 
             obstacle = obstacles[i];
-            obstacleWidth = obstacle.localScale.x * 1.1f /(float) Math.Sqrt(2);//dividimos entre la raiz de 2 para hacer el ovalo mas ajustado
-            obstacleHeight = obstacle.localScale.y * 1.1f /(float) Math.Sqrt(2);
+            obstacleWidth = obstacle.localScale.x ;//dividimos entre la raiz de 2 para hacer el ovalo mas ajustado
+            obstacleHeight = obstacle.localScale.y;
             obstacleCenter = obstacle.position;
 
             
@@ -86,6 +86,10 @@ public class CollisionDetector {
 
             collision.position = Intersection(position, m, obstacleWidth, obstacleHeight, obstacleCenter);
             //el punto de interseccion menos el centro del ovalo nos da la normal
+
+            //printeamos el vector desde el centro del ovalo hasta el punto de interseccion
+            //para debuggear
+            Debug.DrawLine(obstacleCenter,collision.position,  Color.green, 10.0f,true);
            
             collision.normal = collision.position - obstacleCenter;
             collision.normal.z = 0f;
@@ -126,20 +130,20 @@ public class CollisionDetector {
         //NOTA: toda las cuentas las saque calculando la formula interseccion
         // entre la formula de la elipse y de recta
 
-        //Debug.Log("Datos Intersecion");
-        //Debug.Log(point);
-        //Debug.Log(Math.Round(m,2));
-        //Debug.Log(radius1);
-        //Debug.Log(radius2);
-        //Debug.Log(center);
+        Debug.Log("Datos Intersecion");
+        Debug.Log(point);
+        Debug.Log(Math.Round(m,2));
+        Debug.Log(radius1);
+        Debug.Log(radius2);
+        Debug.Log(center);
         float y0 = point.y;
         float x0 = point.x;
         float y1 = center.y;
         float x1 = center.x;
         float k = y0 - m*x0;
 
-        float k1 = radius1*radius1;
-        float k2 = radius2*radius2;
+        float k2 = radius1*radius1;
+        float k1 = radius2*radius2;
 
         float k3 = k - y1;
 
@@ -149,7 +153,10 @@ public class CollisionDetector {
 
         //discriminante
         float disc = (float)Math.Sqrt(B*B - 4*A*C);
-        //Debug.Log(B*B - 4*A*C);
+       
+        Debug.DrawLine(point,new Vector3(center.x,y0-m*x0+m*center.x,0f),  Color.yellow, 10.0f,true);
+
+        
 
         float xA = (-B + disc)/(2*A);
         float xB = (-B - disc)/(2*A);
@@ -157,6 +164,8 @@ public class CollisionDetector {
         //posibles intersecciones
         Vector3 intersectionA = new Vector3(xA, y0+m*xA-m*x0 ,0f);
         Vector3 intersectionB = new Vector3(xB, y0+m*xB-m*x0 ,0f);
+
+        
 
         //buscamos la interseccion mas cercana la cual es el objetivo
         //el que este mas cerca del centro de character (point) es nuestra respuesta
