@@ -918,7 +918,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agent: {fileID: 949220007}
   avoidDistance: 20
-  lookAhead: 4
+  lookAhead: 1
 --- !u!1 &1220114047
 GameObject:
   m_ObjectHideFlags: 0
@@ -2127,7 +2127,7 @@ GameObject:
   - component: {fileID: 1982202805}
   - component: {fileID: 1982202804}
   m_Layer: 0
-  m_Name: Wall1 (1)
+  m_Name: Wall5
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

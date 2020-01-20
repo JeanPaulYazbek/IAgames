@@ -52,6 +52,24 @@ public class ObstacleAvoidance : Seek {
         if ( float.IsNaN(targetPos.x) || float.IsNaN(targetPos.y)){
             targetPos =  character.transform.position + character.velocity * (-1);
         }
+
+        // revisamos si quedamos atrapados en una esquina
+        // para eso vemos si la posicion a la que nos movemos 
+        //esta dentro de otra elispe
+        if( collisionDetector.CheckAllElipse(targetPos)){
+            //en este caso volvemos por donde vinimos con cierta aleatoriedad
+            targetPos = rayVector * (-1) ;
+            float range = 0.1f;
+            targetPos.x += UnityEngine.Random.Range(-range, range); 
+            targetPos.y += UnityEngine.Random.Range(-range, range);
+            
+        }
+
+        
+
+        
+
+
         //Debug.Log("Posicion seek");
         //Debug.Log(targetPos);
         Debug.DrawLine(collision.position,targetPos,  Color.blue, 10.0f,true);

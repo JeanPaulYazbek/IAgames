@@ -55,8 +55,8 @@ public class CollisionDetector {
         for (int i = 0; i< obstacles.Length; i++ ){
 
             obstacle = obstacles[i];
-            obstacleWidth = obstacle.localScale.x ;//dividimos entre la raiz de 2 para hacer el ovalo mas ajustado
-            obstacleHeight = obstacle.localScale.y;
+            obstacleWidth = obstacle.localScale.x /1.4f;//dividimos entre la raiz de 2 para hacer el ovalo mas ajustado
+            obstacleHeight = obstacle.localScale.y /1.4f;
             obstacleCenter = obstacle.position;
 
             
@@ -84,13 +84,18 @@ public class CollisionDetector {
             
             }
 
+            //calculamos la interseccion entre recta y elipse 
             collision.position = Intersection(position, m, obstacleWidth, obstacleHeight, obstacleCenter);
-            //el punto de interseccion menos el centro del ovalo nos da la normal
-
+            
+            
+            
             //printeamos el vector desde el centro del ovalo hasta el punto de interseccion
             //para debuggear
             Debug.DrawLine(obstacleCenter,collision.position,  Color.green, 10.0f,true);
            
+
+            //el punto de interseccion menos el centro del ovalo nos da la normal
+
             collision.normal = collision.position - obstacleCenter;
             collision.normal.z = 0f;
             collision.normal.Normalize();
@@ -115,6 +120,24 @@ public class CollisionDetector {
         float deltaX = point.x - center.x;
 
         return ((deltaY*deltaY)/(radius2*radius2) + (deltaX*deltaX)/(radius1*radius1) )<=1;
+    }
+
+    //funcion que toma un punto y revisa si alguna de las elipses de los obstaculos
+    //chocan con el
+    public bool CheckAllElipse(Vector3 point){
+
+        int n = obstacles.Length;
+        Transform targetObs;
+        for ( int i = 0; i < n; i++ ){
+            
+            targetObs = obstacles[i];
+            if (CheckElipse(point, targetObs.localScale.x,targetObs.localScale.y, targetObs.position)){
+                return true;
+            }
+          
+        }
+        return false;
+
     }
 
     // funcion que toma una recta y una elipse y devuelve el punto de interseccion entre ambos
