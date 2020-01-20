@@ -12,7 +12,7 @@ public class Pursue : Seek {
 
     //funcion que intenta predecir a donde se movera el target e ir
     //antes que el ahi
-    public SteeringOutput getSteeringP(int seek_or_flee){
+    public override SteeringOutput getSteering(int seek_or_flee){
 
 
         Vector3 direction = pTarget.transform.position - character.transform.position;

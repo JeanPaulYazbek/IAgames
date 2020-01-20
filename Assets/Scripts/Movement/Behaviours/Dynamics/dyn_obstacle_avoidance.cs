@@ -50,7 +50,7 @@ public class dyn_obstacle_avoidance : MonoBehaviour
 
         //Perseguimos al enemigo
         // con seek aceleracion
-        steeringAgent.UpdateSteering(obstacleAvoidance.getSteeringOA());
+        steeringAgent.UpdateSteering(obstacleAvoidance.getSteering());
     }
 
 }

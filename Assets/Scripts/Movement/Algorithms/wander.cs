@@ -20,7 +20,7 @@ public class Wander : Face
         maxAccel = MaxAccel;
     }
 
-    public SteeringOutput getSteeringW(){
+    public override SteeringOutput getSteering(){
 
         SteeringOutput steering = new SteeringOutput(Vector3.zero, 0f);
 

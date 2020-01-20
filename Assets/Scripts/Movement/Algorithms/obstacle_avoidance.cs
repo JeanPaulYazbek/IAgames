@@ -20,7 +20,7 @@ public class ObstacleAvoidance : Seek {
 
     //funcion que intenta predecir a donde se movera el target e ir
     //antes que el ahi
-    public SteeringOutput getSteeringOA(){
+    public SteeringOutput getSteering(){
 
         
         //GENERAMOS EL VECTOR DETECTOR DE COLISIONES
@@ -58,8 +58,8 @@ public class ObstacleAvoidance : Seek {
         //esta dentro de otra elispe
         if( collisionDetector.CheckAllElipse(targetPos)){
             //en este caso volvemos por donde vinimos con cierta aleatoriedad
-            targetPos = rayVector * (-1) ;
-            float range = 0.1f;
+            targetPos = character.transform.position + rayVector * (-1) ;
+            float range = 1f;
             targetPos.x += UnityEngine.Random.Range(-range, range); 
             targetPos.y += UnityEngine.Random.Range(-range, range);
             

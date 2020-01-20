@@ -10,7 +10,7 @@ public class Face : Align {
     }
 
     
-    public SteeringOutput getSteeringF(){
+    public override SteeringOutput getSteering(){
 
         return getSteeringF2(fTarget.transform.position);
   

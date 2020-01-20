@@ -7,12 +7,12 @@ public class LookWhereYouAreGoing : Align
 
     }
 
-    public SteeringOutput getSteeringL(){
+    public override SteeringOutput getSteering(){
 
         if (character.velocity.magnitude==0){
             return new SteeringOutput(Vector3.zero, 0f);
         }
 
-        return getSteering2((float)Math.Atan2(-character.velocity.x,character.velocity.y)*53);
+        return getSteering2((float)Math.Atan2(-character.velocity.x,character.velocity.y)*57);
     }
 }

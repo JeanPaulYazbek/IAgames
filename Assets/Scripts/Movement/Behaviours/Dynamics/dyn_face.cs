@@ -32,7 +32,7 @@ public class dyn_face : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        steeringAgent.UpdateSteering(face.getSteeringF());
+        steeringAgent.UpdateSteering(face.getSteering());
         
     }
 }

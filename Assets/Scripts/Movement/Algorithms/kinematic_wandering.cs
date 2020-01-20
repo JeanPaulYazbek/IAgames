@@ -1,7 +1,8 @@
 using UnityEngine;
 using System;
 
-public class KinematicWandering {
+public class KinematicWandering : Behavior
+{
 
     public Kinetics character;
     public float maxspeed;

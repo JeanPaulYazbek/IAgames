@@ -69,6 +69,7 @@
      <Compile Include="Assets\Scripts\Movement\Algorithms\separation.cs" />
      <Compile Include="Assets\Scripts\Movement\Algorithms\velocity_match.cs" />
      <Compile Include="Assets\Scripts\Movement\Algorithms\wander.cs" />
+     <Compile Include="Assets\Scripts\Movement\behavior.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\Dynamics\dyn_align.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\Dynamics\dyn_arrive.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\Dynamics\dyn_collision_avoid.cs" />

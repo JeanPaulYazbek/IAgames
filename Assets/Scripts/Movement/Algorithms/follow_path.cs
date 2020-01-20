@@ -13,7 +13,7 @@ public class FollowPath : Seek {
     }
     
     //funcion que persigue un target ficticio 
-    public SteeringOutput getSteeringFP(){
+    public SteeringOutput getSteering(){
 
         currentParam = path.GetParam(character.transform.position.x);
 

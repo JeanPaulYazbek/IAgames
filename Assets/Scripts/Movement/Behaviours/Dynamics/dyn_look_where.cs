@@ -26,7 +26,7 @@ public class dyn_look_where : MonoBehaviour
     void Update()
     {
         //miramos hacia donde vayamos
-        steeringAgent.UpdateSteering(look.getSteeringL());
+        steeringAgent.UpdateSteering(look.getSteering());
         
     }
 }

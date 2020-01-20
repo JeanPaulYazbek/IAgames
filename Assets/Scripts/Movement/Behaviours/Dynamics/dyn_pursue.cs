@@ -45,7 +45,7 @@ public class dyn_pursue : MonoBehaviour
         
         //Perseguimos al enemigo
         // con seek aceleracion
-        steeringAgent.UpdateSteering(pursue.getSteeringP(seek_or_flee));
+        steeringAgent.UpdateSteering(pursue.getSteering(seek_or_flee));
 
         
         

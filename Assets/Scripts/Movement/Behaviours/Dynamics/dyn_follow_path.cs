@@ -28,7 +28,7 @@ public class dyn_follow_path : MonoBehaviour
     void Update()
     {
         //seguimos el camino
-        steeringAgent.UpdateSteering(follow.getSteeringFP());
+        steeringAgent.UpdateSteering(follow.getSteering());
         
     }
 }

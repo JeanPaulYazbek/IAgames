@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class Seek 
+public class Seek : Behavior
 {
     public Kinetics character;
     public Kinetics target;
@@ -15,7 +15,7 @@ public class Seek
 
     //funcion que realiza seeking de un punto si le pasas 1 y flee si le pasas
     //0
-    public SteeringOutput getSteering(int seek_or_flee){
+    public virtual SteeringOutput getSteering(int seek_or_flee){
 
        
         return getSteering2(target.transform.position, seek_or_flee);

@@ -42,7 +42,7 @@ public class dyn_wander : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        steeringAgent.UpdateSteering(wander.getSteeringW());
+        steeringAgent.UpdateSteering(wander.getSteering());
         
     }
 }

@@ -1,6 +1,7 @@
 using UnityEngine;
 
-public class Separation {
+public class Separation : Behavior
+{
 
     Kinetics character;
     Kinetics[] targets;

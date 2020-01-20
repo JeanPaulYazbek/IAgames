@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System;
 
-public class KinematicSeek {
+public class KinematicSeek : Behavior
+{
 
     public Kinetics character;
     public Kinetics target;

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System;
-public class Align 
+public class Align : Behavior
 {
     public Kinetics character;
     public Kinetics target;
@@ -41,7 +41,7 @@ public class Align
        
     }
 
-    public SteeringOutput getSteering(){
+    public virtual SteeringOutput getSteering(){
 
         return getSteering2(target.transform.eulerAngles.z);
 

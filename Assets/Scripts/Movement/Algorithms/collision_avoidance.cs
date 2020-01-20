@@ -1,6 +1,7 @@
 using UnityEngine;
 
-public class CollisionAvoidance {
+public class CollisionAvoidance : Behavior
+{
 
     Kinetics character;
     float maxAccel;

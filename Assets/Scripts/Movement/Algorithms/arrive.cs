@@ -1,7 +1,7 @@
 ﻿
 using UnityEngine;
 
-public class Arrive 
+public class Arrive : Behavior
 {
     public Kinetics character;
     public Kinetics target;

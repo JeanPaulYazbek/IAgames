@@ -1,7 +1,7 @@
 
 using UnityEngine;
 
-public class VelocityMatch
+public class VelocityMatch : Behavior
 {
     public Kinetics character;
     public Kinetics target;
