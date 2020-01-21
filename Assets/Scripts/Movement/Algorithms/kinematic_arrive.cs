@@ -1,7 +1,7 @@
 using UnityEngine;
 using System;
 
-public class KinematicArrive : Behavior
+public class KinematicArrive 
 {
 
     public Kinetics character;

@@ -9,12 +9,13 @@ public class dyn_vel_match : MonoBehaviour
     //Los objetos necesarios enemigo y agente
     public string enemyName;
     static_data enemy;
-    public static_data agent;
+    public Kinetics kineticsEnemy;
 
     //Estructuras estaticas del agente
+    public static_data agent;
     public Kinetics kineticsAgent;
     public SteeringOutput steeringAgent;
-    public Kinetics kineticsEnemy;
+    
 
 
      //valores por defecto de d arrive 

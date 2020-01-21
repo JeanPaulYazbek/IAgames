@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class Seek : Behavior
+public class Seek 
 {
     public Kinetics character;
     public Kinetics target;

@@ -1,7 +1,7 @@
 using UnityEngine;
 using System;
 
-public class KinematicWandering : Behavior
+public class KinematicWandering
 {
 
     public Kinetics character;

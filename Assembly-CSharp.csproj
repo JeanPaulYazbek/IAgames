@@ -56,6 +56,7 @@
      <Compile Include="Assets\Scripts\Camera\follow_player.cs" />
      <Compile Include="Assets\Scripts\Movement\Algorithms\align.cs" />
      <Compile Include="Assets\Scripts\Movement\Algorithms\arrive.cs" />
+     <Compile Include="Assets\Scripts\Movement\Algorithms\cohesion.cs" />
      <Compile Include="Assets\Scripts\Movement\Algorithms\collision_avoidance.cs" />
      <Compile Include="Assets\Scripts\Movement\Algorithms\face.cs" />
      <Compile Include="Assets\Scripts\Movement\Algorithms\follow_path.cs" />
@@ -70,6 +71,7 @@
      <Compile Include="Assets\Scripts\Movement\Algorithms\velocity_match.cs" />
      <Compile Include="Assets\Scripts\Movement\Algorithms\wander.cs" />
      <Compile Include="Assets\Scripts\Movement\behavior.cs" />
+     <Compile Include="Assets\Scripts\Movement\Behaviours\Blended\flock.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\Dynamics\dyn_align.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\Dynamics\dyn_arrive.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\Dynamics\dyn_collision_avoid.cs" />
@@ -87,6 +89,7 @@
      <Compile Include="Assets\Scripts\Movement\Behaviours\Kinetics\kin_wander.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\static_data.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\static_enemy.cs" />
+     <Compile Include="Assets\Scripts\Movement\blended_steering.cs" />
      <Compile Include="Assets\Scripts\Movement\collision.cs" />
      <Compile Include="Assets\Scripts\Movement\collision_detector.cs" />
      <Compile Include="Assets\Scripts\Movement\draw_elipse.cs" />
