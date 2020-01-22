@@ -41,7 +41,7 @@ public class Align : Behavior
        
     }
 
-    public virtual SteeringOutput getSteering(){
+    public override SteeringOutput getSteering(){
 
         return getSteering2(target.transform.eulerAngles.z);
 

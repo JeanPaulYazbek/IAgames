@@ -7,7 +7,7 @@ public class LookWhereYouAreGoing : Align
 
     }
 
-    public override SteeringOutput getSteering(){
+    new public SteeringOutput getSteering(){
 
         if (character.velocity.magnitude==0){
             return new SteeringOutput(Vector3.zero, 0f);

@@ -17,7 +17,7 @@ public class Separation : Behavior
         maxAccel = MaxAccel;
     }
 
-    public SteeringOutput getSteering(){
+    public override SteeringOutput getSteering(){
 
         SteeringOutput steering = new SteeringOutput(Vector3.zero, 0f);
 

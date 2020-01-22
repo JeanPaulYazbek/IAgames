@@ -46,7 +46,7 @@ public class Cohesion : Behavior
 
    //funcion que calcula la aceleracion necesaria para
    //moverse al centro de masa de un grupo de objetos "targets"
-    public SteeringOutput getSteering(){
+    public override SteeringOutput getSteering(){
 
        
         //velocidades de salida

@@ -2,7 +2,7 @@ using UnityEngine;
 using System;
 public class BlendedSteering
 {
-/**
+
     Behavior[] behaviors; 
     float maxAccel;
     float maxAngular;
@@ -43,5 +43,5 @@ public class BlendedSteering
 
         
     }
-**/
+
 }
