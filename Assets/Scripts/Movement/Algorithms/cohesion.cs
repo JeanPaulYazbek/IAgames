@@ -37,8 +37,7 @@ public class Cohesion : Behavior
         }
 
         result /= n;
-
-        Debug.Log(result);
+        
         return result;
 
 

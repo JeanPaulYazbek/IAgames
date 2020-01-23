@@ -38,11 +38,10 @@ public class Seek
 
              
         steering.linear.Normalize();
-        //Debug.Log(newVelocity);
+
         steering.linear *= maxAcceleration;
 
         steering.angular = 0f;
-        //Debug.Log(newVelocity);
         return steering;
 
     }

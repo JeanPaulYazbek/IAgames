@@ -26,7 +26,7 @@ public class BlendedSteering
             steering_beh = behavior.getSteering();
             steering.linear += behavior.weigth * steering_beh.linear;
             steering.angular += behavior.weigth * steering_beh.angular;
-            Debug.Log(steering_beh.angular);
+            
             
         }
 

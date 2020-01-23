@@ -66,6 +66,7 @@
      <Compile Include="Assets\Scripts\Movement\Algorithms\kinematic_wandering.cs" />
      <Compile Include="Assets\Scripts\Movement\Algorithms\look_where_you_are_going.cs" />
      <Compile Include="Assets\Scripts\Movement\Algorithms\obstacle_avoidance.cs" />
+     <Compile Include="Assets\Scripts\Movement\Algorithms\priority_steering.cs" />
      <Compile Include="Assets\Scripts\Movement\Algorithms\pursue.cs" />
      <Compile Include="Assets\Scripts\Movement\Algorithms\seek.cs" />
      <Compile Include="Assets\Scripts\Movement\Algorithms\separation.cs" />

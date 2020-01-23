@@ -153,12 +153,13 @@ public class CollisionDetector {
         //NOTA: toda las cuentas las saque calculando la formula interseccion
         // entre la formula de la elipse y de recta
 
+        /*
         Debug.Log("Datos Intersecion");
         Debug.Log(point);
         Debug.Log(Math.Round(m,2));
         Debug.Log(radius1);
         Debug.Log(radius2);
-        Debug.Log(center);
+        Debug.Log(center);*/ 
         float y0 = point.y;
         float x0 = point.x;
         float y1 = center.y;
