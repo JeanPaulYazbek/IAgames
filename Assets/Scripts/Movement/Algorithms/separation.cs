@@ -17,6 +17,8 @@ public class Separation : Behavior
         maxAccel = MaxAccel;
     }
 
+    //funcion que calcula la aceleracion adecuada para alejarse 
+    // de un grupo de targets
     public override SteeringOutput getSteering(){
 
         SteeringOutput steering = new SteeringOutput(Vector3.zero, 0f);

@@ -12,7 +12,8 @@ public class FollowPath : Seek {
         path = new Path();
     }
     
-    //funcion que persigue un target ficticio 
+    //funcion que persigue un target ficticio en una ruta predeterminada
+    //en este caso use el sin(x) como ruta
     public SteeringOutput getSteering(){
 
         currentParam = path.GetParam(character.transform.position.x);

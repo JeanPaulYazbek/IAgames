@@ -24,7 +24,8 @@ public class Arrive : Behavior
         timeToTarget = TimeToTarget;
     }
 
-   
+    //funcion que da la aceleracion adecuadra para acercarse a un ritmo
+    //natural a un target
     public override SteeringOutput getSteering(){
 
        

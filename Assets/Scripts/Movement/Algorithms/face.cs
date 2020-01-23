@@ -10,6 +10,7 @@ public class Face : Align {
     }
 
     
+    //funcion que te hace girar hacia un target
     new public SteeringOutput getSteering(){
 
         return getSteeringF2(fTarget.transform.position);

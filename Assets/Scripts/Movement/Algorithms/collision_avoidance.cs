@@ -15,6 +15,7 @@ public class CollisionAvoidance
         radius = Radius;
     }
 
+    //funcion que intenta predecir una colision futura con ciertos targets
     public SteeringOutput getSteering(SteeringOutput steeringCharacter){
 
         float shortestTime = float.MaxValue;

@@ -7,6 +7,7 @@ public class LookWhereYouAreGoing : Align
 
     }
 
+    //funcion que te hace girar hacia donde vas
     new public SteeringOutput getSteering(){
 
         if (character.velocity.magnitude==0){

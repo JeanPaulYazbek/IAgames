@@ -18,8 +18,7 @@ public class ObstacleAvoidance : Seek {
 
     }
 
-    //funcion que intenta predecir a donde se movera el target e ir
-    //antes que el ahi
+    //funcion que ayuda a obtener una aceleracion que evitara colisiones con obstaculos
     public SteeringOutput getSteering(){
 
         

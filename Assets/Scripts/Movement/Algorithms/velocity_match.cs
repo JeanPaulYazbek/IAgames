@@ -16,7 +16,7 @@ public class VelocityMatch : Behavior
         timeToTarget = TimeToTarget;
     }
 
-   
+    //funcion que calcula la aceleracio necesaria para igualar la velocidad de un target
     public override SteeringOutput getSteering(){
 
        
