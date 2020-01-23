@@ -23,7 +23,10 @@ public class BlendedSteering
         for (int i = 0; i < n; i ++){
             behavior = behaviors[i];
 
+            
+
             steering_beh = behavior.getSteering();
+
             steering.linear += behavior.weigth * steering_beh.linear;
             steering.angular += behavior.weigth * steering_beh.angular;
             

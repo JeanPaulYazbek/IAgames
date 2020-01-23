@@ -19,7 +19,7 @@ public class ObstacleAvoidance : Seek {
     }
 
     //funcion que ayuda a obtener una aceleracion que evitara colisiones con obstaculos
-    public SteeringOutput getSteering(){
+    override public SteeringOutput getSteering(){
 
         
         //GENERAMOS EL VECTOR DETECTOR DE COLISIONES
@@ -68,7 +68,7 @@ public class ObstacleAvoidance : Seek {
 
         
 
-
+    
         //Debug.Log("Posicion seek");
         //Debug.Log(targetPos);
         Debug.DrawLine(collision.position,targetPos,  Color.blue, 10.0f,true);

@@ -89,6 +89,7 @@
      <Compile Include="Assets\Scripts\Movement\Behaviours\Kinetics\kin_arrive.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\Kinetics\kin_seek.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\Kinetics\kin_wander.cs" />
+     <Compile Include="Assets\Scripts\Movement\Behaviours\Priority\avoid_with_arrive.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\static_data.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\static_enemy.cs" />
      <Compile Include="Assets\Scripts\Movement\collision.cs" />

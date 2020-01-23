@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class Seek 
+public class Seek : Behavior
 {
     public Kinetics character;
     public Kinetics target;
@@ -11,6 +11,10 @@ public class Seek
         character = Character;
         target = Target;
         maxAcceleration = MaxAcceleration;
+    }
+
+    public override SteeringOutput getSteering(){
+        return getSteering(1);
     }
 
     //funcion que realiza seeking de un punto si le pasas 1 y flee si le pasas
