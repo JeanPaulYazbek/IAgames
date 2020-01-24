@@ -55,8 +55,8 @@ public class CollisionDetector {
         for (int i = 0; i< obstacles.Length; i++ ){
 
             obstacle = obstacles[i];
-            obstacleWidth = obstacle.localScale.x /1.4f;//dividimos entre la raiz de 2 para hacer el ovalo mas ajustado
-            obstacleHeight = obstacle.localScale.y /1.4f;
+            obstacleWidth = obstacle.localScale.x /1.2f;//dividimos entre la raiz de 2 para hacer el ovalo mas ajustado
+            obstacleHeight = obstacle.localScale.y /1.2f;
             obstacleCenter = obstacle.position;
 
             
@@ -96,7 +96,7 @@ public class CollisionDetector {
 
             //el punto de interseccion menos el centro del ovalo nos da la normal
 
-            collision.normal = collision.position - obstacleCenter;
+            collision.normal = (collision.position - obstacleCenter);
             collision.normal.z = 0f;
             collision.normal.Normalize();
 

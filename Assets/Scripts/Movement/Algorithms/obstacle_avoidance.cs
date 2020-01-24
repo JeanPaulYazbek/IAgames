@@ -9,8 +9,9 @@ public class ObstacleAvoidance : Seek {
     CollisionDetector collisionDetector;
 
     SteeringOutput characterSteering;//necesitamos esto para devolver no cambios
+    Vector3 characterPosition;//necesitaremos esto para ver si caimos en una esquina
 
-    public ObstacleAvoidance(Kinetics Character ,Transform[] Obstacles,float AvoidDistance, float LookAhead, SteeringOutput CharacterSteering) : base(Character, Character,10f){
+    public ObstacleAvoidance(Kinetics Character ,Transform[] Obstacles,float AvoidDistance, float LookAhead, SteeringOutput CharacterSteering) : base(Character, Character,1f){
         avoidDistance = AvoidDistance;
         lookAhead = LookAhead;
         collisionDetector = new CollisionDetector(Obstacles);
@@ -55,15 +56,30 @@ public class ObstacleAvoidance : Seek {
         // revisamos si quedamos atrapados en una esquina
         // para eso vemos si la posicion a la que nos movemos 
         //esta dentro de otra elispe
-        if( collisionDetector.CheckAllElipse(targetPos)){
+        /**if( collisionDetector.CheckAllElipse(targetPos)){
+            
+            Debug.DrawLine(Vector3.zero, targetPos, Color.black, 10.0f,true);
             //en este caso volvemos por donde vinimos con cierta aleatoriedad
             targetPos = character.transform.position + rayVector * (-1) ;
             float range = 1f;
             targetPos.x += UnityEngine.Random.Range(-range, range); 
             targetPos.y += UnityEngine.Random.Range(-range, range);
             
+        }**/
+
+        //REVISAMOS si no ha habido cambios en la posicion del personaje
+        //si eso pasa es que caimos en una esquina
+        //esto lo hacemos viendo la distancia entre la posicion acttual
+        //contra la vieja
+        if(Vector3.Distance(characterPosition, character.transform.position) < 0.3f){
+            targetPos = character.transform.position + rayVector * (-1) ;
+            float range = 1f;
+            targetPos.x += UnityEngine.Random.Range(-range, range); 
+            targetPos.y += UnityEngine.Random.Range(-range, range);
         }
 
+        //guardamos la posicion actual del personaje
+        characterPosition = character.transform.position;
         
 
         
@@ -72,6 +88,7 @@ public class ObstacleAvoidance : Seek {
         //Debug.Log("Posicion seek");
         //Debug.Log(targetPos);
         Debug.DrawLine(collision.position,targetPos,  Color.blue, 10.0f,true);
+    
         //Debug.DrawLine(Vector3.zero,collision.position,  Color.black, 10.0f,true);
         return getSteering2(targetPos,1);
         
