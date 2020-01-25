@@ -20,7 +20,7 @@ public class dyn_align : MonoBehaviour
     public float maxAngularAccel = 10f;
     public float maxRotation = 50f;
     //radio de angulo aceptable
-    public float targetRadius = 2f;
+    public float targetRadius = 1f;
     public float slowRadius = 30f;
     public float timeToTarget = 0.1f;
 

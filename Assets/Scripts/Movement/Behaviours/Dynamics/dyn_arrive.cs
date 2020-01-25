@@ -21,7 +21,7 @@ public class dyn_arrive : MonoBehaviour
      //valores por defecto de d arrive 
 
     public float targetRadius = 1f;
-    public float slowRadius = 5f;
+    public float slowRadius = 30f;
 
     public float timeTotarget = 0.1f;
     public float MaxAcceleration = 20f;

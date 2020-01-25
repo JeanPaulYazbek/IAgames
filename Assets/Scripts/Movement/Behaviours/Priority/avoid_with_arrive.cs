@@ -112,7 +112,6 @@ public class avoid_with_arrive : MonoBehaviour
 
         behaviorsAvoid[0] = obstacleAvoidance;
 
-        Debug.Log(behaviorsAvoid[0]);
 
         blendArrive = new BlendedSteering(behaviorsArrive, maxAccelBlend, maxAngularBlend);
         blendAvoid = new BlendedSteering(behaviorsAvoid, maxAccelBlend, maxAngularBlend);
@@ -135,7 +134,7 @@ public class avoid_with_arrive : MonoBehaviour
     {
 
         steeringAgent.UpdateSteering(priority.getSteering());
-        //Debug.Log(priority.getSteering().linear);
+        
         
     }
 }

@@ -5,7 +5,7 @@ public class Pursue : Seek {
     public Kinetics pTarget;//target del pursue
     float maxPrediction;//cuanto tiempo maximo queremos predecir
 
-    public Pursue(Kinetics Character ,Kinetics PTarget, float MaxPrediction) : base(Character, PTarget,10f){
+    public Pursue(Kinetics Character ,Kinetics PTarget, float MaxPrediction) : base(Character, PTarget,20f){
         pTarget = PTarget;
         maxPrediction = MaxPrediction;
     }
