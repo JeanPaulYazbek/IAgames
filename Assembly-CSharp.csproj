@@ -90,15 +90,19 @@
      <Compile Include="Assets\Scripts\Movement\Behaviours\Kinetics\kin_seek.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\Kinetics\kin_wander.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\Priority\avoid_with_arrive.cs" />
+     <Compile Include="Assets\Scripts\Movement\Behaviours\Priority\follow_mouse.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\static_data.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\static_enemy.cs" />
+     <Compile Include="Assets\Scripts\Movement\Behaviours\static_shoot.cs" />
      <Compile Include="Assets\Scripts\Movement\collision.cs" />
      <Compile Include="Assets\Scripts\Movement\collision_detector.cs" />
      <Compile Include="Assets\Scripts\Movement\draw_elipse.cs" />
      <Compile Include="Assets\Scripts\Movement\kinematic_steering_output.cs" />
      <Compile Include="Assets\Scripts\Movement\kinetics.cs" />
+     <Compile Include="Assets\Scripts\Movement\kinetics_shoot.cs" />
      <Compile Include="Assets\Scripts\Movement\path.cs" />
      <Compile Include="Assets\Scripts\Movement\steering_output.cs" />
+     <Compile Include="Assets\Scripts\Shooting\Behaviors\shoot.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>/Users/capi/Desktop/mini_desktop/Universidad/Inteligencia Video Juegos/Pratica/Project Unity A/New Unity Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>

@@ -69,7 +69,7 @@ public class flock : MonoBehaviour
         GameObject[] pokemons = GameObject.FindGameObjectsWithTag("Pokemon");
         //Inicializamos las estructuras necesarias de otros componentes
         for (int i = 0; i<pokemons.Length; i++){
-            if(pokemons[i].name != name ){
+            if(pokemons[i].name != name ){//solo me interesan los pokemones que no son yo
                 targets_kin_sepa.Add(pokemons[i].GetComponent<static_data>().kineticsAgent);
             }
         }
@@ -121,36 +121,7 @@ public class flock : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /**
-        SteeringOutput steering = new SteeringOutput(Vector3.zero, 0f);
-        SteeringOutput steering_target;
-
-        steering_target = velMatch.getSteering();
-        steering.linear += velMatch.weigth * steering_target.linear;
-        steering.angular += velMatch.weigth * steering_target.angular;
-    
-
-        steering_target = separation.getSteering();
-        steering.linear += separation.weigth * steering_target.linear;
-        steering.angular += separation.weigth * steering_target.angular;
-
-    
-        steering_target = cohesion.getSteering();
-        steering.linear += cohesion.weigth * steering_target.linear;
-        steering.angular += cohesion.weigth * steering_target.angular;
-      
-
-        if(steering.linear.magnitude > maxAccelBlend){
-            steering.linear.Normalize();
-            steering.linear *= maxAccelBlend;
-        }
-
-        if(steering.angular > maxAngularBlend){
-            steering.angular = maxAngularBlend;
-        }
-
-        steeringAgent.UpdateSteering(steering);
-        **/
+        
         steeringAgent.UpdateSteering(blendFlock.getSteering());
         kineticsAgent.GetNewOrietation(kineticsAgent.velocity);
     }
