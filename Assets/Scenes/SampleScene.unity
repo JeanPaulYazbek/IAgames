@@ -4280,9 +4280,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a0bd4a16c4254e98a27245deaa376fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agentStatic: {fileID: 1347758963}
   pokeBallPrefab: {fileID: 1497733790846031302, guid: a29b67feed6cd4aacb7f97c77b5d03aa,
     type: 3}
-  ballSpeed: 0
+  ballSpeed: 8
 --- !u!114 &1347758967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4290,7 +4291,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1347758952}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 69c2efd08064a4e5ba9e9be15f57cd35, type: 3}
   m_Name: 

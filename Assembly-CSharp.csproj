@@ -101,6 +101,7 @@
      <Compile Include="Assets\Scripts\Movement\kinetics.cs" />
      <Compile Include="Assets\Scripts\Movement\kinetics_shoot.cs" />
      <Compile Include="Assets\Scripts\Movement\path.cs" />
+     <Compile Include="Assets\Scripts\Movement\proyectile_functions.cs" />
      <Compile Include="Assets\Scripts\Movement\steering_output.cs" />
      <Compile Include="Assets\Scripts\Shooting\Behaviors\shoot.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">

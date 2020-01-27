@@ -11,6 +11,8 @@ public class KineticsShoot
     public Vector3 velocity;//guardamos la velocidad completa
     public Transform transform;//aqui esta la posicion de la pokeBall
 
+    const float capture_rate = 2f;//radio de la esfera que representa el pokemon
+
     //DATOS EXTERNOS
     Kinetics[] pokemons;//lista de pokemons que podemos atrapar
     Transform[] obstacles;//lista de obstaculos con los que podriamos chocar
@@ -91,7 +93,7 @@ public class KineticsShoot
         Vector3 pokemonPos;
         for (int i = 0; i<pokemons.Length; i++){
             pokemonPos = pokemons[i].transform.position;
-            if (InsideSphere(pokemonPos, 1f)){
+            if (InsideSphere(pokemonPos, capture_rate)){
                 arr[1] = i;
                 return true;
             }
