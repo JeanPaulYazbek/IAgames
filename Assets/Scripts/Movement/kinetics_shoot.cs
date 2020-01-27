@@ -61,7 +61,7 @@ public class KineticsShoot
 
         //OJO por alguna razon en mi unity -3 es arriba en z y 3 es abajo osea 
         //esta invertido el eje z, por eso hago las cosas al reves
-        if(newZ >= -0.2f && newZ > lastHeight){//si bajamos y estamos muy cerca del suelo
+        if(newZ >= -0.1f && newZ > lastHeight){//si bajamos y estamos muy cerca del suelo
             
             answer[0]=1;
             return answer;

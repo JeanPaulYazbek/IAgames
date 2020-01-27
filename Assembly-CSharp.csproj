@@ -93,6 +93,7 @@
      <Compile Include="Assets\Scripts\Movement\Behaviours\Priority\follow_mouse.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\static_data.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\static_enemy.cs" />
+     <Compile Include="Assets\Scripts\Movement\Behaviours\static_jump.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\static_shoot.cs" />
      <Compile Include="Assets\Scripts\Movement\collision.cs" />
      <Compile Include="Assets\Scripts\Movement\collision_detector.cs" />

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
+using System;//solo para poder usar Array.FindAll
 
 public class flock : MonoBehaviour
 {
@@ -66,7 +67,11 @@ public class flock : MonoBehaviour
 
         //SEPARATION INITIALIZATION
 
-        GameObject[] pokemons = GameObject.FindGameObjectsWithTag("Pokemon");
+        //buscamos a todos los pokemones 
+        GameObject[] allPokemons = GameObject.FindGameObjectsWithTag("Pokemon");
+        //vamos a usar solo los pokemones que participan en flock
+        GameObject[] pokemons = Array.FindAll(allPokemons, c => c.GetComponent<static_data>().flocker);
+
         //Inicializamos las estructuras necesarias de otros componentes
         for (int i = 0; i<pokemons.Length; i++){
             if(pokemons[i].name != name ){//solo me interesan los pokemones que no son yo

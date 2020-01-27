@@ -19,6 +19,11 @@ public class static_data : MonoBehaviour
     public float maxspeed = 50f;
 
 
+    //extra
+
+    public bool flocker = false;//esto solo se pone en true si eres un pokemon que usa el comportamiento flock
+
+
     void Awake (){
 
         //Inicializamos las estructuras necesarias
