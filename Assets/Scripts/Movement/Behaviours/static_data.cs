@@ -24,7 +24,7 @@ public class static_data : MonoBehaviour
     //extra
 
     public bool flocker = false;//esto solo se pone en true si eres un pokemon que usa el comportamiento flock
-
+    public bool jumper = false;//esto es true si te puedes mover en z
 
     void Awake (){
 
@@ -35,7 +35,7 @@ public class static_data : MonoBehaviour
     }
 
     void Update() {
-        kineticsAgent.UpdateKinetics(steeringAgent, Time.deltaTime,maxspeed);
+        kineticsAgent.UpdateKinetics(steeringAgent, Time.deltaTime,maxspeed, jumper);
     }
 
 

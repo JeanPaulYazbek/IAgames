@@ -23,10 +23,14 @@ public class Kinetics
 
     //Funcion que actualiza ciertos valores dependiendo de las aceleraciones
     // y el tiempo
-    public void UpdateKinetics(SteeringOutput steering, float time, float maxspeed){
+    public void UpdateKinetics(SteeringOutput steering, float time, float maxspeed, bool jump){
 
         //Actualizamos posicion y orientacion
-        transform.position += velocity * time;
+        if(jump){//si somos algo que puede volar o saltar 
+            transform.position += velocity * time;
+        }else{//si somos algo que camina nada mas como trainers no nos inetresa z
+            transform.position += new Vector3(velocity.x * time, velocity.y * time, 0f);
+        }
         transform.eulerAngles += zVector * rotation*time;
 
         //Actualizamos velocidad y rotacion 

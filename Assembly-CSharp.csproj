@@ -82,6 +82,7 @@
      <Compile Include="Assets\Scripts\Movement\Behaviours\Dynamics\dyn_look_where.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\Dynamics\dyn_obstacle_avoidance.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\Dynamics\dyn_pursue.cs" />
+     <Compile Include="Assets\Scripts\Movement\Behaviours\Dynamics\dyn_pursue_all.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\Dynamics\dyn_seek.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\Dynamics\dyn_separation.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\Dynamics\dyn_vel_match.cs" />
@@ -92,7 +93,7 @@
      <Compile Include="Assets\Scripts\Movement\Behaviours\Priority\avoid_with_arrive.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\Priority\follow_mouse.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\static_data.cs" />
-     <Compile Include="Assets\Scripts\Movement\Behaviours\static_enemy.cs" />
+     <Compile Include="Assets\Scripts\Movement\Behaviours\static_fly.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\static_jump.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\static_shoot.cs" />
      <Compile Include="Assets\Scripts\Movement\collision.cs" />

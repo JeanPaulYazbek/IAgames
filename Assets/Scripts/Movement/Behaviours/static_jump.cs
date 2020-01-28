@@ -23,6 +23,9 @@ public class static_jump : MonoBehaviour
     public float maxHeight = -4f;//altura maxima de vuelo
     public float minHeight = -1f;//altura minima de vuelo
 
+    //medidas
+    public float minSize = 0.8f;
+
 
     void Start (){
 
@@ -37,9 +40,11 @@ public class static_jump : MonoBehaviour
 
         float height = transform.position.z;
 
+        
+
         //ajustamos el tamanno del pokemon de acuerdo a la altura
-        float targetSize = Math.Abs(height)*(0.4f);
-        float minSize = 0.8f;
+        //float targetSize = Math.Abs(height)*(0.4f);
+        float targetSize = (float)Math.Log(Math.Abs(height));
         if (targetSize < minSize){
             targetSize = minSize;
         }

@@ -65,9 +65,10 @@ public class auto_shoot : MonoBehaviour
     void Update()
     {
  
-        //NORMAL SHOOT
-        if (Input.GetKey("x") && !pokeBall) {//si presionamos x y ya termino la ultima pokeBall lanzada
+       
             
+        if(!pokeBall){//si ya desaparecio la ultima poke ball que lanzamos lanzamos otra
+
             //creamos un pokeball en el mismo lugar que esta el character que la lanza.
             pokeBall = Instantiate(pokeBallPrefab, transform.position, Quaternion.identity);
             //le pasamos la lista de pokemones y obstaculos
@@ -76,78 +77,18 @@ public class auto_shoot : MonoBehaviour
             ballStatic.pokemons = pokemons_kins;
             ballStatic.obstacles = obstacles;
             ballStatic.speed = ballSpeed;
+            ballStatic.ultraBall = true;//estamos usando una ultra ball
             //le damos la direccion de la velocidad del trainer
             agentVelocity = agentKinetics.velocity;
             agentVelocity.Normalize();//esta sera la direccion del lanzamiento
             agentVelocity.z = -1f;
             ballStatic.direction = agentVelocity;
-        
-      
         }
-
-        //CHEAT SHOOT 
-        //z si disparo rapido
-        //s si disparo lento
-        if ((Input.GetKey("z") || Input.GetKey("s")) && !pokeBall) {//si presionamos z o s y ya termino la ultima pokeBall lanzada
         
 
-            //CREAMOS POKE BALL
-            //creamos un pokeball en el mismo lugar que esta el character que la lanza.
-            pokeBall = Instantiate(pokeBallPrefab, transform.position, Quaternion.identity);
-            //le pasamos la lista de pokemones y obstaculos
-            static_shoot ballStatic = pokeBall.GetComponent<static_shoot>();
-            ballStatic.pokemons = pokemons_kins;
-            ballStatic.obstacles = obstacles;
-            ballStatic.speed = ballSpeed;
-
-            //--BUSCAMOS EL POKEMON MAS CERCANO
-            Vector3 trainerPos = agentKinetics.transform.position;//posicion actual del trainer
-            Vector3 pokemonPos = searchPokemon(trainerPos);//valor por defecto en caso de que todos los pokemon esten atrapados
-            
-            //usaremos esta direccion para el disparo en caso de que CalculateFiringSolution falle en encontrar
-            //una direccion de disparo
-            agentVelocity = agentKinetics.velocity;
-            agentVelocity.Normalize();//esta sera la direccion del lanzamiento
-            agentVelocity.z = -1f;
-
-            bool slow = true;
-            if(Input.GetKey("z")){//si queremos rapido
-                slow = false;
-            }
-
-            //ahora calculamos a que direccion lanzar. PD: el *2 es porque necesitamos mas alcance
-            Vector3 shootDirection = shootHandler.CalculateFiringSolution(trainerPos, pokemonPos, ballSpeed*2, gravity, agentVelocity, slow);
-
-            //si casualmente la direccion tiene -1 es porque yo cablee el disparo
-            //si cablee el disparo debemos usar la ballSpeed sola, sino usamos *2
-            if(shootDirection.z != -1f){
-                ballStatic.speed *= 2;
-            }
-  
-            ballStatic.direction = shootDirection;
-
-        }
+        
 
     }
 
-    //funcion que busca el pokemon mas cercano
-    Vector3 searchPokemon(Vector3 trainerPos){
-        
-        float closest = float.PositiveInfinity;
-        float distance;
-        Transform pokemonTrans;
-        Vector3 pokemonPos = Vector3.zero;//valor por defecto en caso de que todos los pokemon esten atrapados
-        for (int i =0; i<pokemons_kins.Length; i++) {
-            
-            pokemonTrans = pokemons_kins[i].transform;
-            distance = Vector3.Distance(trainerPos, pokemonTrans.position);
-            if((closest > distance) && (pokemonTrans.localScale.x > 0f)){//si esta mas cerca y no el pokemon no ha sido atrapado
-                closest = distance;
-                pokemonPos = pokemonTrans.position;
-                
-            }
-        }  
 
-        return pokemonPos;
-    }
 }

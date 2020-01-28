@@ -7,12 +7,16 @@ public class static_shoot : MonoBehaviour
 {
 
     //DATOS PARA LA POKE BALL
-    public GameObject staticBallPrefab;
+    public GameObject staticBallPrefab;//imagen de pokeball para dejar ahi cuando atrapemos un poke
+    public GameObject ultraBallPrefab;//imagen de ultraball
+
     KineticsShoot kineticsBall;//necesitamos una estructura que almacena nuestra informacion de ball
     const float gravity = 9.8f;
     public Vector3 direction;//este vector sera normal en la direccion en la que lanzamos la bola
     public float speed;//magnitud de velocidad de los disparos
     int[] destroy;//necesitamos saber si debemos ser destruidos
+
+    public bool ultraBall = false;//debe ser true si estamos usando ultra balls y no poke balls
 
     //EXTERNOS
     public Kinetics[] pokemons;//necesiitamos una lista de pokemons para saber si los podemos atrapar
@@ -29,13 +33,19 @@ public class static_shoot : MonoBehaviour
     void Update()
     {
         destroy = kineticsBall.UpdateKinetics(Time.deltaTime);
-        if(destroy[0]==1){
+        if(destroy[0]==1){//si pisamos el suelo
             Object.Destroy(this.gameObject); //desaparecemos completamente la pokeball
         }
-        if(destroy[0]==2){
+        if(destroy[0]==2){//si le pegamos a un pokemon
             Transform caught_poke = pokemons[destroy[1]].transform;
             if(caught_poke.localScale.x > 0){//si no fue atrapado ya
-                Instantiate(staticBallPrefab, transform.position, Quaternion.identity);
+
+                //PONEMOS UNA BALL QUIETA
+                if(ultraBall){//si es una ultraball ponemos una ultra ball
+                    Instantiate(ultraBallPrefab, transform.position, Quaternion.identity);
+                }else{
+                    Instantiate(staticBallPrefab, transform.position, Quaternion.identity);
+                }
                 caught_poke.localScale = Vector3.zero;
             }
             Object.Destroy(this.gameObject);

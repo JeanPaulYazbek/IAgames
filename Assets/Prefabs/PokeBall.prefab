@@ -94,3 +94,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   staticBallPrefab: {fileID: 4397921427173524475, guid: 2a6762354cb9243f79f9058821888ed5,
     type: 3}
+  ultraBallPrefab: {fileID: 4207344843356443767, guid: c9eaf7f6cea964cbc983ea431692bdc0,
+    type: 3}
+  direction: {x: 0, y: 0, z: 0}
+  speed: 0
+  ultraBall: 0
+  obstacles: []
