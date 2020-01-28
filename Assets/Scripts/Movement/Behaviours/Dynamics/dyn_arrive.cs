@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 
 
+//componente que permite a un agente hacer arrive
 public class dyn_arrive : MonoBehaviour
 {
 

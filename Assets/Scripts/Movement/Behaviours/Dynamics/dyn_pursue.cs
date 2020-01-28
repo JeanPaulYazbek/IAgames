@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-
+//componente que permite predecir la trayectoria de un target y perseguirlo
 public class dyn_pursue : MonoBehaviour
 {
 

@@ -1,6 +1,8 @@
 using UnityEngine;
 using System;
 
+//este componente hace que un pokemon se quede saltando en un solo punto 
+//osea solo se mueve de arriba a abajo 
 public class static_jump : MonoBehaviour
 {
 

@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-
+//BUGEADO: componente que permite evadir colisiones contra una lista de targets
 public class dyn_collision_avoid : MonoBehaviour
 {
 

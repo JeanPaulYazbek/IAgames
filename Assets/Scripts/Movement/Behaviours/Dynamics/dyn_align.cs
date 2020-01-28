@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//componente que agregado a cualquier cosa que tenga un transform hace que haga align al target
 public class dyn_align : MonoBehaviour
 {
 

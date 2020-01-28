@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//componente que te permite vagar al azar
 public class dyn_wander : MonoBehaviour
 {
 

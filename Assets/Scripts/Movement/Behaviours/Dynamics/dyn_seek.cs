@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-
+//componente que te permite perseguir a un target
 public class dyn_seek : MonoBehaviour
 {
 

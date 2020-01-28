@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System;//solo para poder usar Array.FindAll
 
+//este componente SOLO PUEDE SER USADO EN POKEMONS, hace que los pokemon 
+//que tengan activo flocker en su static_data caminen en manada
 public class flock : MonoBehaviour
 {
 

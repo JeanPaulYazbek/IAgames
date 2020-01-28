@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//componente que hace que veas a donde vas 
 public class dyn_look_where : MonoBehaviour
 {
 

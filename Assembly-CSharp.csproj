@@ -104,6 +104,7 @@
      <Compile Include="Assets\Scripts\Movement\path.cs" />
      <Compile Include="Assets\Scripts\Movement\proyectile_functions.cs" />
      <Compile Include="Assets\Scripts\Movement\steering_output.cs" />
+     <Compile Include="Assets\Scripts\Shooting\Behaviors\auto_shoot.cs" />
      <Compile Include="Assets\Scripts\Shooting\Behaviors\shoot.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>/Users/capi/Desktop/mini_desktop/Universidad/Inteligencia Video Juegos/Pratica/Project Unity A/New Unity Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 
+//componente que te permite avadir obstaculos y hacer arrive a la vez
 public class avoid_with_arrive : MonoBehaviour
 {
 

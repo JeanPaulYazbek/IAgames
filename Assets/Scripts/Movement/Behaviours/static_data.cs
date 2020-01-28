@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 
 
+//este componenete permite a cualquier cosa que se mueva (por ejemplo un trainer o un pokemon)
+//actualizar su posicion y guardar todos los datos encesarios para ello
 public class static_data : MonoBehaviour
 {
 

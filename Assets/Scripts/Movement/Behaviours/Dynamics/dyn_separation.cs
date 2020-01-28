@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-
+//componente que permite mantenerse alejado de una lista de targets
 public class dyn_separation : MonoBehaviour
 {
 

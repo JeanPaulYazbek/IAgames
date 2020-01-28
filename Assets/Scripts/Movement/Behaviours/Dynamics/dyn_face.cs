@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+//componente que hace que veas hacia un target
 public class dyn_face : MonoBehaviour
 {
 

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//ananlogo a static data pero esta hecha para datos de cosas que sean lanzadas(por ejemplo poke balls)
 public class static_shoot : MonoBehaviour
 {
 

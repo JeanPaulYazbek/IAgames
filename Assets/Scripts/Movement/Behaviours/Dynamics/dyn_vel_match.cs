@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-
+//componente que te permite intentar tener la misma velocidad que un target
 public class dyn_vel_match : MonoBehaviour
 {
 

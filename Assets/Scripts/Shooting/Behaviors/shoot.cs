@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using System;
 
+//este compoenente permite a un personaje disparar presionando x y o z
 public class shoot : MonoBehaviour
 {
 

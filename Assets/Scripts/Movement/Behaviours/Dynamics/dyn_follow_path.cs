@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+//componente que te hace seguir un path en mi caso el seno es el path
 public class dyn_follow_path : MonoBehaviour
 {
     public static_data agent;

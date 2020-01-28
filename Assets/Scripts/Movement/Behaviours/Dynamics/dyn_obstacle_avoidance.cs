@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-
+//componente que te permite evadir obstaculos
 public class dyn_obstacle_avoidance : MonoBehaviour
 {
 

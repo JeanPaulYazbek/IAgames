@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 
+//analogo a avoid_with_arrive pero el target de arrive siempre es el mouse
 public class follow_mouse : MonoBehaviour
 {
 
