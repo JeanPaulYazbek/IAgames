@@ -119,7 +119,13 @@ public class CollisionDetector {
         float deltaY = point.y - center.y;
         float deltaX = point.x - center.x;
 
-        return ((deltaY*deltaY)/(radius2*radius2) + (deltaX*deltaX)/(radius1*radius1) )<=1;
+        //a veces las elipses no son muy precisas ya que se achatan por un lado
+        //dando falsos obstaculos, para eso agregamos esta restriccion que 
+        // hace que solo consideremos puntos que no esten muy lejos
+        bool tooFar = (point - center).magnitude > Math.Max(radius1, radius2)*0.6f;
+        bool inside = ((deltaY*deltaY)/(radius2*radius2) + (deltaX*deltaX)/(radius1*radius1) )<=1;
+
+        return inside && !tooFar;
     }
 
     //funcion que toma un punto y revisa si alguna de las elipses de los obstaculos
