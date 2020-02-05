@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Camera\follow_player.cs" />
+     <Compile Include="Assets\Scripts\Graph\Mesh\static_mesh.cs" />
      <Compile Include="Assets\Scripts\Movement\Algorithms\align.cs" />
      <Compile Include="Assets\Scripts\Movement\Algorithms\arrive.cs" />
      <Compile Include="Assets\Scripts\Movement\Algorithms\blended_steering.cs" />
