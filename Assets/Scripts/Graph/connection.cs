@@ -11,6 +11,14 @@ public class Connection {
         nodeB = NodeB;
     }
 
+    public void DrawConnection(float duration){
+
+        Debug.DrawLine(nodeA.center, nodeB.center, Color.black, duration, true);
+        
+       
+
+    }
+
     
 
 }

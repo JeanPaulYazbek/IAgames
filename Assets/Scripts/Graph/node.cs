@@ -29,7 +29,7 @@ public class Node {
         vertexC = VertexC;
 
         //calculamos el centro
-        center =  (vertexA + vertexB + vertexC) / 2f; 
+        center =  (vertexA + vertexB + vertexC) / 3f; 
 
         //calculamos los centros de los lados 
         centerAB = (vertexA + vertexB) / 2;
