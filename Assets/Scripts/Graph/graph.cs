@@ -6,7 +6,7 @@ using System.Collections.Generic;
 public class Graph {
 
     public Node[] nodes;//un arreglo de nodos donde el indice donde esta un nodo es su id
-    public int numberNodes;//cuentos nodos tendremos
+    public int numberNodes;//cuantos nodos tendremos
     public List<Connection>[] connections;//un arreglo donde estaran los nodos vecinos de cada nodo
 
     public Graph(Node[] Nodes){

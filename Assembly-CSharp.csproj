@@ -57,6 +57,7 @@
      <Compile Include="Assets\Scripts\Graph\Behaviours\static_graph.cs" />
      <Compile Include="Assets\Scripts\Graph\connection.cs" />
      <Compile Include="Assets\Scripts\Graph\graph.cs" />
+     <Compile Include="Assets\Scripts\Graph\Heuristics\euclidean.cs" />
      <Compile Include="Assets\Scripts\Graph\Heuristics\heuristic.cs" />
      <Compile Include="Assets\Scripts\Graph\Mesh\Behaviours\static_mesh.cs" />
      <Compile Include="Assets\Scripts\Graph\node.cs" />
