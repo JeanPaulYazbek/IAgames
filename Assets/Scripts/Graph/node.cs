@@ -20,6 +20,10 @@ public class Node {
     public Vector3 centerBC;
 
 
+    //Variables utiles para algoritmos
+    public Node prev = null;
+
+
     public Node(int Id, Vector3 VertexA, Vector3 VertexB, Vector3 VertexC){
 
         id = Id;

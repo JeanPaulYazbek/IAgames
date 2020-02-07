@@ -3,20 +3,28 @@ using UnityEngine;
 // Esta clase representa un nodo del grafo, en este caso triangulos
 public class Connection {
 
-    Node nodeA;
-    Node nodeB;
+    Node fromNode;
+    Node toNode;
+    public float cost;
 
-    public Connection(Node NodeA,Node NodeB){
-        nodeA = NodeA;
-        nodeB = NodeB;
+    public Connection(Node FromNode,Node ToNode){
+        fromNode = FromNode;
+        toNode = ToNode;
+        cost = Vector3.Distance(fromNode.center, toNode.center);
     }
 
     public void DrawConnection(float duration){
 
-        Debug.DrawLine(nodeA.center, nodeB.center, Color.black, duration, true);
+        Debug.DrawLine(fromNode.center, toNode.center, Color.black, duration, true);
         
-       
+    }
 
+    public Node GetToNode(){
+        return toNode;
+    }
+
+    public Node GetFromNode(){
+        return fromNode;
     }
 
     
