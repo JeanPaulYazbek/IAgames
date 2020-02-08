@@ -73,7 +73,7 @@ public class ObstacleAvoidance : Seek {
         //contra la vieja
         if(Vector3.Distance(characterPosition, character.transform.position) < 0.3f){
             targetPos = character.transform.position + rayVector * (-1) ;
-            float range = 1f;
+            float range = 10f;
             targetPos.x += UnityEngine.Random.Range(-range, range); 
             targetPos.y += UnityEngine.Random.Range(-range, range);
         }

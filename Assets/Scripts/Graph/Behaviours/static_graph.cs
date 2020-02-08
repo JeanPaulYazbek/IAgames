@@ -8,27 +8,89 @@ public class static_graph : MonoBehaviour
     GameObject[] meshes;//aqui guardaremos todos los rectangulos que se hicieron a mano
 
     Utilities utilities =  new Utilities();//funciones de utilidad
-    Node[] nodes;//aqui guardaremos los nodos
+    
 
-    Graph graph;//aqui guardaremos el grafo cuando este listo
+    public bool drawTriangles = false;
+    public bool drawConnections = false;
+
+    public Graph graph;//aqui guardaremos el grafo cuando este listo
 
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         meshes = GameObject.FindGameObjectsWithTag("MyMesh");
+        graph = GenerateGraph(meshes);
+        
+        //ESTO SIRVE EN CASO DE QUE SOSPECHES QUE ALGUIEN PUSO DOS TRIANGULOS EN EL MISMO LUGAR
+        // Vector3 centerC;
+        // for(int i = 0; i< amountTriangles; i++){
+        //     centerC = graph.GetNode(i).center;
+        //     for(int j = 0; j<amountTriangles; j++){
+        //         if((Vector3.Distance(graph.GetNode(j).center, centerC )< 0.1f ) && j!=i){
+        //             Debug.Log("ARREGLA LOS TRIANGULOS");
+        //             
+        //             graph.GetNode(i).DrawTriangle(40f);
+        //             graph.GetNode(j).DrawTriangle(40f);
+        //             return;
+
+        //         }
+        //     }
+        // }
+
+        //IMPRIMIMOS NUESTRAS CONECCIONES PARA VER QUE SIRVAN
+        if(drawConnections){//solo si queremos imprimirlas
+            for(int i =0; i<graph.numberNodes; i++){
+                foreach(var connection in graph.connections[i]){
+                    connection.DrawConnection(40);
+                }
+            }
+        }
+
+       
+        //PROBANDO A*
+        // int targetId = graph.numberNodes -1;
+        // Euclidean euclidean = new Euclidean(graph.GetNode(targetId));
+
+        // PathFindAStar pathFinder = new PathFindAStar(graph, graph.GetNode(0), graph.GetNode(targetId), euclidean); 
+        // Vector3[] path = pathFinder.GetPath();
+        // utilities.DrawPath(path, 50f);
+
+        
+        
+    }
+
+
+    //Funcion que toma una lista de rectangulos y genera el grafo de triangulos 
+    //acorde a ellos
+    Graph GenerateGraph(GameObject[] meshes){
+        
         static_mesh target;
         int id = 0;
 
         //DATOS PARA CREAR EL GRAFO
         int amountTriangles = meshes.Length*2;//tendresmos el dobles de triangulos
-        nodes = new Node[amountTriangles];
+        Node[] nodes = new Node[amountTriangles];
 
 
-
+        Vector3 center;//centro del rectangulo
+        float offsetX;//su ancho
+        float offsetY;//su alto
         //LLENAMOS EL ARREGLO DE TRIANGULOS
         for(int i = 0; i< meshes.Length; i++){
             target = meshes[i].GetComponent<static_mesh>();
+
+            //Buscamos los datos necesarios para los calculos
+            center = target.transform.position;
+            offsetX = Math.Abs(target.transform.localScale.x);
+            offsetY = Math.Abs(target.transform.localScale.y);
+
+            // Conseguimos las esquinas
+            target.upLeft = target.corner(center, -offsetX, offsetY);
+            target.upRight = target.corner(center, offsetX, offsetY);
+            target.downLeft = target.corner(center, -offsetX, -offsetY);
+            target.downRight = target.corner(center, offsetX, -offsetY);
+            
             // Generamos los dos triangulos a partir de un rectangulo
             nodes[id]=new Node(id, target.upLeft, target.downLeft, target.downRight);
             id++;
@@ -53,7 +115,10 @@ public class static_graph : MonoBehaviour
         
         for(int i =0; i<amountTriangles; i++){
             node = nodes[i];
-            //node.DrawTriangle(40);
+            if(drawTriangles){//si queremos dibujar los triangulos 
+                node.DrawTriangle(40);
+            }
+            
 
             //solo necesitamos un vertice para hacer las comparaciones
             //ya que sabemos que nuestros rectangulos de mayor largo
@@ -130,54 +195,9 @@ public class static_graph : MonoBehaviour
 
         }
 
-        
-        //ESTO SIRVE EN CASO DE QUE SOSPOECHES QUE ALGUIEN PUSO DOS TRIANGULOS EN EL MISMO LUGAR
-        // Vector3 centerC;
-        // for(int i = 0; i< amountTriangles; i++){
-        //     centerC = graph.GetNode(i).center;
-        //     for(int j = 0; j<amountTriangles; j++){
-        //         if((Vector3.Distance(graph.GetNode(j).center, centerC )< 0.1f ) && j!=i){
-        //             Debug.Log("ARREGLA LOS TRIANGULOS");
-        //             Debug.Log(i);
-        //             Debug.Log(j);
-        //             Debug.Log(centerC);
-        //             Debug.Log(graph.GetNode(j).center);
-        //             graph.GetNode(i).DrawTriangle(40f);
-        //             graph.GetNode(j).DrawTriangle(40f);
-        //             return;
+        return graph;
 
-        //         }
-        //     }
-        // }
-
-        //IMPRIMIMOS NUESTRAS CONECCIONES PARA VER QUE SIRVAN
-        // for(int i =0; i<amountTriangles; i++){
-        //     foreach(var connection in graph.connections[i]){
-        //          connection.DrawConnection(40);
-        //     }
-        // }
-
-        //graph.GetNode(9).DrawTriangle(40f);
-        // foreach(var connection in graph.GetConnections(9)){
-        //     connection.GetToNode().DrawTriangle(40f);
-        //     Debug.Log(connection.GetFromNode().id);
-        //     Debug.Log(connection.GetToNode().id);
-        //     connection.GetFromNode().DrawTriangle(40f);
-        // }
-        
-
-        //PROBANDO A*
-        int targetId = amountTriangles -1;
-        Euclidean euclidean = new Euclidean(graph.GetNode(targetId));
-
-        PathFindAStar pathFinder = new PathFindAStar(graph, graph.GetNode(0), graph.GetNode(targetId), euclidean); 
-        List<Vector3> path = pathFinder.GetPath();
-        utilities.DrawPath(path, 50f);
-
-        
-        
     }
-
 
 
     // Funcion que toma un plano el centro del lado de un nodo, el id del nodo
@@ -212,27 +232,22 @@ public class static_graph : MonoBehaviour
 
         //SI NO ESTABA EN EL CENTRO BUSCAMOS ALREDEDOR PARA ESTAR SEGUROS
 
-        //variables que ayudaran a revisar alrededor de los centrales
+        //variables que ayudaran a revisar alrededor del punto central
         int currentX = 0;
         int currentY = 0;
         Node current;
 
-    
-
-        int offsetI;
-        int offsetJ;
 
         //probamos los ocho puntos alrededor del punto que buscamos para estar seguros
-        for(int i = 0; i<3; i++){
-            for(int j = 0; j<3; j++){
+        for(int i = -1; i<2; i++){
+            for(int j = -1; j<2; j++){
 
-                offsetI = i -1;
-                offsetJ = j -1;
-                currentX = x + offsetI;
-                currentY = y + offsetJ;
+                
+                currentX = x + i;
+                currentY = y + j;
 
   
-                if(currentX < n && currentY < n && (offsetI != 0 || offsetJ !=0) && !(plane[currentX, currentY] is null)) {//si no nos salimos de la matriz y hay una lista en la casilla
+                if(currentX < n && currentY < n && (i != 0 || j != 0) && !(plane[currentX, currentY] is null)) {//si no nos salimos de la matriz y hay una lista en la casilla
                 //OJO: no revisamos el centro osea cuando los dos current son 0 porque ya lo revisamos
                 //ademas podemos tomar ventaja de que si no estaba en el centro esta en la primera casilla de otra
                     

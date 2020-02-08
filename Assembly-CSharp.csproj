@@ -55,6 +55,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Camera\follow_player.cs" />
      <Compile Include="Assets\Scripts\Graph\Behaviours\static_graph.cs" />
+     <Compile Include="Assets\Scripts\Graph\Behaviours\Trainers\find_pokemons_Astar.cs" />
      <Compile Include="Assets\Scripts\Graph\connection.cs" />
      <Compile Include="Assets\Scripts\Graph\graph.cs" />
      <Compile Include="Assets\Scripts\Graph\Heuristics\euclidean.cs" />

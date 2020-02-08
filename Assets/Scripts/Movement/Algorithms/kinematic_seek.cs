@@ -15,18 +15,22 @@ public class KinematicSeek
         maxspeed = Maxspeed;
     }
 
+    public KinematicSteeringOutput getSteering(int seek_or_flee){
+        return getSteering2(target.transform.position, seek_or_flee);
+    }
+
     //funcion que realiza seeking de un punto si le pasas 1 y flee si le pasas
     //0
-    public KinematicSteeringOutput getSteering(int seek_or_flee){
+    public KinematicSteeringOutput getSteering2(Vector3 targetPosition, int seek_or_flee){
 
        
         //velocidades de salida
         KinematicSteeringOutput steering = new KinematicSteeringOutput();
 
         if (seek_or_flee == 1){
-            steering.velocity = target.transform.position - character.transform.position;
+            steering.velocity = targetPosition - character.transform.position;
         }else{
-            steering.velocity = character.transform.position - target.transform.position;
+            steering.velocity = character.transform.position - targetPosition;
         }
              
         steering.velocity.Normalize();

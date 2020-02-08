@@ -24,15 +24,18 @@ public class Arrive : Behavior
         timeToTarget = TimeToTarget;
     }
 
+    public override SteeringOutput getSteering(){
+        return getSteering2(target.transform.position);
+    }
     //funcion que da la aceleracion adecuadra para acercarse a un ritmo
     //natural a un target
-    public override SteeringOutput getSteering(){
+    public SteeringOutput getSteering2(Vector3 targetPos){
 
        
         //velocidades de salida
         SteeringOutput steering = new SteeringOutput(Vector3.zero, 0f);
 
-        Vector3 direction = target.transform.position - character.transform.position;
+        Vector3 direction = targetPos - character.transform.position;
         float distance = direction.magnitude;
 
         //revisamos si estamos en el radio peque
