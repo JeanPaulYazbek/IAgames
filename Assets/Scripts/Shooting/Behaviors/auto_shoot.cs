@@ -75,6 +75,7 @@ public class auto_shoot : MonoBehaviour
             static_shoot ballStatic = pokeBall.GetComponent<static_shoot>();
             //le pasamos datos necesarios
             ballStatic.pokemons = pokemons_kins;
+            ballStatic.pokemonsObjs = pokemons;
             ballStatic.obstacles = obstacles;
             ballStatic.speed = ballSpeed;
             ballStatic.ultraBall = true;//estamos usando una ultra ball

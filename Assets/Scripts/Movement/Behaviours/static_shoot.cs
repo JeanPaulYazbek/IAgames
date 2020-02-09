@@ -20,6 +20,7 @@ public class static_shoot : MonoBehaviour
 
     //EXTERNOS
     public Kinetics[] pokemons;//necesiitamos una lista de pokemons para saber si los podemos atrapar
+    public GameObject[] pokemonsObjs;//estos sera utiles cuando queramos deshabilitar los pokemones 
     public Transform[] obstacles;//necesitamos los obstaculos para cuando choquemos con ellos 
 
     
@@ -33,11 +34,13 @@ public class static_shoot : MonoBehaviour
     void Update()
     {
         destroy = kineticsBall.UpdateKinetics(Time.deltaTime);
-        if(destroy[0]==1){//si pisamos el suelo
+        int option = destroy[0];
+        int pokemonIndex = destroy[1];
+        if(option==1){//si pisamos el suelo
             Object.Destroy(this.gameObject); //desaparecemos completamente la pokeball
         }
-        if(destroy[0]==2){//si le pegamos a un pokemon
-            Transform caught_poke = pokemons[destroy[1]].transform;
+        if(option==2){//si le pegamos a un pokemon
+            Transform caught_poke = pokemons[pokemonIndex].transform;
             if(caught_poke.localScale.x > 0){//si no fue atrapado ya
 
                 //PONEMOS UNA BALL QUIETA
@@ -46,10 +49,29 @@ public class static_shoot : MonoBehaviour
                 }else{
                     Instantiate(staticBallPrefab, transform.position, Quaternion.identity);
                 }
-                caught_poke.localScale = Vector3.zero;
+                //HACEMOS QUE EL POKEMON DESAPAREZCA
+                DisablePokemon(pokemonsObjs[pokemonIndex], caught_poke);
+                
             }
             Object.Destroy(this.gameObject);
         }
         
+    }
+
+    //Funcion que deshabilita todos los componentes de un pokemon dados y po
+    void DisablePokemon(GameObject pokemonObject, Transform pokemonTrans){
+
+        //Reducimos el tamanno del pokemon a 0, asi los otros componentes sabran que desaparecio
+        pokemonTrans.localScale = Vector3.zero;
+
+        //Desactivamos todos sus compoenentes pero su transform sigue existiendo 
+        //para efectos de los otros componentes sera como si estuviera quieto en donde se le atrapo
+        MonoBehaviour[] comps = GameObject.Find(pokemonObject.name).GetComponents<MonoBehaviour>();
+        foreach(MonoBehaviour c in comps)
+        {
+            c.enabled = false;
+        }
+       
+
     }
 }

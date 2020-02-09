@@ -70,19 +70,9 @@ public class shoot : MonoBehaviour
             
             //creamos un pokeball en el mismo lugar que esta el character que la lanza.
             pokeBall = Instantiate(pokeBallPrefab, transform.position, Quaternion.identity);
-            //le pasamos la lista de pokemones y obstaculos
-            static_shoot ballStatic = pokeBall.GetComponent<static_shoot>();
-            //le pasamos datos necesarios
-            ballStatic.pokemons = pokemons_kins;
-            ballStatic.obstacles = obstacles;
-            ballStatic.speed = ballSpeed;
-            //le damos la direccion de la velocidad del trainer
-            agentVelocity = agentKinetics.velocity;
-            agentVelocity.Normalize();//esta sera la direccion del lanzamiento
-            agentVelocity.z = -1f;
-            ballStatic.direction = agentVelocity;
-        
-      
+            InitDirection();//inicializamos agentVelocity que nos dara la direccion de lanzamiento
+            InitBall();//inicializamos la bola que acabamos de crear
+ 
         }
 
         //CHEAT SHOOT 
@@ -94,37 +84,31 @@ public class shoot : MonoBehaviour
             //CREAMOS POKE BALL
             //creamos un pokeball en el mismo lugar que esta el character que la lanza.
             pokeBall = Instantiate(pokeBallPrefab, transform.position, Quaternion.identity);
-            //le pasamos la lista de pokemones y obstaculos
-            static_shoot ballStatic = pokeBall.GetComponent<static_shoot>();
-            ballStatic.pokemons = pokemons_kins;
-            ballStatic.obstacles = obstacles;
-            ballStatic.speed = ballSpeed;
-
-            //--BUSCAMOS EL POKEMON MAS CERCANO
-            Vector3 trainerPos = agentKinetics.transform.position;//posicion actual del trainer
-            Vector3 pokemonPos = searchPokemon(trainerPos);//valor por defecto en caso de que todos los pokemon esten atrapados
             
-            //usaremos esta direccion para el disparo en caso de que CalculateFiringSolution falle en encontrar
-            //una direccion de disparo
-            agentVelocity = agentKinetics.velocity;
-            agentVelocity.Normalize();//esta sera la direccion del lanzamiento
-            agentVelocity.z = -1f;
+            InitDirection();//iniciamos la direccion por defecto
+            static_shoot ballStatic = InitBall();//iniciamos la bola con una direccion por defecto
 
+            //DISPARO RAPIDO O LENTO
             bool slow = true;
             if(Input.GetKey("z")){//si queremos rapido
                 slow = false;
             }
 
+            //--BUSCAMOS EL POKEMON MAS CERCANO
+            Vector3 trainerPos = agentKinetics.transform.position;//posicion actual del trainer
+            Vector3 pokemonPos = searchPokemon(trainerPos);//valor por defecto en caso de que todos los pokemon esten atrapados
+            
+
             //ahora calculamos a que direccion lanzar. PD: el *2 es porque necesitamos mas alcance
             Vector3 shootDirection = shootHandler.CalculateFiringSolution(trainerPos, pokemonPos, ballSpeed*2, gravity, agentVelocity, slow);
 
-            //si casualmente la direccion tiene -1 es porque yo cablee el disparo
-            //si cablee el disparo debemos usar la ballSpeed sola, sino usamos *2
-            if(shootDirection.z != -1f){
-                ballStatic.speed *= 2;
+           
+            if(shootDirection.z != -1f){//si shoot direction encontro una trayecotira
+                ballStatic.speed *= 2;//modificamos la velocidad de disparo
+                ballStatic.direction = shootDirection;//ponemos la direccionque no es por defecto
             }
   
-            ballStatic.direction = shootDirection;
+            
 
         }
 
@@ -149,5 +133,27 @@ public class shoot : MonoBehaviour
         }  
 
         return pokemonPos;
+    }
+
+    //Funcion que asigna los datos que necesita una poke bola
+    static_shoot InitBall(){
+        static_shoot ballStatic = pokeBall.GetComponent<static_shoot>();
+        ballStatic.pokemons = pokemons_kins;
+        ballStatic.pokemonsObjs = pokemons;
+        ballStatic.obstacles = obstacles;
+        ballStatic.speed = ballSpeed;
+        ballStatic.direction = agentVelocity;
+        return ballStatic;
+
+    }
+
+    //Funcion que inicia la direccion de disparo
+    //en este caso usa la velocidad que lleva el trainer para ello
+    void InitDirection(){
+        //usaremos esta direccion para el disparo en caso de que CalculateFiringSolution falle en encontrar
+        //una direccion de disparo
+        agentVelocity = agentKinetics.velocity;
+        agentVelocity.Normalize();//esta sera la direccion del lanzamiento
+        agentVelocity.z = -1f;//esto es uno porque se ve bien asi el lanzamiento
     }
 }
