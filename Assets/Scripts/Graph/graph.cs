@@ -60,6 +60,7 @@ public class Graph {
     }
 
     //Funcion que busca el triangulo mas cercano al punto dado
+    //solo retorna null si el grafo no tiene nodos
     public Node ClosestNode(Vector3 point){
         Node currentNode;
         float currentDistance;

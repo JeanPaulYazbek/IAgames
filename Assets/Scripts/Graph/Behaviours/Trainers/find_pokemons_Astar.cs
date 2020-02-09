@@ -2,8 +2,9 @@ using UnityEngine;
 using System.Collections.Generic;
 
 //componente que permite predecir la trayectoria de todos los pokemons (uno por uno)
-//si uno es atrapado el pursue pasara al siguiente target
+//si uno es atrapado el seek pasara al siguiente target
 //este componente es principalmente para la trainer enemiga
+//usa Astar para calcular las rutas
 public class find_pokemons_Astar : MonoBehaviour
 {
 
@@ -91,64 +92,67 @@ public class find_pokemons_Astar : MonoBehaviour
         //un pokemon es atrapado cuando su tamanno se vuelve 0
         float caught = pokemons[currentPokemon].transform.localScale.x;
 
-        //si el pokemon actual fue atrapado 
+        //SI EL POKEMON QUE SEGUIAMOS FUE ATRAPADO
         if (caught == 0f){
             currentPokemon++;//pasamos al siguiente
-            currentPokemon = currentPokemon % amountPokemon;//si nos pasamos del largo del arreglo volvemos al primero
+            //si ya no hay pokemones
+            if(currentPokemon == amountPokemon){
+                
+                //dejamos de movernos
+                kineticsAgent.velocity = Vector3.zero;
+                steeringAgent.linear = Vector3.zero;
+                //apagamos este componente
+                enabled = false;
+                return;
+            }
+            UpdatePath();//actualizamos al nuevo camino a seguir
             
-            pokemonPosition = pokemons[currentPokemon].transform.position;
-            //actualizamos el a start
-            aStar.goal = graph.FindNode(pokemonPosition);
-            aStar.start = graph.FindNode(transform.position);
-            //generamos nuevo camino
-            currentPath = aStar.GetPath();
-            utilities.DrawPath(currentPath, 40f);
-
-            indexPath = 0;
         }
 
 
-        currentPosition = kineticsAgent.transform.position;
+        currentPosition = kineticsAgent.transform.position;//posicion actual del trainer
         
 
-        if(Vector3.Distance(currentPosition, currentPath[indexPath])<5f){//si alcanzamos cierto punto del path
-            indexPath++;//nos movemos al siguiente
+        //OJO: ese 5f se consiguio tanteando
+        //SI ESTAMOS MUY CERCA DEL TRIANGULO QUE SEGUIMOS
+        if(Vector3.Distance(currentPosition, currentPath[indexPath])<5f){
+            indexPath++;//nos movemos al siguiente triangulo
             int n = currentPath.Length;
             if(indexPath >= n){//si nos pasamos del largo del path 
-                indexPath = n -1;//
+                indexPath = n -1;//nos quedamos en el ultimo
             }
-            currentTarget = currentPath[indexPath];
+            currentTarget = currentPath[indexPath];//siguiente triangulo a seguir
         }
 
-        //Debemos ver si alcanzamos la posicion que buscabamos en cuyo caso 
-        //debemos actualizar nuestro path con el siguiente pokemon a atrapar
+        //SI ALCANZAMOS DONDE ESTABA EL POKEMON
         if(Vector3.Distance(currentPosition, pokemonPosition)<3f){
             
-            if(pokemonPosition != pokemons[currentPokemon].transform.position){//si el pokemon se movio hay que actualizar el camino
-                pokemonPosition = pokemons[currentPokemon].transform.position;
-                //actualizamos el a start
-                aStar.goal = graph.FindNode(pokemonPosition);
-                aStar.start = graph.FindNode(transform.position);
-                //generamos nuevo camino
-                currentPath = aStar.GetPath();
-                utilities.DrawPath(currentPath, 40f);
-
-                indexPath = 0;
-            }else{
+            //si el pokemon se movio hay que actualizar el camino
+            if(pokemonPosition != pokemons[currentPokemon].transform.position){
+                UpdatePath();
+            }else{//si no estamos dentro del triangulo del pokemon asi que lo seguimos
                 currentTarget = pokemonPosition;
             }
         }
-
-       
-
-        
-        //Perseguimos al enemigo
-        // con seek aceleracion
+    
+        //Perseguimos al pokemon 
+        // con seek 
         steeringAgent.UpdateSteering(seek.getSteering2(currentTarget ,seek_or_flee));
 
         
-        
-        
+    }
+
+    //Funcion que actualiza a cual pokemon seguiremos y reestructura A* adecuadamente
+    void UpdatePath(){
+        pokemonPosition = pokemons[currentPokemon].transform.position;
+        //actualizamos el a start
+        aStar.goal = graph.FindNode(pokemonPosition);
+        aStar.start = graph.FindNode(transform.position);
+        //generamos nuevo camino
+        currentPath = aStar.GetPath();
+        utilities.DrawPath(currentPath, 40f);
+
+        indexPath = 0;
     }
 
 }

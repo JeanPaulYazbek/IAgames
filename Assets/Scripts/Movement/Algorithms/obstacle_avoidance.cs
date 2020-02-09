@@ -53,20 +53,7 @@ public class ObstacleAvoidance : Seek {
             targetPos =  character.transform.position + character.velocity * (-1);
         }
 
-        // revisamos si quedamos atrapados en una esquina
-        // para eso vemos si la posicion a la que nos movemos 
-        //esta dentro de otra elispe
-        /**if( collisionDetector.CheckAllElipse(targetPos)){
-            
-            Debug.DrawLine(Vector3.zero, targetPos, Color.black, 10.0f,true);
-            //en este caso volvemos por donde vinimos con cierta aleatoriedad
-            targetPos = character.transform.position + rayVector * (-1) ;
-            float range = 1f;
-            targetPos.x += UnityEngine.Random.Range(-range, range); 
-            targetPos.y += UnityEngine.Random.Range(-range, range);
-            
-        }**/
-
+    
         //REVISAMOS si no ha habido cambios en la posicion del personaje
         //si eso pasa es que caimos en una esquina
         //esto lo hacemos viendo la distancia entre la posicion acttual
@@ -81,15 +68,10 @@ public class ObstacleAvoidance : Seek {
         //guardamos la posicion actual del personaje
         characterPosition = character.transform.position;
         
+        //Debug.DrawLine(collision.position,targetPos,  Color.blue, 10.0f,true);
+        //Debug.DrawLine(Vector3.zero,collision.position,  Color.black, 10.0f,true);
 
         
-
-    
-        //Debug.Log("Posicion seek");
-        //Debug.Log(targetPos);
-        Debug.DrawLine(collision.position,targetPos,  Color.blue, 10.0f,true);
-    
-        //Debug.DrawLine(Vector3.zero,collision.position,  Color.black, 10.0f,true);
         return getSteering2(targetPos,1);
         
 
