@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class meowth_state_machine : MonoBehaviour {
 
@@ -11,6 +12,13 @@ public class meowth_state_machine : MonoBehaviour {
     public static_data target;
     Kinetics kineticsTarget;
 
+    //DATOS DE LOS TRAINERS
+    public static_data trainer;
+    Kinetics kineticsTrainer;
+    public static_data rival;
+    Kinetics kineticsRival;
+
+
     //DATOS SEEK
     public float maxSeekAccel = 10f;
 
@@ -19,6 +27,10 @@ public class meowth_state_machine : MonoBehaviour {
     public float slowRadiusArrive = 30f;
     public float MaxAccelerationArrive = 20f;
 
+    //DATOS MAQUINA DE ESTADOS
+    StateMachine meowthMachine;
+    public float radiusAlert = 30f;//radio para alertarse
+    public float radiusRun = 20f;//radio para huir
 
     void Start(){
 
@@ -26,13 +38,18 @@ public class meowth_state_machine : MonoBehaviour {
         kinMeowth = meowth.kineticsAgent;
         steeringMeowth = meowth.steeringAgent;
         kineticsTarget = target.kineticsAgent;
+        kineticsTrainer = trainer.kineticsAgent;
+        kineticsRival = rival.kineticsAgent;
 
         //COMENZAMOS A CONSTRUIR LA MAQUINA DE ESTADOS
 
         //1. ACCIONES:
 
         FollowTarget seekTarget = new FollowTarget(steeringMeowth, kinMeowth, kineticsTarget, maxSeekAccel);
-        RunFromTarget runFromTarget = new RunFromTarget(steeringMeowth, kinMeowth, kineticsTarget, maxSeekAccel);
+        Kinetics[] targets = new Kinetics[2];
+        targets[0]=kineticsTrainer;
+        targets[1]=kineticsRival;
+        RunFromTargets runFromTargets = new RunFromTargets(steeringMeowth, kinMeowth, targets, maxSeekAccel);
         StopMoving stop = new StopMoving(kinMeowth, steeringMeowth);
         DoNothing nothing = new DoNothing();
         ShowIcon showHeart = new ShowIcon(this.gameObject, "Heart");
@@ -45,13 +62,93 @@ public class meowth_state_machine : MonoBehaviour {
 
         //2. ESTADOS:
 
-        //State stalkTarget = new State()
+        List<Action> entryActions;//aqui iremos guardanndo todas las acciondes de entrada
+        List<Action> exitActions;//aqui iremos guardanndo todas las acciones de salida
+        List<Action> actions;//aqui guardaremos todas las acciones intermedias
+
+        //2.a estado para perseguir enamorado (glameow)
+
+        entryActions = new List<Action>() {showHeart};//al entrar al estado ponemos un corazon
+        actions= new List<Action>() {seekTarget};//durante el estado perseguimos al enamorado
+        exitActions= new List<Action>() {disableHeart};//al salir quitamos el corazon
+
+        State stalkTarget = new State(actions, entryActions, exitActions);
 
 
+        //2.b estado para alertarse de entrenador cercano
+
+        entryActions= new List<Action>() {showExclamation, stop};//al entrar al estado debemos mostrar un signo de exclamacion
+        actions = new List<Action>();
+        exitActions=new List<Action>() {disableExclamation};//al salir quitamos el signo
+
+        
+        State alert = new State(actions, entryActions, exitActions);
+
+
+        //2.c estado para huir del entrenador
+
+        entryActions = new List<Action>();
+        actions = new List<Action>() {runFromTargets};
+        exitActions = new List<Action>();
+        
+
+        State runAway = new State(actions, entryActions, exitActions);
+
+        //2.d estado para preocuparse por alguien y seguirlo preocupado
+
+
+        entryActions = new List<Action>() {showSweat};
+        actions = new List<Action>() {seekTarget};
+        exitActions = new List<Action>() {disableSweat};
+
+        State worry = new State(actions, entryActions, exitActions);
+
+
+        //3. CONDICIONES:
+
+        TooClose closeTrainer = new TooClose(kinMeowth, kineticsTrainer, radiusAlert);
+        TooClose veryCloseTrainer = new TooClose(kinMeowth, kineticsTrainer, radiusRun); 
+        TooClose closeRival = new TooClose(kinMeowth, kineticsRival, radiusAlert);
+        TooClose veryCloseRival = new TooClose(kinMeowth, kineticsRival, radiusRun); 
+       
+
+        //Estas son las que de verdad necesitamos
+        OrCondition anyTargetClose = new OrCondition(closeTrainer, closeRival);
+        OrCondition anyTargetVeryClose = new OrCondition(veryCloseRival, veryCloseTrainer);
+        NotCondition noOneClose = new NotCondition(anyTargetClose);
+        NotCondition noOneVeryClose = new NotCondition(anyTargetVeryClose);
+        WasCaught targetCaught = new WasCaught(kineticsTarget);
+
+
+        List<Action> noActions = new List<Action>();
+        //4. TRANSICIONES:
+        Transition anyHumanClose = new Transition(anyTargetClose, noActions, alert);
+        Transition noHumanClose =  new Transition(noOneClose, noActions, stalkTarget);
+        Transition anyHumanVeryClose = new Transition(anyTargetVeryClose, noActions, runAway);
+        Transition noHumanVeryClose = new Transition(noOneVeryClose, noActions, alert);
+        Transition targetWasCaught = new Transition(targetCaught, noActions, worry);
+    
+        //4.1 AGREGAMOS TRANSICIONES A ESTADOS
+        List<Transition> transitions = new List<Transition>() {anyHumanClose, targetWasCaught};
+        stalkTarget.transitions = transitions;
+
+        transitions = new List<Transition>() {noHumanClose, anyHumanVeryClose, targetWasCaught};
+        alert.transitions = transitions;
+
+        transitions = new List<Transition>() {noHumanVeryClose, targetWasCaught};
+        runAway.transitions = transitions;
+
+        //5 MAQUINA DE ESTADOS
+        State[] states = new State[] {stalkTarget, alert,  runAway, worry};
+        meowthMachine = new StateMachine(states, stalkTarget);
 
     }
 
     void Update(){
 
+        meowthMachine.RunMachine();
+
     }
+
+    
 }

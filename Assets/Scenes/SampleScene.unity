@@ -1198,7 +1198,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 54112642}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -7710,7 +7710,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 20
+  orthographic size: 40
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -11065,6 +11065,7 @@ GameObject:
   - component: {fileID: 704580127}
   - component: {fileID: 704580126}
   - component: {fileID: 704580125}
+  - component: {fileID: 704580128}
   m_Layer: 0
   m_Name: Meowth
   m_TagString: Pokemon
@@ -11096,7 +11097,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 704580123}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f5521e31cc0e547959b3124afb75ffa8, type: 3}
   m_Name: 
@@ -11172,6 +11173,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &704580128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704580123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb5e60017865640b1aa5477dc297dc43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meowth: {fileID: 704580126}
+  target: {fileID: 1938216021}
+  trainer: {fileID: 1347758963}
+  rival: {fileID: 1330056654}
+  maxSeekAccel: 10
+  targetRadiusArrive: 1
+  slowRadiusArrive: 30
+  MaxAccelerationArrive: 20
+  radiusAlert: 30
+  radiusRun: 20
 --- !u!1 &709870476
 GameObject:
   m_ObjectHideFlags: 0
@@ -16900,7 +16923,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1031607322
 Transform:
   m_ObjectHideFlags: 0
@@ -19360,7 +19383,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1133064747}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -28328,7 +28351,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1347758952}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1162422a7cb934c4bb671c1e2686d667, type: 3}
   m_Name: 
@@ -28361,7 +28384,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1347758952}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.3, y: 1.23, z: 0}
+  m_LocalPosition: {x: 49.9, y: 53.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -28374,7 +28397,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1347758952}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6a0bd4a16c4254e98a27245deaa376fd, type: 3}
   m_Name: 
@@ -28390,7 +28413,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1347758952}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 37c54bbdd63784dc1bb36ad5e725d3e9, type: 3}
   m_Name: 
@@ -33614,7 +33637,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1691583797
 Transform:
   m_ObjectHideFlags: 0

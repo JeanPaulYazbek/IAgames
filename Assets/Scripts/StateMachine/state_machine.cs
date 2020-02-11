@@ -41,4 +41,11 @@ public class StateMachine{
 
         return currentState.GetAction();
     }
+
+    public void RunMachine(){
+        List<Action> actions = Update();
+        foreach(var action in actions){
+            action.DoAction();
+        }
+    }
 }

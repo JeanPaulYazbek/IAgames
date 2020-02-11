@@ -13,7 +13,7 @@ public class ShowIcon : Action {
 
     public override void DoAction(){
         //buscamos los hijos del agente
-        GameObject[] childs = agent.GetComponentsInChildren<GameObject>();//buscamos los hijos
+        Transform[] childs = agent.GetComponentsInChildren<Transform>();//buscamos los hijos
         for(int i  = 0; i < childs.Length; i++){//para cada hijo
             if(childs[i].name == name){//si tiene el nombre que buscamos
 
