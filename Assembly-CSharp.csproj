@@ -134,6 +134,7 @@
      <Compile Include="Assets\Scripts\StateMachine\Conditions\not_condition.cs" />
      <Compile Include="Assets\Scripts\StateMachine\Conditions\or_condition.cs" />
      <Compile Include="Assets\Scripts\StateMachine\Conditions\too_close.cs" />
+     <Compile Include="Assets\Scripts\StateMachine\Conditions\true_condition.cs" />
      <Compile Include="Assets\Scripts\StateMachine\Conditions\was_caught.cs" />
      <Compile Include="Assets\Scripts\StateMachine\state.cs" />
      <Compile Include="Assets\Scripts\StateMachine\state_machine.cs" />
