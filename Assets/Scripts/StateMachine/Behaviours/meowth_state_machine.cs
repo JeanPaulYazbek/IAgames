@@ -46,6 +46,8 @@ public class meowth_state_machine : MonoBehaviour {
         //1. ACCIONES:
 
         FollowTarget seekTarget = new FollowTarget(steeringMeowth, kinMeowth, kineticsTarget, maxSeekAccel);
+        FollowTarget seekWorried = new FollowTarget(steeringMeowth, kinMeowth, kineticsTarget, 100f);
+
         Kinetics[] targets = new Kinetics[2];
         targets[0]=kineticsTrainer;
         targets[1]=kineticsRival;
@@ -58,6 +60,7 @@ public class meowth_state_machine : MonoBehaviour {
         DisableIcon disableSweat = new DisableIcon(this.gameObject, "Sweat");
         ShowIcon showExclamation = new ShowIcon(this.gameObject, "Exclamation");
         DisableIcon disableExclamation = new DisableIcon(this.gameObject, "Exclamation");
+
 
 
         //2. ESTADOS:
@@ -97,8 +100,8 @@ public class meowth_state_machine : MonoBehaviour {
         //2.d estado para preocuparse por alguien y seguirlo preocupado
 
 
-        entryActions = new List<Action>() {showSweat};
-        actions = new List<Action>() {seekTarget};
+        entryActions = new List<Action>() {showSweat, disableHeart, disableExclamation};
+        actions = new List<Action>() {seekWorried};
         exitActions = new List<Action>() {disableSweat};
 
         State worry = new State(actions, entryActions, exitActions);
@@ -137,6 +140,8 @@ public class meowth_state_machine : MonoBehaviour {
 
         transitions = new List<Transition>() {noHumanVeryClose, targetWasCaught};
         runAway.transitions = transitions;
+
+        worry.transitions = new List<Transition>();//es un sumidero
 
         //5 MAQUINA DE ESTADOS
         State[] states = new State[] {stalkTarget, alert,  runAway, worry};

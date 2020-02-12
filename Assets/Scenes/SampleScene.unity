@@ -11064,7 +11064,6 @@ GameObject:
   - component: {fileID: 704580124}
   - component: {fileID: 704580127}
   - component: {fileID: 704580126}
-  - component: {fileID: 704580125}
   - component: {fileID: 704580128}
   m_Layer: 0
   m_Name: Meowth
@@ -11081,7 +11080,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 704580123}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 66.5, y: 93.3, z: -1}
+  m_LocalPosition: {x: 66.5, y: 93.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1691583797}
@@ -11090,22 +11089,6 @@ Transform:
   m_Father: {fileID: 1917575491}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &704580125
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 704580123}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5521e31cc0e547959b3124afb75ffa8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyName: Glameow
-  agent: {fileID: 704580126}
-  maxSeekAccel: 10
-  seek_or_flee: 1
 --- !u!114 &704580126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11124,7 +11107,7 @@ MonoBehaviour:
   defaultAngular: 0
   maxspeed: 50
   flocker: 0
-  jumper: 1
+  jumper: 0
 --- !u!212 &704580127
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27479,7 +27462,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1330056644}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.88, y: -2.82, z: 0}
+  m_LocalPosition: {x: -10.3, y: 2.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -28384,7 +28367,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1347758952}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 49.9, y: 53.9, z: 0}
+  m_LocalPosition: {x: 65.7, y: 51.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -38979,7 +38962,7 @@ GameObject:
   - component: {fileID: 1938216019}
   - component: {fileID: 1938216022}
   - component: {fileID: 1938216021}
-  - component: {fileID: 1938216020}
+  - component: {fileID: 1938216023}
   m_Layer: 0
   m_Name: Glameow
   m_TagString: Pokemon
@@ -38995,7 +38978,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1938216018}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 72.9, y: 88.5, z: -1}
+  m_LocalPosition: {x: 72.9, y: 88.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1221263373}
@@ -39004,22 +38987,6 @@ Transform:
   m_Father: {fileID: 1917575491}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1938216020
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1938216018}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5521e31cc0e547959b3124afb75ffa8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyName: Meowth
-  agent: {fileID: 1938216021}
-  maxSeekAccel: 10
-  seek_or_flee: 1
 --- !u!114 &1938216021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39038,7 +39005,7 @@ MonoBehaviour:
   defaultAngular: 0
   maxspeed: 50
   flocker: 0
-  jumper: 1
+  jumper: 0
 --- !u!212 &1938216022
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39087,6 +39054,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1938216023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1938216018}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f767236a8698c42fd82f2a8eb73e2b42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glameow: {fileID: 1938216021}
+  target: {fileID: 704580126}
+  trainer: {fileID: 1347758963}
+  rival: {fileID: 1330056654}
+  maxSeekAccel: 10
+  targetRadiusArrive: 1
+  slowRadiusArrive: 30
+  MaxAccelerationArrive: 20
+  radiusAlert: 30
+  radiusRun: 20
 --- !u!1 &1954965118
 GameObject:
   m_ObjectHideFlags: 0

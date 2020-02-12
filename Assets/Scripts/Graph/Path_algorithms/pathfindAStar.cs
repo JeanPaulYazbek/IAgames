@@ -161,7 +161,6 @@ public class PathFindAStar{
 
         //Si no hay solucion
         if (currentNode != goal){
-            Debug.Log("ID");
             return null;
         }
 

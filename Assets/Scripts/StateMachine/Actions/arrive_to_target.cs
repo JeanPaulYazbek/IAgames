@@ -5,7 +5,7 @@ public class ArriveToTarget : Action {
     SteeringOutput steeringAgent;
     Kinetics kineticsAgent;
     Kinetics kineticsTarget;
-    Arrive arrive;
+    public Arrive arrive;
 
     public ArriveToTarget(SteeringOutput SteeringAgent, Kinetics KineticsAgent,
      Kinetics KineticsTarget, float MaxAccel,float MaxSpeed, float TargetRadius,

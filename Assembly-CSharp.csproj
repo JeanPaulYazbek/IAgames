@@ -122,11 +122,12 @@
      <Compile Include="Assets\Scripts\StateMachine\Actions\disable_icon.cs" />
      <Compile Include="Assets\Scripts\StateMachine\Actions\do_nothing.cs" />
      <Compile Include="Assets\Scripts\StateMachine\Actions\follow_target.cs" />
-     <Compile Include="Assets\Scripts\StateMachine\Actions\run_from_target copy.cs" />
      <Compile Include="Assets\Scripts\StateMachine\Actions\run_from_target.cs" />
      <Compile Include="Assets\Scripts\StateMachine\Actions\run_from_targets.cs" />
+     <Compile Include="Assets\Scripts\StateMachine\Actions\set_follow_target.cs" />
      <Compile Include="Assets\Scripts\StateMachine\Actions\show_icon.cs" />
      <Compile Include="Assets\Scripts\StateMachine\Actions\stop_moving.cs" />
+     <Compile Include="Assets\Scripts\StateMachine\Behaviours\glameow_state_machine.cs" />
      <Compile Include="Assets\Scripts\StateMachine\Behaviours\meowth_state_machine.cs" />
      <Compile Include="Assets\Scripts\StateMachine\condition.cs" />
      <Compile Include="Assets\Scripts\StateMachine\Conditions\and_condition.cs" />
