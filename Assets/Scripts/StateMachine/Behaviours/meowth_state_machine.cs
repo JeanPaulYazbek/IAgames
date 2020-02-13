@@ -87,8 +87,15 @@ public class meowth_state_machine : MonoBehaviour {
         
         State alert = new State(actions, entryActions, exitActions);
 
+        //2,c estado para perseguir sin corazon
+        entryActions = new List<Action>() ;//al entrar al estado ponemos un corazon
+        actions= new List<Action>() {seekTarget};//durante el estado perseguimos al enamorado
+        exitActions= new List<Action>() ;//al salir quitamos el corazon
 
-        //2.c estado para huir del entrenador
+        State stalk = new State(actions, entryActions, exitActions);
+
+
+        //2.d estado para huir del entrenador
 
         entryActions = new List<Action>();
         actions = new List<Action>() {runFromTargets};
@@ -97,7 +104,7 @@ public class meowth_state_machine : MonoBehaviour {
 
         State runAway = new State(actions, entryActions, exitActions);
 
-        //2.d estado para preocuparse por alguien y seguirlo preocupado
+        //2.e estado para preocuparse por alguien y seguirlo preocupado
 
 
         entryActions = new List<Action>() {showSweat, disableHeart, disableExclamation};
@@ -126,7 +133,7 @@ public class meowth_state_machine : MonoBehaviour {
         List<Action> noActions = new List<Action>();
         //4. TRANSICIONES:
         Transition anyHumanClose = new Transition(anyTargetClose, noActions, alert);
-        Transition noHumanClose =  new Transition(noOneClose, noActions, stalkTarget);
+        Transition noHumanClose =  new Transition(noOneClose, noActions, stalk);
         Transition anyHumanVeryClose = new Transition(anyTargetVeryClose, noActions, runAway);
         Transition noHumanVeryClose = new Transition(noOneVeryClose, noActions, alert);
         Transition targetWasCaught = new Transition(targetCaught, noActions, worry);
@@ -138,13 +145,16 @@ public class meowth_state_machine : MonoBehaviour {
         transitions = new List<Transition>() {noHumanClose, anyHumanVeryClose, targetWasCaught};
         alert.transitions = transitions;
 
+        transitions =  new List<Transition>() {anyHumanClose, targetWasCaught};
+        stalk.transitions = transitions;
+
         transitions = new List<Transition>() {noHumanVeryClose, targetWasCaught};
         runAway.transitions = transitions;
 
         worry.transitions = new List<Transition>();//es un sumidero
 
         //5 MAQUINA DE ESTADOS
-        State[] states = new State[] {stalkTarget, alert,  runAway, worry};
+        State[] states = new State[] {stalkTarget, alert, stalk, runAway, worry};
         meowthMachine = new StateMachine(states, stalkTarget);
 
     }
