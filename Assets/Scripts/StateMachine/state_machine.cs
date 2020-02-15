@@ -39,9 +39,9 @@ public class StateMachine{
         if( !(triggeredTrasition is null)){
             State targetState = triggeredTrasition.GetTargetState();
 
-            List<Action> actions;
+            List<Action> actions = new List<Action>();
 
-            actions = currentState.GetExitAction();
+            actions.AddRange(currentState.GetExitAction());
             actions.AddRange(triggeredTrasition.GetAction());
             actions.AddRange(targetState.GetEntryAction());
 

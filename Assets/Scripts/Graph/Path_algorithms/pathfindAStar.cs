@@ -7,7 +7,7 @@ public class PathFindAStar{
     Graph graph;//el grafo a analizar
     public Node start;//nodo desde donce queremos e path
     public Node goal;//nodo de destino
-    Heuristic heuristic;//herustica a utilizar
+    public Heuristic heuristic;//herustica a utilizar
 
     public PathFindAStar(Graph Graph, Node Start, Node Goal, Heuristic Heuristic){
         graph = Graph;

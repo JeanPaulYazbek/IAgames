@@ -37,7 +37,7 @@ public class find_pokemons_Astar : MonoBehaviour
 
 
     //Datos grafo
-    public static_graph graphComponent;
+    public static_graph graphComponent;//componente que tiene guardado el grafo
     Graph graph;
     PathFindAStar aStar;
 

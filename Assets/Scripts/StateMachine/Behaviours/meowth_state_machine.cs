@@ -51,9 +51,10 @@ public class meowth_state_machine : MonoBehaviour {
         Kinetics[] targets = new Kinetics[2];
         targets[0]=kineticsTrainer;
         targets[1]=kineticsRival;
-        RunFromTargets runFromTargets = new RunFromTargets(steeringMeowth, kinMeowth, targets, maxSeekAccel);
+        RunFromTargets runFromTargets = new RunFromTargets(steeringMeowth, kinMeowth, targets, maxSeekAccel*5);
         StopMoving stop = new StopMoving(kinMeowth, steeringMeowth);
-        DoNothing nothing = new DoNothing();
+        UpdateMaxSpeed moreMaxSpeed = new UpdateMaxSpeed(meowth, meowth.maxspeed*5); // esto ayudara a aumentar la maxspeed
+        UpdateMaxSpeed speedBackToNormal = new UpdateMaxSpeed(meowth, meowth.maxspeed);// esto guarda la maxspeed original para volverla a poner asi
         ShowIcon showHeart = new ShowIcon(this.gameObject, "Heart");
         DisableIcon disableHeart = new DisableIcon(this.gameObject, "Heart");
         ShowIcon showSweat = new ShowIcon(this.gameObject, "Sweat");
@@ -97,9 +98,9 @@ public class meowth_state_machine : MonoBehaviour {
 
         //2.d estado para huir del entrenador
 
-        entryActions = new List<Action>();
+        entryActions = new List<Action>() {moreMaxSpeed};
         actions = new List<Action>() {runFromTargets};
-        exitActions = new List<Action>();
+        exitActions = new List<Action>() {speedBackToNormal};
         
 
         State runAway = new State(actions, entryActions, exitActions);
