@@ -17,7 +17,9 @@ public class TooClose : Condition{
     //Funcion que devuelve true si el character y el target estan muy cerca
     public override bool Test(){
 
-        return Vector3.Distance(character.transform.position, target.transform.position) < range;
+        Vector3 agentPos = character.transform.position;
+        agentPos.z = 0f;
+        return Vector3.Distance(agentPos, target.transform.position) < range;
 
     }
 }

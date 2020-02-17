@@ -30,8 +30,12 @@ public class FollowPathOfPoints : Action {
     //en este caso la accion es actualizar la acelaracion del usuario
     public override void DoAction(){
 
+        Vector3 agent = agentKin.transform.position;
+        Vector3 target = currentTargetPoint;
+        target.z = agent.z;
+
         //si nos acercamos mucho al punto actual pasamos al siguiente
-        if(Vector3.Distance(currentTargetPoint, agentKin.transform.position)<5f){
+        if(Vector3.Distance(target, agent)<5f){
             currentIndexPoint++;
             int n = path.Length;
             if(currentIndexPoint == n){//si nos pasamos del largo del path 
@@ -41,6 +45,6 @@ public class FollowPathOfPoints : Action {
         }
 
         //seguimos el punto actual
-        steeringAgent.UpdateSteering(seek.getSteering2(currentTargetPoint,1));
+        steeringAgent.UpdateSteering(seek.getSteering2(target,1));
     }
 }

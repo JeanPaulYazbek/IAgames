@@ -123,6 +123,7 @@
      <Compile Include="Assets\Scripts\StateMachine\Actions\do_nothing.cs" />
      <Compile Include="Assets\Scripts\StateMachine\Actions\follow_path_of_points.cs" />
      <Compile Include="Assets\Scripts\StateMachine\Actions\follow_target.cs" />
+     <Compile Include="Assets\Scripts\StateMachine\Actions\move_on_z.cs" />
      <Compile Include="Assets\Scripts\StateMachine\Actions\rival_machine_actions\remove_pokemon.cs" />
      <Compile Include="Assets\Scripts\StateMachine\Actions\rival_machine_actions\update_Astar.cs" />
      <Compile Include="Assets\Scripts\StateMachine\Actions\rival_machine_actions\update_follow_with_aStar.cs" />
@@ -131,12 +132,16 @@
      <Compile Include="Assets\Scripts\StateMachine\Actions\set_follow_target.cs" />
      <Compile Include="Assets\Scripts\StateMachine\Actions\show_icon.cs" />
      <Compile Include="Assets\Scripts\StateMachine\Actions\stop_moving.cs" />
+     <Compile Include="Assets\Scripts\StateMachine\Actions\update_Astar_random.cs" />
      <Compile Include="Assets\Scripts\StateMachine\Actions\update_max_speed.cs" />
+     <Compile Include="Assets\Scripts\StateMachine\Behaviours\dugtrio_state_machine.cs" />
      <Compile Include="Assets\Scripts\StateMachine\Behaviours\glameow_state_machine.cs" />
      <Compile Include="Assets\Scripts\StateMachine\Behaviours\meowth_state_machine.cs" />
      <Compile Include="Assets\Scripts\StateMachine\Behaviours\rival_machine.cs" />
      <Compile Include="Assets\Scripts\StateMachine\condition.cs" />
+     <Compile Include="Assets\Scripts\StateMachine\Conditions\am_i_underground.cs" />
      <Compile Include="Assets\Scripts\StateMachine\Conditions\and_condition.cs" />
+     <Compile Include="Assets\Scripts\StateMachine\Conditions\arrived_to_position.cs" />
      <Compile Include="Assets\Scripts\StateMachine\Conditions\not_condition.cs" />
      <Compile Include="Assets\Scripts\StateMachine\Conditions\or_condition.cs" />
      <Compile Include="Assets\Scripts\StateMachine\Conditions\rival_machine\all_caught.cs" />

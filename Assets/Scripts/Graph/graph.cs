@@ -80,4 +80,10 @@ public class Graph {
         return closestNode;
     }
 
+    //Funcion que regresa un nodo al azar del grafo
+    public Node GetRandomNode(){
+        int randomNode = Random.Range(0, nodes.Length);
+        return nodes[randomNode];
+    }
+
 }
