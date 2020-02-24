@@ -34,14 +34,14 @@ public class KinematicSeek
         }
              
         steering.velocity.Normalize();
-        //Debug.Log(newVelocity);
+       
         steering.velocity *= maxspeed;
 
-       // Debug.Log(newVelocity);
+      
         character.GetNewOrietation(steering.velocity);
 
         steering.rotation = 0f;
-        //Debug.Log(newVelocity);
+       
         return steering;
 
     }

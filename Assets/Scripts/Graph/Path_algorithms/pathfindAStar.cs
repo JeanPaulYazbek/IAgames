@@ -186,8 +186,8 @@ public class PathFindAStar{
         path[0] = start.center;
 
         
-        start.DrawTriangle(40f);
-        goal.DrawTriangle(40f);
+        // start.DrawTriangle(40f);
+        // goal.DrawTriangle(40f);
         return path;
 
 

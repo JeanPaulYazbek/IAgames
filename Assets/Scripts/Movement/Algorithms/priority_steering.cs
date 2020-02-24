@@ -33,8 +33,7 @@ public class PrioritySteering {
         for(int i = 0; i<n; i++){
             //sacamos el steering de un grupo
             steering = groups[i].getSteering();
-            //Debug.Log(i);
-            //Debug.Log(steering.linear);
+           
 
             //si alguna de las aceleraciones del grupo es lo suficientemente relevante
             if ((steering.linear.magnitude > epsilon || Math.Abs(steering.angular) > epsilon)

@@ -46,6 +46,14 @@ public class dugtrio_state_machine : MonoBehaviour {
         targets[0]=kineticsTrainer;
         targets[1]=kineticsRival;
 
+        //obstaculos
+        GameObject[] obstacles = GameObject.FindGameObjectsWithTag("Obstacle");
+        obstacle_data[] obstaclesData =  new obstacle_data[obstacles.Length];
+
+        for(int k = 0; k < obstacles.Length; k++){
+            obstaclesData[k] = obstacles[k].GetComponent<obstacle_data>();
+        }
+
         //COMENZAMOS A CONSTRUIR LA MAQUINA DE ESTADOS
 
         //1. ACCIONES:
@@ -54,7 +62,7 @@ public class dugtrio_state_machine : MonoBehaviour {
         ShowIcon showHole = new ShowIcon(this.gameObject, "Digging");
         DisableIcon disableHole  = new DisableIcon(this.gameObject, "Digging");
         FollowPathOfPoints followPath = new FollowPathOfPoints(steeringDugtrio, seek, null);
-        UpdateFollowPathWithAstar updateFollow =  new UpdateFollowPathWithAstar(followPath,aStar);
+        UpdateFollowPathWithAstar updateFollow =  new UpdateFollowPathWithAstar(followPath,aStar, obstaclesData);
         MoveOnZ underground = new MoveOnZ(transform, undergroundCoord);
         MoveOnZ getOutOfGround = new MoveOnZ(transform, 0f);
 

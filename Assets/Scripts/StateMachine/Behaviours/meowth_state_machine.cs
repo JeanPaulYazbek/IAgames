@@ -29,8 +29,8 @@ public class meowth_state_machine : MonoBehaviour {
 
     //DATOS MAQUINA DE ESTADOS
     StateMachine meowthMachine;
-    public float radiusAlert = 30f;//radio para alertarse
-    public float radiusRun = 20f;//radio para huir
+    public float radiusAlert = 20f;//radio para alertarse
+    public float radiusRun = 15f;//radio para huir
 
     void Start(){
 

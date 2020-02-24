@@ -54,7 +54,7 @@ public class Kinetics
     //funcion que modifica la orientacion cuando cambias velocidad
     public void GetNewOrietation(Vector3 velocity) {
 
-        //Debug.Log(Transform.eulerAngles);
+        
         if (velocity.magnitude > 0) {
             //hay que multiplicar por 53 para convertir los radianes a angulos
             transform.eulerAngles = zVector*57* Convert.ToSingle(Math.Atan2(-velocity.x, velocity.y));

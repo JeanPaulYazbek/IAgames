@@ -50,6 +50,14 @@ public class rival_machine : MonoBehaviour {
             pokemonKins.Push(pokemons[i].GetComponent<static_data>().kineticsAgent);
         }
 
+        //obstaculos
+        GameObject[] obstacles = GameObject.FindGameObjectsWithTag("Obstacle");
+        obstacle_data[] obstaclesData =  new obstacle_data[obstacles.Length];
+
+        for(int k = 0; k < obstacles.Length; k++){
+            obstaclesData[k] = obstacles[k].GetComponent<obstacle_data>();
+        }
+
         //Inicializamos grafo y A*
         graph = graphComponent.graph;
         aStar = new PathFindAStar(graph,null ,null,null);
@@ -67,7 +75,7 @@ public class rival_machine : MonoBehaviour {
         UpdateAStar updateAstar = new UpdateAStar(pokemonKins, aStar, graph, kineticsAgent);
         FollowPathOfPoints followPath = new FollowPathOfPoints(steeringAgent, seek, null);
         RemovePokemon removePokemon = new RemovePokemon(pokemonKins);
-        UpdateFollowPathWithAstar updateFollow =  new UpdateFollowPathWithAstar(followPath,aStar);
+        UpdateFollowPathWithAstar updateFollow =  new UpdateFollowPathWithAstar(followPath,aStar, obstaclesData);
         StopMoving stop = new StopMoving(kineticsAgent, steeringAgent);
 
         //2. ESTADOS:

@@ -64,7 +64,7 @@
      <Compile Include="Assets\Scripts\Graph\Mesh\Behaviours\static_mesh.cs" />
      <Compile Include="Assets\Scripts\Graph\node.cs" />
      <Compile Include="Assets\Scripts\Graph\Path_algorithms\pathfindAStar.cs" />
-     <Compile Include="Assets\Scripts\Graph\utilities.cs" />
+     <Compile Include="Assets\Scripts\Graph\Path_algorithms\smooth_path.cs" />
      <Compile Include="Assets\Scripts\Movement\Algorithms\align.cs" />
      <Compile Include="Assets\Scripts\Movement\Algorithms\arrive.cs" />
      <Compile Include="Assets\Scripts\Movement\Algorithms\blended_steering.cs" />
@@ -101,6 +101,7 @@
      <Compile Include="Assets\Scripts\Movement\Behaviours\Kinetics\kin_arrive.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\Kinetics\kin_seek.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\Kinetics\kin_wander.cs" />
+     <Compile Include="Assets\Scripts\Movement\Behaviours\obstacle_data.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\Priority\avoid_with_arrive.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\Priority\follow_mouse.cs" />
      <Compile Include="Assets\Scripts\Movement\Behaviours\static_data.cs" />
@@ -167,6 +168,7 @@
      <Compile Include="Assets\Scripts\StateMachine\state.cs" />
      <Compile Include="Assets\Scripts\StateMachine\state_machine.cs" />
      <Compile Include="Assets\Scripts\StateMachine\transition.cs" />
+     <Compile Include="Assets\Scripts\utilities.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>/Users/capi/Desktop/mini_desktop/Universidad/Inteligencia Video Juegos/Pratica/Project Unity A/New Unity Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>

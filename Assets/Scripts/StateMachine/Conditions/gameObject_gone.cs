@@ -11,12 +11,6 @@ public class GameObjectGone : Condition {
     }
 
     public override bool Test(){
-        // if((items.Peek() is null)){
-        //     Debug.Log("Piedra ya no esta");
-        // }else{
-        //     Debug.Log(items.Peek().name);
-
-        // }
         return (items.Peek() == null);
     }
 }

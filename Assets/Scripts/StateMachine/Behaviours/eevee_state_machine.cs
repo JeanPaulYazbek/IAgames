@@ -73,6 +73,14 @@ public class eevee_state_machine : MonoBehaviour {
         //Inicializamos seek
         seek = new Seek(kineticsAgent, kineticsAgent, maxAccel);
 
+        //obstaculos
+        GameObject[] obstacles = GameObject.FindGameObjectsWithTag("Obstacle");
+        obstacle_data[] obstaclesData =  new obstacle_data[obstacles.Length];
+
+        for(int k = 0; k < obstacles.Length; k++){
+            obstaclesData[k] = obstacles[k].GetComponent<obstacle_data>();
+        }
+
         
         
 
@@ -84,7 +92,7 @@ public class eevee_state_machine : MonoBehaviour {
         FollowPathOfPoints followPath = new FollowPathOfPoints(steeringAgent, seek, null);
         PopGameObject popStone = new PopGameObject(stonesStack);
         DestroyGameObject destroyStone = new DestroyGameObject(stonesStack);
-        UpdateFollowPathWithAstar updateFollow = new UpdateFollowPathWithAstar(followPath, aStar);
+        UpdateFollowPathWithAstar updateFollow = new UpdateFollowPathWithAstar(followPath, aStar, obstaclesData);
         UpdateAStarTarget updateAStar2 = new UpdateAStarTarget(aStar, graph, kineticsAgent, graph.GetNode(150));
         StopMoving stop = new StopMoving(kineticsAgent, steeringAgent);
         RunSprite showRunSprite = new RunSprite(pokemonData);
@@ -158,7 +166,7 @@ public class eevee_state_machine : MonoBehaviour {
         Transition noHumanClose = new Transition(noOneClose, new List<Action>(), wait);
         Transition veryCloseHuman = new Transition(anyTargetVeryClose, new List<Action>(){showRunSprite}, followStone);
         Transition stoneLost = new Transition(stoneGone, new List<Action>{popStone}, followStone);
-        Transition allStonesLost = new Transition(allStoneGone, new List<Action>{evolve}, followReunionPoint);
+        Transition allStonesLost = new Transition(allStoneGone, new List<Action>{evolve, disableSweat}, followReunionPoint);
         Transition reachStone = new Transition(arrivedToStone, new List<Action>{updateEvolve,evolve,destroyStone,popStone, disableSweat}, followReunionPoint);
 
 

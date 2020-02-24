@@ -1,0 +1,119 @@
+﻿using UnityEngine;
+using System.Collections.Generic;
+
+
+public class Utilities 
+{
+
+    public void DrawTriangle(Vector3 vertexA, Vector3 vertexB, Vector3 vertexC, float duration){
+
+        Debug.DrawLine(vertexA, vertexB, Color.white, duration, true);
+        Debug.DrawLine(vertexA, vertexC, Color.white, duration, true);
+        Debug.DrawLine(vertexB, vertexC, Color.white, duration, true);
+
+    }
+
+    //Funcion que toma una lista de puntos y un tiempo
+    // y dibuja el camino formado por esos puntos durante ese tiempo
+    public void DrawPath(Vector3[] path, float duration){
+
+        if(path is null){
+            Debug.Log("Oh no, no hay camino");
+            return;
+        }
+
+        if(path.Length < 2){
+            Debug.Log("No puedo dibujarte un camino de un solo punto");
+            return;
+        }
+
+        for(int i = 1; i<path.Length; i++){
+            Debug.DrawLine(path[i], path[i-1], Color.black, duration, true);
+        }
+    }
+
+    //Funcion que toma un punto p y revisa si esta dentro del triangulo
+    //formado por p0 p1 y p2
+    public bool PointInTriangle(Vector3 p, Vector3 p0, Vector3 p1, Vector3 p2){
+        var s = p0.y * p2.x - p0.x * p2.y + (p2.y - p0.y) * p.x + (p0.x - p2.x) * p.y;
+        var t = p0.x * p1.y - p0.y * p1.x + (p0.y - p1.y) * p.x + (p1.x - p0.x) * p.y;
+
+        if ((s < 0) != (t < 0))
+            return false;
+
+        var A = -p1.y * p2.x + p0.y * (p2.x - p1.x) + p0.x * (p1.y - p2.y) + p1.x * p2.y;
+
+        return A < 0 ?
+                (s <= 0 && s + t >= A) :
+                (s >= 0 && s + t <= A);
+    }
+
+    // Funcion que dice si ocurre una interseccion entre dos segmentos
+    // de rectas: (p1, p2) y (p3, p4)
+    public bool LineSegmentIntersection(Vector3 p1, Vector3 p2, Vector3 p3, Vector3 p4)
+    {
+        // Get the segments' parameters.
+        float dx12 = p2.x - p1.x;
+        float dy12 = p2.y - p1.y;
+        float dx34 = p4.x - p3.x;
+        float dy34 = p4.y - p3.y;
+
+        // Solve for t1 and t2
+        float denominator = (dy12 * dx34 - dx12 * dy34);
+
+        float t1 = ((p1.x - p3.x) * dy34 + (p3.y - p1.y) * dx34) / denominator;
+
+        bool segments_intersect = false;
+
+        if (float.IsInfinity(t1))
+        {
+            return segments_intersect;
+        }
+
+
+        float t2 = ((p3.x - p1.x) * dy12 + (p1.y - p3.y) * dx12) / -denominator;
+
+        // The segments intersect if t1 and t2 are between 0 and 1.
+        segments_intersect = ((t1 >= 0) && (t1 <= 1) && (t2 >= 0) && (t2 <= 1));
+
+        return segments_intersect;
+
+      
+    }
+
+    //Funcion que revisa si un segmento de linea choca con algun obstaculo
+    //en la lista dada, el segmento de linea viene dado por point1 y point2
+    public bool LineSegmentIntersectionObstacle(Vector3 point1, Vector3 point2, obstacle_data[] obstacles){
+
+        obstacle_data obstacle;
+        bool intersectsSide;
+
+        //estos modificadores son un truco para hacer que smooth path piense 
+        //que los obstaculos son mas grandes de lo que son, esto ayuda a quitarnos
+        //casos borde que hacian que los personajes pasaran encima de obstaculos
+        Vector3 modifierX = new Vector3(4f,0f,0f);
+        Vector3 modifierY = new Vector3(0f,4f,0f);
+
+
+        //Vemos si algun obstaculo colisiona con el segmento de recta
+        for(int i = 0; i < obstacles.Length; i++){
+            obstacle = obstacles[i];
+            
+            //vemos si choca con algun lado del obstaculo
+            intersectsSide = LineSegmentIntersection(point1, point2, obstacle.upLeft - modifierX, obstacle.upRight + modifierX)
+            || LineSegmentIntersection(point1, point2, obstacle.upLeft + modifierY, obstacle.downLeft - modifierY)
+            || LineSegmentIntersection(point1, point2, obstacle.upRight + modifierY, obstacle.downRight - modifierY)
+            || LineSegmentIntersection(point1, point2, obstacle.downLeft - modifierX, obstacle.downRight + modifierX);
+
+            if(intersectsSide){//si choco con alguno dejamos de revisar 
+                return true;
+            }
+
+        }
+
+        //no hubo colisiones
+        return false;
+
+    }
+
+}

@@ -38,7 +38,7 @@ public class FollowPathOfPoints : Action {
         float modifier = 1f;//este numero sera util para que el seek no se pase mucho de los puntos        
 
         //si nos acercamos mucho al punto actual pasamos al siguiente
-        if(Vector3.Distance(target, agent)<5f){
+        if(Vector3.Distance(target, agent)<4f){
 
             currentIndexPoint++;
             int n = path.Length;
