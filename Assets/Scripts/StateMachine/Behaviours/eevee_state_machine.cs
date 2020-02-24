@@ -92,6 +92,10 @@ public class eevee_state_machine : MonoBehaviour {
         updateEvolveMethod updateEvolve = new updateEvolveMethod(evolve, stonesStack);
         ShowIcon showExclamation = new ShowIcon(this.gameObject, "Exclamation");
         DisableIcon disableExclamation = new DisableIcon(this.gameObject, "Exclamation");
+        ShowIcon showSweat = new ShowIcon(this.gameObject, "Sweat");
+        DisableIcon disableSweat = new DisableIcon(this.gameObject, "Sweat");
+
+
 
 
         //2. ESTADOS:
@@ -116,7 +120,7 @@ public class eevee_state_machine : MonoBehaviour {
         State alert = new State(actions, entryActions, exitActions);
 
         //2.c estado para perseguir piedra
-        entryActions = new List<Action>() {updateAStar, updateFollow};//al entrar al estado debemos actualizar el a* y luego el camino
+        entryActions = new List<Action>() {updateAStar, updateFollow, showSweat};//al entrar al estado debemos actualizar el a* y luego el camino
         actions= new List<Action>() {followPath};//durante la accion seguimos el camino
         exitActions= new List<Action>();//al salir no hacemos nada
         
@@ -155,7 +159,7 @@ public class eevee_state_machine : MonoBehaviour {
         Transition veryCloseHuman = new Transition(anyTargetVeryClose, new List<Action>(){showRunSprite}, followStone);
         Transition stoneLost = new Transition(stoneGone, new List<Action>{popStone}, followStone);
         Transition allStonesLost = new Transition(allStoneGone, new List<Action>{evolve}, followReunionPoint);
-        Transition reachStone = new Transition(arrivedToStone, new List<Action>{updateEvolve,evolve,destroyStone,popStone}, followReunionPoint);
+        Transition reachStone = new Transition(arrivedToStone, new List<Action>{updateEvolve,evolve,destroyStone,popStone, disableSweat}, followReunionPoint);
 
 
    
