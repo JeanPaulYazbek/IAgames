@@ -76,12 +76,14 @@ public class static_graph : MonoBehaviour
         Vector3 center;//centro del rectangulo
         float offsetX;//su ancho
         float offsetY;//su alto
+        float zCoord;//altura(util para triangulos voladores)
         //LLENAMOS EL ARREGLO DE TRIANGULOS
         for(int i = 0; i< meshes.Length; i++){
             target = meshes[i].GetComponent<static_mesh>();
 
             //Buscamos los datos necesarios para los calculos
             center = target.transform.position;
+            zCoord = center.z;
             offsetX = Math.Abs(target.transform.localScale.x);
             offsetY = Math.Abs(target.transform.localScale.y);
 
@@ -92,9 +94,9 @@ public class static_graph : MonoBehaviour
             target.downRight = target.corner(center, offsetX, -offsetY);
             
             // Generamos los dos triangulos a partir de un rectangulo
-            nodes[id]=new Node(id, target.upLeft, target.downLeft, target.downRight, target.type);
+            nodes[id]=new Node(id, target.upLeft, target.downLeft, target.downRight,zCoord, target.type);
             id++;
-            nodes[id]=new Node(id, target.upLeft, target.downRight, target.upRight, target.type);
+            nodes[id]=new Node(id, target.upLeft, target.downRight, target.upRight,zCoord, target.type);
             id++;
 
         }

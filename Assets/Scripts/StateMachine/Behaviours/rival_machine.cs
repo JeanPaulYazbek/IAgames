@@ -74,7 +74,7 @@ public class rival_machine : MonoBehaviour {
         //1. ACCIONES:
 
         UpdateAStar updateAstar = new UpdateAStar(pokemonKins, aStar, graph, kineticsAgent, walkable);
-        FollowPathOfPoints followPath = new FollowPathOfPoints(steeringAgent, seek, null);
+        FollowPathOfPoints followPath = new FollowPathOfPoints(steeringAgent, seek, null, false);
         RemovePokemon removePokemon = new RemovePokemon(pokemonKins);
         UpdateFollowPathWithAstar updateFollow =  new UpdateFollowPathWithAstar(followPath,aStar, obstaclesData);
         StopMoving stop = new StopMoving(kineticsAgent, steeringAgent);

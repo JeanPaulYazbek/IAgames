@@ -147,6 +147,7 @@
      <Compile Include="Assets\Scripts\StateMachine\Behaviours\eevee_state_machine.cs" />
      <Compile Include="Assets\Scripts\StateMachine\Behaviours\glameow_state_machine.cs" />
      <Compile Include="Assets\Scripts\StateMachine\Behaviours\meowth_state_machine.cs" />
+     <Compile Include="Assets\Scripts\StateMachine\Behaviours\pidgeotto_state_machine.cs" />
      <Compile Include="Assets\Scripts\StateMachine\Behaviours\pokemon_data.cs" />
      <Compile Include="Assets\Scripts\StateMachine\Behaviours\rival_machine.cs" />
      <Compile Include="Assets\Scripts\StateMachine\condition.cs" />

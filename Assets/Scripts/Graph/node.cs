@@ -25,7 +25,7 @@ public class Node {
     public Node prev = null;
 
 
-    public Node(int Id, Vector3 VertexA, Vector3 VertexB, Vector3 VertexC, string Type){
+    public Node(int Id, Vector3 VertexA, Vector3 VertexB, Vector3 VertexC,float zCoord, string Type){
 
         id = Id;
         type = Type;
@@ -36,6 +36,7 @@ public class Node {
 
         //calculamos el centro
         center =  (vertexA + vertexB + vertexC) / 3f; 
+        center.z = zCoord;
 
         //calculamos los centros de los lados 
         centerAB = (vertexA + vertexB) / 2;

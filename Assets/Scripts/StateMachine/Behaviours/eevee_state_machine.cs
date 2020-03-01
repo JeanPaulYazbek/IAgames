@@ -90,7 +90,7 @@ public class eevee_state_machine : MonoBehaviour {
         //1. ACCIONES:
 
         UpdateAStarGameObject updateAStar = new UpdateAStarGameObject(stonesStack, aStar, graph, kineticsAgent, walkable);
-        FollowPathOfPoints followPath = new FollowPathOfPoints(steeringAgent, seek, null);
+        FollowPathOfPoints followPath = new FollowPathOfPoints(steeringAgent, seek, null, false);
         PopGameObject popStone = new PopGameObject(stonesStack);
         DestroyGameObject destroyStone = new DestroyGameObject(stonesStack);
         UpdateFollowPathWithAstar updateFollow = new UpdateFollowPathWithAstar(followPath, aStar, obstaclesData);

@@ -336,21 +336,21 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Movement/Behaviours
+    - Assets/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/Movement/Behaviours
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/capi/Desktop/mini_desktop/Universidad/Inteligencia Video
     Juegos/Pratica/Project Unity A/New Unity Project
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 118.99939}
-    m_SelectedIDs: 8c0c0000
-    m_LastClickedID: 3212
-    m_ExpandedIDs: 000000008a0a0000920c0000a00c0000b20c0000bc0d0000ce0d00000e0e0000820e0000200f00006a0f0000
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 920c0000
+    m_LastClickedID: 3218
+    m_ExpandedIDs: 000000008a0a0000920c0000a00c0000b20c0000bc0d0000ce0d00000e0e0000820e0000200f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -403,8 +403,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: ee1d0000
+    m_LastClickedInstanceID: 7662
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000344d0000
     m_RenameOverlay:
@@ -497,9 +497,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 88190000
-      m_LastClickedID: 6536
-      m_ExpandedIDs: c6fbffff481e0000
+      m_SelectedIDs: ba110000
+      m_LastClickedID: 0
+      m_ExpandedIDs: defbffffb6140000ea150000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -554,9 +554,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 31.24331, y: 10.630056, z: -27.370733}
+    m_Target: {x: 29.876999, y: 27.288914, z: -1139.2498}
     speed: 2
-    m_Value: {x: 31.24331, y: 10.630056, z: -27.370733}
+    m_Value: {x: 29.876999, y: 27.288914, z: -1139.2498}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -588,9 +588,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 49.761562
+    m_Target: 107.30683
     speed: 2
-    m_Value: 49.761562
+    m_Value: 107.30683
   m_Ortho:
     m_Target: 1
     speed: 2

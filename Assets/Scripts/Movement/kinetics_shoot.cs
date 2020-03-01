@@ -93,7 +93,9 @@ public class KineticsShoot
         Vector3 pokemonPos;
         for (int i = 0; i<pokemons.Length; i++){
             pokemonPos = pokemons[i].transform.position;
-            if (InsideSphere(pokemonPos, capture_rate)){
+            //revisamos si la poke ball esta dentro del radio de captura del pokemon y si 
+            //el pokemon no fue atrapado ya
+            if (InsideSphere(pokemonPos, capture_rate) && pokemons[i].transform.localScale.x > 0f){
                 arr[1] = i;
                 return true;
             }
