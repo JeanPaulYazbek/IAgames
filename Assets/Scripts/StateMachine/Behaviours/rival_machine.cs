@@ -28,6 +28,7 @@ public class rival_machine : MonoBehaviour {
     public static_graph graphComponent;//componente que tiene guardado el grafo
     Graph graph;
     PathFindAStar aStar;
+    string[] walkable = new string[]{"Earth"};
 
 
     //DATOS MAQUINA DE ESTADOS
@@ -60,7 +61,7 @@ public class rival_machine : MonoBehaviour {
 
         //Inicializamos grafo y A*
         graph = graphComponent.graph;
-        aStar = new PathFindAStar(graph,null ,null,null);
+        aStar = new PathFindAStar(graph,null ,null,null, walkable);
 
         //Inicializamos seek
         seek = new Seek(kineticsAgent, kineticsAgent, maxAccel);
@@ -72,7 +73,7 @@ public class rival_machine : MonoBehaviour {
 
         //1. ACCIONES:
 
-        UpdateAStar updateAstar = new UpdateAStar(pokemonKins, aStar, graph, kineticsAgent);
+        UpdateAStar updateAstar = new UpdateAStar(pokemonKins, aStar, graph, kineticsAgent, walkable);
         FollowPathOfPoints followPath = new FollowPathOfPoints(steeringAgent, seek, null);
         RemovePokemon removePokemon = new RemovePokemon(pokemonKins);
         UpdateFollowPathWithAstar updateFollow =  new UpdateFollowPathWithAstar(followPath,aStar, obstaclesData);

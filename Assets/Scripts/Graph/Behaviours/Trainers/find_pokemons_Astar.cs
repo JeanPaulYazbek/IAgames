@@ -41,8 +41,10 @@ public class find_pokemons_Astar : MonoBehaviour
     Graph graph;
     PathFindAStar aStar;
 
+    string[] walkable;//cosas sobre las que podemos caminar
     Vector3[] currentPath;//aqui guardaremos el camino que estemos siguiendo 
     int indexPath = 0;
+
 
 
     //Extras
@@ -72,15 +74,20 @@ public class find_pokemons_Astar : MonoBehaviour
         seek = new Seek(kineticsAgent, kineticsAgent, maxAccel);
 
         //Inicializamos grafo y A*
+
+
         graph = graphComponent.graph;
         pokemonPosition = pokemonKins[0].transform.position;
-        Node start = graph.FindNode(transform.position);//buscamos el triangulos con nuestra posicion actual
-        Node goal = graph.FindNode(pokemonPosition);//buscamos el triangulo donde esta el primer pokemon
+
+        walkable = new string[]{"Earth"}; //sobre que podemos movernos
+
+        Node start = graph.FindNode(transform.position, walkable);//buscamos el triangulos con nuestra posicion actual
+        Node goal = graph.FindNode(pokemonPosition, walkable);//buscamos el triangulo donde esta el primer pokemon
         if(goal is null){//si no hay un triangulo para el goal vamos a donde estamos parados
             goal = start;
         }
         Euclidean euclidean = new Euclidean(goal);
-        aStar = new PathFindAStar(graph,start , goal , euclidean);
+        aStar = new PathFindAStar(graph,start , goal , euclidean,walkable);
         currentPath = aStar.GetPath();
         currentTarget = currentPath[0];
         utilities.DrawPath(currentPath, 40f);
@@ -146,8 +153,8 @@ public class find_pokemons_Astar : MonoBehaviour
     void UpdatePath(){
         pokemonPosition = pokemons[currentPokemon].transform.position;
         //actualizamos el a start
-        aStar.goal = graph.FindNode(pokemonPosition);
-        aStar.start = graph.FindNode(transform.position);
+        aStar.goal = graph.FindNode(pokemonPosition, walkable);
+        aStar.start = graph.FindNode(transform.position, walkable);
         //generamos nuevo camino
         currentPath = aStar.GetPath();
         utilities.DrawPath(currentPath, 40f);

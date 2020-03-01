@@ -161,6 +161,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &3219246
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -255,6 +256,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &9210946
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -349,6 +351,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &24046064
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -443,6 +446,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &26748549
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -501,6 +505,7 @@ GameObject:
   - component: {fileID: 29679533}
   - component: {fileID: 29679532}
   - component: {fileID: 29679536}
+  - component: {fileID: 29679537}
   m_Layer: 0
   m_Name: obstacle2
   m_TagString: Obstacle
@@ -596,6 +601,22 @@ MonoBehaviour:
   Color: {r: 0, g: 0, b: 1, a: 1}
   XRadius: 2
   YRadius: 1
+--- !u!114 &29679537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29679531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2eb402c686a24e96ab685920d75f52b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upLeft: {x: 0, y: 0, z: 0}
+  upRight: {x: 0, y: 0, z: 0}
+  downLeft: {x: 0, y: 0, z: 0}
+  downRight: {x: 0, y: 0, z: 0}
 --- !u!1 &30629770
 GameObject:
   m_ObjectHideFlags: 0
@@ -645,6 +666,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &30629773
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -739,6 +761,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &32831816
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -833,6 +856,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &37455847
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -927,6 +951,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &38860337
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1021,6 +1046,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &44023762
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1115,6 +1141,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &51564359
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1252,6 +1279,7 @@ GameObject:
   - component: {fileID: 60874699}
   - component: {fileID: 60874698}
   - component: {fileID: 60874697}
+  - component: {fileID: 60874702}
   m_Layer: 0
   m_Name: 'obstacle8 lake '
   m_TagString: Obstacle
@@ -1347,6 +1375,22 @@ Transform:
   m_Father: {fileID: 1852938936}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &60874702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60874696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2eb402c686a24e96ab685920d75f52b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upLeft: {x: 0, y: 0, z: 0}
+  upRight: {x: 0, y: 0, z: 0}
+  downLeft: {x: 0, y: 0, z: 0}
+  downRight: {x: 0, y: 0, z: 0}
 --- !u!1 &72791537
 GameObject:
   m_ObjectHideFlags: 0
@@ -1396,6 +1440,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &72791540
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1490,6 +1535,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &73688917
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1658,6 +1704,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &80298586
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1752,6 +1799,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &84376265
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1796,6 +1844,101 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 84376262}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &93139078
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 93139079}
+  - component: {fileID: 93139082}
+  - component: {fileID: 93139081}
+  - component: {fileID: 93139080}
+  m_Layer: 0
+  m_Name: Water (349)
+  m_TagString: MyMesh
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &93139079
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 93139078}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -55.75, y: 56.87, z: 0}
+  m_LocalScale: {x: 6, y: 2, z: 0.1}
+  m_Children: []
+  m_Father: {fileID: 1021140798}
+  m_RootOrder: 353
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &93139080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 93139078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc8fe3021cc5b4c5ab38c1eeeac8534b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upLeft: {x: 0, y: 0, z: 0}
+  upRight: {x: 0, y: 0, z: 0}
+  downLeft: {x: 0, y: 0, z: 0}
+  downRight: {x: 0, y: 0, z: 0}
+  type: Water
+--- !u!23 &93139081
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 93139078}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &93139082
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 93139078}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &93957772
 GameObject:
@@ -1846,6 +1989,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &93957775
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1940,6 +2084,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &98058257
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2034,6 +2179,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &99068257
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2128,6 +2274,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &109034498
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2222,6 +2369,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &114104647
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2316,6 +2464,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &120838676
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2410,6 +2559,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &141176815
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2504,6 +2654,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &146968020
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2598,6 +2749,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &156217474
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2692,6 +2844,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &157337612
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2786,6 +2939,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &160553918
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2880,6 +3034,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &164459690
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2924,6 +3079,101 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 164459687}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &167464161
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 167464162}
+  - component: {fileID: 167464165}
+  - component: {fileID: 167464164}
+  - component: {fileID: 167464163}
+  m_Layer: 0
+  m_Name: Water (333)
+  m_TagString: MyMesh
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &167464162
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167464161}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -69.9, y: -0.28, z: 0}
+  m_LocalScale: {x: 8, y: 6, z: 0.1}
+  m_Children: []
+  m_Father: {fileID: 1021140798}
+  m_RootOrder: 350
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &167464163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167464161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc8fe3021cc5b4c5ab38c1eeeac8534b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upLeft: {x: 0, y: 0, z: 0}
+  upRight: {x: 0, y: 0, z: 0}
+  downLeft: {x: 0, y: 0, z: 0}
+  downRight: {x: 0, y: 0, z: 0}
+  type: Water
+--- !u!23 &167464164
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167464161}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &167464165
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167464161}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &169648572
 GameObject:
@@ -2974,6 +3224,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &169648575
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3068,6 +3319,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &181610102
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3162,6 +3414,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &183292747
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3256,6 +3509,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &188652795
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3314,6 +3568,7 @@ GameObject:
   - component: {fileID: 197500391}
   - component: {fileID: 197500390}
   - component: {fileID: 197500389}
+  - component: {fileID: 197500394}
   m_Layer: 0
   m_Name: 'obstacle5 '
   m_TagString: Obstacle
@@ -3409,6 +3664,22 @@ Transform:
   m_Father: {fileID: 1852938936}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &197500394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197500388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2eb402c686a24e96ab685920d75f52b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upLeft: {x: 0, y: 0, z: 0}
+  upRight: {x: 0, y: 0, z: 0}
+  downLeft: {x: 0, y: 0, z: 0}
+  downRight: {x: 0, y: 0, z: 0}
 --- !u!1 &219572975
 GameObject:
   m_ObjectHideFlags: 0
@@ -3458,6 +3729,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &219572978
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3552,6 +3824,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &239764095
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3646,6 +3919,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &240000805
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3740,6 +4014,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &247607928
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3834,6 +4109,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &255042080
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3928,6 +4204,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &259527647
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4022,6 +4299,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &266830910
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4066,6 +4344,101 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 266830907}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &269924377
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 269924378}
+  - component: {fileID: 269924381}
+  - component: {fileID: 269924380}
+  - component: {fileID: 269924379}
+  m_Layer: 0
+  m_Name: Mesh (332)
+  m_TagString: MyMesh
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &269924378
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269924377}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -77.1, y: 60.85, z: 0}
+  m_LocalScale: {x: 6, y: 6, z: 0.1}
+  m_Children: []
+  m_Father: {fileID: 1021140798}
+  m_RootOrder: 354
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &269924379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269924377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc8fe3021cc5b4c5ab38c1eeeac8534b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upLeft: {x: 0, y: 0, z: 0}
+  upRight: {x: 0, y: 0, z: 0}
+  downLeft: {x: 0, y: 0, z: 0}
+  downRight: {x: 0, y: 0, z: 0}
+  type: Earth
+--- !u!23 &269924380
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269924377}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &269924381
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269924377}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &271816369
 GameObject:
@@ -4116,6 +4489,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &271816372
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4210,6 +4584,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &276255606
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4304,6 +4679,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &277994964
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4348,6 +4724,101 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 277994961}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &284202506
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 284202507}
+  - component: {fileID: 284202510}
+  - component: {fileID: 284202509}
+  - component: {fileID: 284202508}
+  m_Layer: 0
+  m_Name: Water (334)
+  m_TagString: MyMesh
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &284202507
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284202506}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -43.47, y: 67.04, z: 0}
+  m_LocalScale: {x: 6, y: 6, z: 0.1}
+  m_Children: []
+  m_Father: {fileID: 1021140798}
+  m_RootOrder: 336
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &284202508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284202506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc8fe3021cc5b4c5ab38c1eeeac8534b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upLeft: {x: 0, y: 0, z: 0}
+  upRight: {x: 0, y: 0, z: 0}
+  downLeft: {x: 0, y: 0, z: 0}
+  downRight: {x: 0, y: 0, z: 0}
+  type: Water
+--- !u!23 &284202509
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284202506}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &284202510
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284202506}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &285904782
 GameObject:
@@ -4398,6 +4869,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &285904785
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4442,6 +4914,101 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 285904782}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &294970797
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 294970798}
+  - component: {fileID: 294970801}
+  - component: {fileID: 294970800}
+  - component: {fileID: 294970799}
+  m_Layer: 0
+  m_Name: Water (345)
+  m_TagString: MyMesh
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &294970798
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 294970797}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -69.52, y: 60.94, z: 0}
+  m_LocalScale: {x: 9, y: 6, z: 0.1}
+  m_Children: []
+  m_Father: {fileID: 1021140798}
+  m_RootOrder: 347
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &294970799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 294970797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc8fe3021cc5b4c5ab38c1eeeac8534b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upLeft: {x: 0, y: 0, z: 0}
+  upRight: {x: 0, y: 0, z: 0}
+  downLeft: {x: 0, y: 0, z: 0}
+  downRight: {x: 0, y: 0, z: 0}
+  type: Water
+--- !u!23 &294970800
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 294970797}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &294970801
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 294970797}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &298187526
 GameObject:
@@ -4492,6 +5059,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &298187529
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4586,6 +5154,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &298940747
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4978,6 +5547,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &301003760
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5072,6 +5642,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &308100228
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5166,6 +5737,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &310742132
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5260,6 +5832,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &313845483
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5318,6 +5891,7 @@ GameObject:
   - component: {fileID: 318774372}
   - component: {fileID: 318774371}
   - component: {fileID: 318774370}
+  - component: {fileID: 318774375}
   m_Layer: 0
   m_Name: Wall5
   m_TagString: Obstacle
@@ -5413,6 +5987,22 @@ Transform:
   m_Father: {fileID: 1852938936}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &318774375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 318774369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2eb402c686a24e96ab685920d75f52b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upLeft: {x: 0, y: 0, z: 0}
+  upRight: {x: 0, y: 0, z: 0}
+  downLeft: {x: 0, y: 0, z: 0}
+  downRight: {x: 0, y: 0, z: 0}
 --- !u!1 &346998678
 GameObject:
   m_ObjectHideFlags: 0
@@ -5462,6 +6052,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &346998681
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5556,6 +6147,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &350098766
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5650,6 +6242,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &351515412
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5744,6 +6337,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &368308989
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5838,6 +6432,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &370971133
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5932,6 +6527,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &371362399
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6026,6 +6622,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &371779898
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6098,7 +6695,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 383919329}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 68.8, y: 29, z: -1}
+  m_LocalPosition: {x: -66.3, y: 91.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 588658275}
@@ -6190,6 +6787,101 @@ MonoBehaviour:
   graphComponent: {fileID: 1021140799}
   radiusHide: 15
   undergroundCoord: 7
+--- !u!1 &390029563
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 390029564}
+  - component: {fileID: 390029567}
+  - component: {fileID: 390029566}
+  - component: {fileID: 390029565}
+  m_Layer: 0
+  m_Name: Water (339)
+  m_TagString: MyMesh
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &390029564
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 390029563}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -49.6, y: 54.64, z: 0}
+  m_LocalScale: {x: 6, y: 6.5, z: 0.1}
+  m_Children: []
+  m_Father: {fileID: 1021140798}
+  m_RootOrder: 341
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &390029565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 390029563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc8fe3021cc5b4c5ab38c1eeeac8534b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upLeft: {x: 0, y: 0, z: 0}
+  upRight: {x: 0, y: 0, z: 0}
+  downLeft: {x: 0, y: 0, z: 0}
+  downRight: {x: 0, y: 0, z: 0}
+  type: Water
+--- !u!23 &390029566
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 390029563}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &390029567
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 390029563}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &398661576
 GameObject:
   m_ObjectHideFlags: 0
@@ -6203,6 +6895,7 @@ GameObject:
   - component: {fileID: 398661579}
   - component: {fileID: 398661578}
   - component: {fileID: 398661577}
+  - component: {fileID: 398661582}
   m_Layer: 0
   m_Name: obstacle6 bigTree
   m_TagString: Obstacle
@@ -6298,6 +6991,22 @@ Transform:
   m_Father: {fileID: 1852938936}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &398661582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398661576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2eb402c686a24e96ab685920d75f52b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upLeft: {x: 0, y: 0, z: 0}
+  upRight: {x: 0, y: 0, z: 0}
+  downLeft: {x: 0, y: 0, z: 0}
+  downRight: {x: 0, y: 0, z: 0}
 --- !u!1 &415164135
 GameObject:
   m_ObjectHideFlags: 0
@@ -6347,6 +7056,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &415164138
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6441,6 +7151,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &415339604
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6535,6 +7246,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &429348323
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6629,6 +7341,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &431054017
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6723,6 +7436,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &434934116
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6767,6 +7481,101 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 434934113}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &445504929
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 445504930}
+  - component: {fileID: 445504933}
+  - component: {fileID: 445504932}
+  - component: {fileID: 445504931}
+  m_Layer: 0
+  m_Name: Water (332)
+  m_TagString: MyMesh
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &445504930
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445504929}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -69.9, y: 5.77, z: 0}
+  m_LocalScale: {x: 8, y: 6, z: 0.1}
+  m_Children: []
+  m_Father: {fileID: 1021140798}
+  m_RootOrder: 349
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &445504931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445504929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc8fe3021cc5b4c5ab38c1eeeac8534b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upLeft: {x: 0, y: 0, z: 0}
+  upRight: {x: 0, y: 0, z: 0}
+  downLeft: {x: 0, y: 0, z: 0}
+  downRight: {x: 0, y: 0, z: 0}
+  type: Water
+--- !u!23 &445504932
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445504929}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &445504933
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445504929}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &449750972
 GameObject:
@@ -6817,6 +7626,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &449750975
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6911,6 +7721,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &457617486
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7005,6 +7816,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &461885708
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7099,6 +7911,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &464093103
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7193,6 +8006,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &468817232
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7287,6 +8101,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &469953456
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7381,6 +8196,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &484000748
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7475,6 +8291,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &502748598
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7643,6 +8460,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &506152981
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7737,6 +8555,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &506757357
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7831,6 +8650,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &510977422
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8113,6 +8933,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &521551898
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8207,6 +9028,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &521737622
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8301,6 +9123,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &531395981
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8395,6 +9218,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &535637868
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8489,6 +9313,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &536005319
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8583,6 +9408,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &543752832
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8677,6 +9503,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &556081054
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8771,6 +9598,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &556152506
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8865,6 +9693,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &560413172
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9039,6 +9868,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &568246322
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9212,6 +10042,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &590248884
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9306,6 +10137,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &599105623
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9400,6 +10232,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &603504295
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9494,6 +10327,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &603597862
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9588,6 +10422,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &609429906
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9799,6 +10634,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &621035405
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9893,6 +10729,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &624720658
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9987,6 +10824,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &626080586
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10059,8 +10897,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 627024022}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -44.43, y: 47.48, z: 0}
-  m_LocalScale: {x: 8, y: 7, z: 0.1}
+  m_LocalPosition: {x: -43.51, y: 47.6, z: 0}
+  m_LocalScale: {x: 6, y: 7, z: 0.1}
   m_Children: []
   m_Father: {fileID: 1021140798}
   m_RootOrder: 288
@@ -10081,6 +10919,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &627024025
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10249,6 +11088,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &636682587
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10343,6 +11183,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &651115258
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10437,6 +11278,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &653472984
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10531,6 +11373,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &659623255
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10625,6 +11468,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &660696536
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10719,6 +11563,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &661740473
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10813,6 +11658,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &673310679
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10907,6 +11753,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &673499043
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11001,6 +11848,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &676582944
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11095,6 +11943,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &679750412
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11167,7 +12016,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 680498814}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -51.5, y: 47.25, z: 0}
+  m_LocalPosition: {x: -49.65, y: 47.43, z: 0}
   m_LocalScale: {x: 6, y: 7, z: 0.1}
   m_Children: []
   m_Father: {fileID: 1021140798}
@@ -11189,6 +12038,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &680498817
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11283,6 +12133,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &685823618
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11327,6 +12178,101 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 685823615}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &689662869
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 689662870}
+  - component: {fileID: 689662873}
+  - component: {fileID: 689662872}
+  - component: {fileID: 689662871}
+  m_Layer: 0
+  m_Name: Water (336)
+  m_TagString: MyMesh
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &689662870
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689662869}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -43.5, y: 54.64, z: 0}
+  m_LocalScale: {x: 6, y: 6.5, z: 0.1}
+  m_Children: []
+  m_Father: {fileID: 1021140798}
+  m_RootOrder: 338
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &689662871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689662869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc8fe3021cc5b4c5ab38c1eeeac8534b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upLeft: {x: 0, y: 0, z: 0}
+  upRight: {x: 0, y: 0, z: 0}
+  downLeft: {x: 0, y: 0, z: 0}
+  downRight: {x: 0, y: 0, z: 0}
+  type: Water
+--- !u!23 &689662872
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689662869}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &689662873
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689662869}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &692131195
 GameObject:
@@ -11377,6 +12323,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &692131198
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11421,6 +12368,101 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 692131195}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &692751677
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 692751678}
+  - component: {fileID: 692751681}
+  - component: {fileID: 692751680}
+  - component: {fileID: 692751679}
+  m_Layer: 0
+  m_Name: Water (334)
+  m_TagString: MyMesh
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &692751678
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692751677}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -69.9, y: -6.26, z: 0}
+  m_LocalScale: {x: 8, y: 6, z: 0.1}
+  m_Children: []
+  m_Father: {fileID: 1021140798}
+  m_RootOrder: 351
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &692751679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692751677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc8fe3021cc5b4c5ab38c1eeeac8534b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upLeft: {x: 0, y: 0, z: 0}
+  upRight: {x: 0, y: 0, z: 0}
+  downLeft: {x: 0, y: 0, z: 0}
+  downRight: {x: 0, y: 0, z: 0}
+  type: Water
+--- !u!23 &692751680
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692751677}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &692751681
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692751677}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &695072779
 GameObject:
@@ -11471,6 +12513,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &695072782
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11565,6 +12608,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &696126434
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11733,8 +12777,8 @@ MonoBehaviour:
   targetRadiusArrive: 1
   slowRadiusArrive: 30
   MaxAccelerationArrive: 20
-  radiusAlert: 30
-  radiusRun: 20
+  radiusAlert: 20
+  radiusRun: 15
 --- !u!1 &709870476
 GameObject:
   m_ObjectHideFlags: 0
@@ -11784,6 +12828,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &709870479
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11878,6 +12923,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &713537898
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11936,6 +12982,7 @@ GameObject:
   - component: {fileID: 718152759}
   - component: {fileID: 718152758}
   - component: {fileID: 718152757}
+  - component: {fileID: 718152762}
   m_Layer: 0
   m_Name: Wall8
   m_TagString: Obstacle
@@ -12031,6 +13078,22 @@ Transform:
   m_Father: {fileID: 1852938936}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &718152762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718152756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2eb402c686a24e96ab685920d75f52b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upLeft: {x: 0, y: 0, z: 0}
+  upRight: {x: 0, y: 0, z: 0}
+  downLeft: {x: 0, y: 0, z: 0}
+  downRight: {x: 0, y: 0, z: 0}
 --- !u!1 &726824159
 GameObject:
   m_ObjectHideFlags: 0
@@ -12080,6 +13143,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &726824162
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12124,6 +13188,101 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 726824159}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &736172012
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 736172013}
+  - component: {fileID: 736172016}
+  - component: {fileID: 736172015}
+  - component: {fileID: 736172014}
+  m_Layer: 0
+  m_Name: Water (341)
+  m_TagString: MyMesh
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &736172013
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736172012}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -55.8, y: 60.82, z: 0}
+  m_LocalScale: {x: 6, y: 6, z: 0.1}
+  m_Children: []
+  m_Father: {fileID: 1021140798}
+  m_RootOrder: 345
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &736172014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736172012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc8fe3021cc5b4c5ab38c1eeeac8534b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upLeft: {x: 0, y: 0, z: 0}
+  upRight: {x: 0, y: 0, z: 0}
+  downLeft: {x: 0, y: 0, z: 0}
+  downRight: {x: 0, y: 0, z: 0}
+  type: Water
+--- !u!23 &736172015
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736172012}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &736172016
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736172012}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &741443542
 GameObject:
@@ -12253,6 +13412,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &741723158
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12347,6 +13507,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &745811664
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12441,6 +13602,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &746145728
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12535,6 +13697,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &746554019
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12629,6 +13792,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &748727588
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12723,6 +13887,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &758613545
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12817,6 +13982,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &768190037
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12911,6 +14077,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &768599511
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13005,6 +14172,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &770527903
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13099,6 +14267,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &772170607
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13193,6 +14362,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &775495761
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13287,6 +14457,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &778204560
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13381,6 +14552,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &781553510
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13475,6 +14647,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &789305834
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13533,6 +14706,7 @@ GameObject:
   - component: {fileID: 789855042}
   - component: {fileID: 789855041}
   - component: {fileID: 789855040}
+  - component: {fileID: 789855045}
   m_Layer: 0
   m_Name: 'obstacle7 bigTree '
   m_TagString: Obstacle
@@ -13628,6 +14802,22 @@ Transform:
   m_Father: {fileID: 1852938936}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &789855045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789855039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2eb402c686a24e96ab685920d75f52b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upLeft: {x: 0, y: 0, z: 0}
+  upRight: {x: 0, y: 0, z: 0}
+  downLeft: {x: 0, y: 0, z: 0}
+  downRight: {x: 0, y: 0, z: 0}
 --- !u!1 &791641341
 GameObject:
   m_ObjectHideFlags: 0
@@ -13677,6 +14867,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &791641344
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13771,6 +14962,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &799025919
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13865,6 +15057,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &804278129
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13959,6 +15152,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &807873134
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14053,6 +15247,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &818175974
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14147,6 +15342,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &826717134
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14241,6 +15437,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &831436068
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14417,6 +15614,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &842651028
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14511,6 +15709,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &844354864
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14569,6 +15768,7 @@ GameObject:
   - component: {fileID: 845848421}
   - component: {fileID: 845848420}
   - component: {fileID: 845848424}
+  - component: {fileID: 845848425}
   m_Layer: 0
   m_Name: Wall1
   m_TagString: Obstacle
@@ -14664,6 +15864,22 @@ MonoBehaviour:
   Color: {r: 0, g: 0, b: 1, a: 1}
   XRadius: 2
   YRadius: 1
+--- !u!114 &845848425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 845848419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2eb402c686a24e96ab685920d75f52b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upLeft: {x: 0, y: 0, z: 0}
+  upRight: {x: 0, y: 0, z: 0}
+  downLeft: {x: 0, y: 0, z: 0}
+  downRight: {x: 0, y: 0, z: 0}
 --- !u!1 &859469451
 GameObject:
   m_ObjectHideFlags: 0
@@ -14743,6 +15959,101 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &866133912
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 866133913}
+  - component: {fileID: 866133916}
+  - component: {fileID: 866133915}
+  - component: {fileID: 866133914}
+  m_Layer: 0
+  m_Name: Water (344)
+  m_TagString: MyMesh
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &866133913
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866133912}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -70.96, y: 57.04, z: 0}
+  m_LocalScale: {x: 6, y: 2.5, z: 0.1}
+  m_Children: []
+  m_Father: {fileID: 1021140798}
+  m_RootOrder: 346
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &866133914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866133912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc8fe3021cc5b4c5ab38c1eeeac8534b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upLeft: {x: 0, y: 0, z: 0}
+  upRight: {x: 0, y: 0, z: 0}
+  downLeft: {x: 0, y: 0, z: 0}
+  downRight: {x: 0, y: 0, z: 0}
+  type: Water
+--- !u!23 &866133915
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866133912}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &866133916
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866133912}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &875364344
 GameObject:
   m_ObjectHideFlags: 0
@@ -14792,6 +16103,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &875364347
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14886,6 +16198,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &875621662
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14980,6 +16293,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &890352970
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15074,6 +16388,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &891423127
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15168,6 +16483,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &905979544
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15226,6 +16542,7 @@ GameObject:
   - component: {fileID: 912716104}
   - component: {fileID: 912716103}
   - component: {fileID: 912716107}
+  - component: {fileID: 912716108}
   m_Layer: 0
   m_Name: obstacle1
   m_TagString: Obstacle
@@ -15321,6 +16638,22 @@ MonoBehaviour:
   Color: {r: 0, g: 0, b: 1, a: 1}
   XRadius: 2
   YRadius: 1
+--- !u!114 &912716108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912716102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2eb402c686a24e96ab685920d75f52b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upLeft: {x: 0, y: 0, z: 0}
+  upRight: {x: 0, y: 0, z: 0}
+  downLeft: {x: 0, y: 0, z: 0}
+  downRight: {x: 0, y: 0, z: 0}
 --- !u!1 &921494516
 GameObject:
   m_ObjectHideFlags: 0
@@ -15370,6 +16703,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &921494519
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15464,6 +16798,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &929044726
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15558,6 +16893,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &931319860
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15616,6 +16952,7 @@ GameObject:
   - component: {fileID: 937038359}
   - component: {fileID: 937038358}
   - component: {fileID: 937038357}
+  - component: {fileID: 937038362}
   m_Layer: 0
   m_Name: Wall4
   m_TagString: Obstacle
@@ -15711,6 +17048,22 @@ Transform:
   m_Father: {fileID: 1852938936}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &937038362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937038356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2eb402c686a24e96ab685920d75f52b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upLeft: {x: 0, y: 0, z: 0}
+  upRight: {x: 0, y: 0, z: 0}
+  downLeft: {x: 0, y: 0, z: 0}
+  downRight: {x: 0, y: 0, z: 0}
 --- !u!1 &949220003
 GameObject:
   m_ObjectHideFlags: 0
@@ -16085,6 +17438,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &957662181
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16179,6 +17533,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &958673614
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16390,6 +17745,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &969854850
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16490,6 +17846,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &987733682
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16584,6 +17941,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &991800443
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16678,6 +18036,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1005012860
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16772,6 +18131,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1008720889
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16866,6 +18226,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1009238474
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16960,6 +18321,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1013751665
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17369,6 +18731,26 @@ Transform:
   - {fileID: 1364986765}
   - {fileID: 695072780}
   - {fileID: 775495759}
+  - {fileID: 284202507}
+  - {fileID: 1629354737}
+  - {fileID: 689662870}
+  - {fileID: 1954802429}
+  - {fileID: 1797007649}
+  - {fileID: 390029564}
+  - {fileID: 1561833491}
+  - {fileID: 1891038042}
+  - {fileID: 1778610281}
+  - {fileID: 736172013}
+  - {fileID: 866133913}
+  - {fileID: 294970798}
+  - {fileID: 1235824564}
+  - {fileID: 445504930}
+  - {fileID: 167464162}
+  - {fileID: 692751678}
+  - {fileID: 1594220157}
+  - {fileID: 93139079}
+  - {fileID: 269924378}
+  - {fileID: 1121433614}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -17435,6 +18817,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1029594171
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17529,6 +18912,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1030939352
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17623,6 +19007,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1031309045
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17830,6 +19215,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1037523225
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17924,6 +19310,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1043357065
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18018,6 +19405,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1049543783
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18112,6 +19500,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1052744526
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18286,6 +19675,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1067050611
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18380,6 +19770,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1068031005
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18474,6 +19865,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1072338812
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18568,6 +19960,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1072489384
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18662,6 +20055,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1077132525
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18756,6 +20150,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1084638444
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18850,6 +20245,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1094650128
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18921,7 +20317,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1095664531}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 957328940}
@@ -19423,6 +20819,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1099895176
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19517,6 +20914,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1107811619
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19611,6 +21009,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1109776210
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19705,6 +21104,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1111019400
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19799,6 +21199,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1115044637
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19893,6 +21294,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1115738817
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19987,6 +21389,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1116846697
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20081,6 +21484,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1118477948
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20125,6 +21529,101 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1118477945}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1121433613
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1121433614}
+  - component: {fileID: 1121433617}
+  - component: {fileID: 1121433616}
+  - component: {fileID: 1121433615}
+  m_Layer: 0
+  m_Name: Mesh (333)
+  m_TagString: MyMesh
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1121433614
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121433613}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -77.1, y: 56.91, z: 0}
+  m_LocalScale: {x: 6, y: 2, z: 0.1}
+  m_Children: []
+  m_Father: {fileID: 1021140798}
+  m_RootOrder: 355
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1121433615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121433613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc8fe3021cc5b4c5ab38c1eeeac8534b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upLeft: {x: 0, y: 0, z: 0}
+  upRight: {x: 0, y: 0, z: 0}
+  downLeft: {x: 0, y: 0, z: 0}
+  downRight: {x: 0, y: 0, z: 0}
+  type: Earth
+--- !u!23 &1121433616
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121433613}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1121433617
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121433613}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1125161240
 GameObject:
@@ -20175,6 +21674,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1125161243
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20348,6 +21848,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1136964564
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20442,6 +21943,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1149668088
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20536,6 +22038,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1154238983
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20630,6 +22133,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1156883122
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20724,6 +22228,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1160329396
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20818,6 +22323,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1160594332
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20912,6 +22418,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1182532103
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21103,6 +22610,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1183446328
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21197,6 +22705,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1189964402
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21255,6 +22764,7 @@ GameObject:
   - component: {fileID: 1190821404}
   - component: {fileID: 1190821403}
   - component: {fileID: 1190821402}
+  - component: {fileID: 1190821407}
   m_Layer: 0
   m_Name: Wall7
   m_TagString: Obstacle
@@ -21350,6 +22860,22 @@ Transform:
   m_Father: {fileID: 1852938936}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1190821407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190821401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2eb402c686a24e96ab685920d75f52b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upLeft: {x: 0, y: 0, z: 0}
+  upRight: {x: 0, y: 0, z: 0}
+  downLeft: {x: 0, y: 0, z: 0}
+  downRight: {x: 0, y: 0, z: 0}
 --- !u!1 &1203179544
 GameObject:
   m_ObjectHideFlags: 0
@@ -21399,6 +22925,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1203179547
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21493,6 +23020,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1205723603
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21587,6 +23115,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1218244849
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21681,6 +23210,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1219572358
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21924,6 +23454,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1221969127
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22018,6 +23549,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1229286430
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22112,6 +23644,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1232016481
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22206,6 +23739,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1235592500
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22250,6 +23784,101 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1235592497}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1235824563
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1235824564}
+  - component: {fileID: 1235824567}
+  - component: {fileID: 1235824566}
+  - component: {fileID: 1235824565}
+  m_Layer: 0
+  m_Name: Water (346)
+  m_TagString: MyMesh
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1235824564
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235824563}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -69.51, y: 66.87, z: 0}
+  m_LocalScale: {x: 9, y: 6, z: 0.1}
+  m_Children: []
+  m_Father: {fileID: 1021140798}
+  m_RootOrder: 348
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1235824565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235824563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc8fe3021cc5b4c5ab38c1eeeac8534b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upLeft: {x: 0, y: 0, z: 0}
+  upRight: {x: 0, y: 0, z: 0}
+  downLeft: {x: 0, y: 0, z: 0}
+  downRight: {x: 0, y: 0, z: 0}
+  type: Water
+--- !u!23 &1235824566
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235824563}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1235824567
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235824563}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1235853840
 GameObject:
@@ -22300,6 +23929,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1235853843
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22394,6 +24024,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1239973881
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22488,6 +24119,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1242412493
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22582,6 +24214,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1245267199
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22676,6 +24309,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1249175402
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22770,6 +24404,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1249602024
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22864,6 +24499,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1250825783
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23027,6 +24663,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1261763295
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -35773,6 +37410,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1265626101
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -35867,6 +37505,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1270910327
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -35961,6 +37600,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1277439842
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -36067,6 +37707,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1289850844
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -36161,6 +37802,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1294960136
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -36255,6 +37897,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1306011363
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -36349,6 +37992,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1307248850
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -36443,6 +38087,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1309642113
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -36537,6 +38182,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1313030457
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -36631,6 +38277,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1317609844
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -36725,6 +38372,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1318215366
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -36819,6 +38467,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1319932777
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -36913,6 +38562,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1326578840
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -37302,7 +38952,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1330056644}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.3, y: 2.9, z: 0}
+  m_LocalPosition: {x: -14.2, y: 7.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -37337,7 +38987,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1330056644}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b3ed7a272a3dc49dfb3a3a37a70a0e8f, type: 3}
   m_Name: 
@@ -37384,7 +39034,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1330056644}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7c4234896a0484d03b885f99b336b236, type: 3}
   m_Name: 
@@ -37620,6 +39270,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1335850382
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -37678,6 +39329,7 @@ GameObject:
   - component: {fileID: 1339540851}
   - component: {fileID: 1339540850}
   - component: {fileID: 1339540849}
+  - component: {fileID: 1339540854}
   m_Layer: 0
   m_Name: 'obstacle9 lake '
   m_TagString: Obstacle
@@ -37773,6 +39425,22 @@ Transform:
   m_Father: {fileID: 1852938936}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1339540854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339540848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2eb402c686a24e96ab685920d75f52b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upLeft: {x: 0, y: 0, z: 0}
+  upRight: {x: 0, y: 0, z: 0}
+  downLeft: {x: 0, y: 0, z: 0}
+  downRight: {x: 0, y: 0, z: 0}
 --- !u!1 &1342129683
 GameObject:
   m_ObjectHideFlags: 0
@@ -37822,6 +39490,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1342129686
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -37916,6 +39585,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1346059545
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -38279,6 +39949,7 @@ GameObject:
   - component: {fileID: 1348282145}
   - component: {fileID: 1348282144}
   - component: {fileID: 1348282143}
+  - component: {fileID: 1348282148}
   m_Layer: 0
   m_Name: 'obstacle4 '
   m_TagString: Obstacle
@@ -38374,6 +40045,22 @@ Transform:
   m_Father: {fileID: 1852938936}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1348282148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348282142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2eb402c686a24e96ab685920d75f52b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upLeft: {x: 0, y: 0, z: 0}
+  upRight: {x: 0, y: 0, z: 0}
+  downLeft: {x: 0, y: 0, z: 0}
+  downRight: {x: 0, y: 0, z: 0}
 --- !u!1 &1362710743
 GameObject:
   m_ObjectHideFlags: 0
@@ -38401,8 +40088,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1362710743}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -77.1, y: 63.11, z: 0}
-  m_LocalScale: {x: 6, y: 14, z: 0.1}
+  m_LocalPosition: {x: -77.1, y: 66.94, z: 0}
+  m_LocalScale: {x: 6, y: 6, z: 0.1}
   m_Children: []
   m_Father: {fileID: 1021140798}
   m_RootOrder: 279
@@ -38423,6 +40110,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1362710746
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -38517,6 +40205,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1364986767
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -38611,6 +40300,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1370563918
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -38705,6 +40395,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1370925835
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -38799,6 +40490,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1372244551
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -38893,6 +40585,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1375774772
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -38987,6 +40680,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1380859599
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -39081,6 +40775,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1385037394
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -39175,6 +40870,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1385513213
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -39269,6 +40965,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1388772768
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -39363,6 +41060,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1390337470
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -39457,6 +41155,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1400502585
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -39551,6 +41250,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1405274818
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -39645,6 +41345,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1422748845
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -39739,6 +41440,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1425623017
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -39833,6 +41535,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1429172972
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -39927,6 +41630,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1432370462
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -40021,6 +41725,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1433626320
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -40115,6 +41820,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1445517759
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -40209,6 +41915,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1455785063
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -40267,6 +41974,7 @@ GameObject:
   - component: {fileID: 1478357752}
   - component: {fileID: 1478357751}
   - component: {fileID: 1478357750}
+  - component: {fileID: 1478357755}
   m_Layer: 0
   m_Name: Wall6
   m_TagString: Obstacle
@@ -40357,11 +42065,27 @@ Transform:
   m_GameObject: {fileID: 1478357749}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 17.6, y: 77.1, z: 0}
-  m_LocalScale: {x: 53, y: 13, z: 2}
+  m_LocalScale: {x: 54, y: 13, z: 2}
   m_Children: []
   m_Father: {fileID: 1852938936}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1478357755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1478357749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2eb402c686a24e96ab685920d75f52b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upLeft: {x: 0, y: 0, z: 0}
+  upRight: {x: 0, y: 0, z: 0}
+  downLeft: {x: 0, y: 0, z: 0}
+  downRight: {x: 0, y: 0, z: 0}
 --- !u!1 &1483626350
 GameObject:
   m_ObjectHideFlags: 0
@@ -40411,6 +42135,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1483626353
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -40505,6 +42230,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1498607891
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -40599,6 +42325,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1503000589
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -40657,6 +42384,7 @@ GameObject:
   - component: {fileID: 1513130666}
   - component: {fileID: 1513130665}
   - component: {fileID: 1513130664}
+  - component: {fileID: 1513130669}
   m_Layer: 0
   m_Name: obstacle3 lake
   m_TagString: Obstacle
@@ -40752,6 +42480,22 @@ Transform:
   m_Father: {fileID: 1852938936}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1513130669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513130663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2eb402c686a24e96ab685920d75f52b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upLeft: {x: 0, y: 0, z: 0}
+  upRight: {x: 0, y: 0, z: 0}
+  downLeft: {x: 0, y: 0, z: 0}
+  downRight: {x: 0, y: 0, z: 0}
 --- !u!1 &1516207864
 GameObject:
   m_ObjectHideFlags: 0
@@ -40801,6 +42545,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1516207867
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -40895,6 +42640,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1522299519
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -40989,6 +42735,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1530550412
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -41083,6 +42830,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1531350291
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -41177,6 +42925,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1534962885
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -41271,6 +43020,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1537759978
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -41365,6 +43115,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1548471872
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -41409,6 +43160,101 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1548471869}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1561833490
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1561833491}
+  - component: {fileID: 1561833494}
+  - component: {fileID: 1561833493}
+  - component: {fileID: 1561833492}
+  m_Layer: 0
+  m_Name: Water (332)
+  m_TagString: MyMesh
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1561833491
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1561833490}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -61.8, y: 66.96, z: 0}
+  m_LocalScale: {x: 6, y: 6, z: 0.1}
+  m_Children: []
+  m_Father: {fileID: 1021140798}
+  m_RootOrder: 342
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1561833492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1561833490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc8fe3021cc5b4c5ab38c1eeeac8534b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upLeft: {x: 0, y: 0, z: 0}
+  upRight: {x: 0, y: 0, z: 0}
+  downLeft: {x: 0, y: 0, z: 0}
+  downRight: {x: 0, y: 0, z: 0}
+  type: Water
+--- !u!23 &1561833493
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1561833490}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1561833494
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1561833490}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1574650824
 GameObject:
@@ -41459,6 +43305,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1574650827
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -41553,6 +43400,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1577350934
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -41721,6 +43569,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1586890852
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -41815,6 +43664,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1590148612
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -41909,6 +43759,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1593680461
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -41953,6 +43804,101 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1593680458}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1594220156
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1594220157}
+  - component: {fileID: 1594220160}
+  - component: {fileID: 1594220159}
+  - component: {fileID: 1594220158}
+  m_Layer: 0
+  m_Name: Water (347)
+  m_TagString: MyMesh
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1594220157
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1594220156}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -61.99, y: 56.41, z: 0}
+  m_LocalScale: {x: 6, y: 2, z: 0.1}
+  m_Children: []
+  m_Father: {fileID: 1021140798}
+  m_RootOrder: 352
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1594220158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1594220156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc8fe3021cc5b4c5ab38c1eeeac8534b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upLeft: {x: 0, y: 0, z: 0}
+  upRight: {x: 0, y: 0, z: 0}
+  downLeft: {x: 0, y: 0, z: 0}
+  downRight: {x: 0, y: 0, z: 0}
+  type: Water
+--- !u!23 &1594220159
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1594220156}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1594220160
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1594220156}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1595623807
 GameObject:
@@ -42003,6 +43949,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1595623810
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -42097,6 +44044,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1606814103
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -42191,6 +44139,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1609222268
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -42285,6 +44234,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1616162777
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -42379,6 +44329,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1628232942
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -42423,6 +44374,101 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1628232939}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1629354736
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1629354737}
+  - component: {fileID: 1629354740}
+  - component: {fileID: 1629354739}
+  - component: {fileID: 1629354738}
+  m_Layer: 0
+  m_Name: Water (335)
+  m_TagString: MyMesh
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1629354737
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1629354736}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -43.47, y: 60.91, z: 0}
+  m_LocalScale: {x: 6, y: 6, z: 0.1}
+  m_Children: []
+  m_Father: {fileID: 1021140798}
+  m_RootOrder: 337
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1629354738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1629354736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc8fe3021cc5b4c5ab38c1eeeac8534b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upLeft: {x: 0, y: 0, z: 0}
+  upRight: {x: 0, y: 0, z: 0}
+  downLeft: {x: 0, y: 0, z: 0}
+  downRight: {x: 0, y: 0, z: 0}
+  type: Water
+--- !u!23 &1629354739
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1629354736}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1629354740
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1629354736}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1630845112
 GameObject:
@@ -42473,6 +44519,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1630845115
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -42567,6 +44614,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1638784703
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -42959,6 +45007,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1641398526
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -43053,6 +45102,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1641997400
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -43147,6 +45197,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1669299700
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -43241,6 +45292,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1678047202
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -43335,6 +45387,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1680908107
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -43429,6 +45482,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1685713961
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -43719,6 +45773,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1696122492
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -43813,6 +45868,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1700983053
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -43907,6 +45963,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1703649147
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -43965,6 +46022,7 @@ GameObject:
   - component: {fileID: 1704731521}
   - component: {fileID: 1704731520}
   - component: {fileID: 1704731524}
+  - component: {fileID: 1704731525}
   m_Layer: 0
   m_Name: Wall2
   m_TagString: Obstacle
@@ -44060,6 +46118,22 @@ MonoBehaviour:
   Color: {r: 0, g: 0, b: 1, a: 1}
   XRadius: 2
   YRadius: 1
+--- !u!114 &1704731525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1704731519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2eb402c686a24e96ab685920d75f52b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upLeft: {x: 0, y: 0, z: 0}
+  upRight: {x: 0, y: 0, z: 0}
+  downLeft: {x: 0, y: 0, z: 0}
+  downRight: {x: 0, y: 0, z: 0}
 --- !u!1 &1714520139
 GameObject:
   m_ObjectHideFlags: 0
@@ -44109,6 +46183,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1714520142
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -44203,6 +46278,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1715981904
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -44595,6 +46671,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1731550580
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -44689,6 +46766,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1734225466
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -44783,6 +46861,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1737933458
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -44877,6 +46956,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1743277731
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -44971,6 +47051,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1743358208
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -45065,6 +47146,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1749301445
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -45159,6 +47241,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1750549847
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -45253,6 +47336,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1766576906
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -45347,6 +47431,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1770562752
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -45391,6 +47476,101 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1770562749}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1778610280
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1778610281}
+  - component: {fileID: 1778610284}
+  - component: {fileID: 1778610283}
+  - component: {fileID: 1778610282}
+  m_Layer: 0
+  m_Name: Water (340)
+  m_TagString: MyMesh
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1778610281
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778610280}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -61.8, y: 60.82, z: 0}
+  m_LocalScale: {x: 6, y: 6, z: 0.1}
+  m_Children: []
+  m_Father: {fileID: 1021140798}
+  m_RootOrder: 344
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1778610282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778610280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc8fe3021cc5b4c5ab38c1eeeac8534b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upLeft: {x: 0, y: 0, z: 0}
+  upRight: {x: 0, y: 0, z: 0}
+  downLeft: {x: 0, y: 0, z: 0}
+  downRight: {x: 0, y: 0, z: 0}
+  type: Water
+--- !u!23 &1778610283
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778610280}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1778610284
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778610280}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1785386073
 GameObject:
@@ -45441,6 +47621,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1785386076
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -45535,6 +47716,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1788149988
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -45579,6 +47761,101 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1788149985}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1797007648
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1797007649}
+  - component: {fileID: 1797007652}
+  - component: {fileID: 1797007651}
+  - component: {fileID: 1797007650}
+  m_Layer: 0
+  m_Name: Water (338)
+  m_TagString: MyMesh
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1797007649
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797007648}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -49.57, y: 60.91, z: 0}
+  m_LocalScale: {x: 6, y: 6, z: 0.1}
+  m_Children: []
+  m_Father: {fileID: 1021140798}
+  m_RootOrder: 340
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1797007650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797007648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc8fe3021cc5b4c5ab38c1eeeac8534b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upLeft: {x: 0, y: 0, z: 0}
+  upRight: {x: 0, y: 0, z: 0}
+  downLeft: {x: 0, y: 0, z: 0}
+  downRight: {x: 0, y: 0, z: 0}
+  type: Water
+--- !u!23 &1797007651
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797007648}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1797007652
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797007648}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1797114796
 GameObject:
@@ -45629,6 +47906,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1797114799
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -45723,6 +48001,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1798300258
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -45817,6 +48096,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1798602369
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -45911,6 +48191,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1799023531
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -46005,6 +48286,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1801168857
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -46099,6 +48381,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1809023424
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -46273,6 +48556,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1816313107
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -46367,6 +48651,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1816789180
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -46461,6 +48746,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1817689427
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -46555,6 +48841,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1818543257
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -46649,6 +48936,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1829250898
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -46743,6 +49031,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1836797884
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -46837,6 +49126,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1840534769
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -46931,6 +49221,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1846436238
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -47025,6 +49316,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1846608171
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -47119,6 +49411,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1846748700
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -47292,6 +49585,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1851314507
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -47433,6 +49727,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1855980883
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -47527,6 +49822,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1867078287
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -47621,6 +49917,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1867296048
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -47715,6 +50012,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1871854321
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -47809,6 +50107,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1875987845
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -48201,6 +50500,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1883594479
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -48295,6 +50595,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1884402997
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -48389,6 +50690,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1886179507
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -48483,6 +50785,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1886908466
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -48527,6 +50830,101 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1886908463}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1891038041
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1891038042}
+  - component: {fileID: 1891038045}
+  - component: {fileID: 1891038044}
+  - component: {fileID: 1891038043}
+  m_Layer: 0
+  m_Name: Water (333)
+  m_TagString: MyMesh
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1891038042
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891038041}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -55.8, y: 66.96, z: 0}
+  m_LocalScale: {x: 6, y: 6, z: 0.1}
+  m_Children: []
+  m_Father: {fileID: 1021140798}
+  m_RootOrder: 343
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1891038043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891038041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc8fe3021cc5b4c5ab38c1eeeac8534b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upLeft: {x: 0, y: 0, z: 0}
+  upRight: {x: 0, y: 0, z: 0}
+  downLeft: {x: 0, y: 0, z: 0}
+  downRight: {x: 0, y: 0, z: 0}
+  type: Water
+--- !u!23 &1891038044
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891038041}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1891038045
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891038041}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &1902512656 stripped
 Transform:
@@ -48583,6 +50981,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1910385405
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -48677,6 +51076,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1915210921
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -48812,6 +51212,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1928190532
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -48906,6 +51307,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1929018730
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -49000,6 +51402,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1929511615
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -49094,6 +51497,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1933247953
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -49262,8 +51666,103 @@ MonoBehaviour:
   targetRadiusArrive: 1
   slowRadiusArrive: 30
   MaxAccelerationArrive: 20
-  radiusAlert: 30
-  radiusRun: 20
+  radiusAlert: 20
+  radiusRun: 15
+--- !u!1 &1954802428
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1954802429}
+  - component: {fileID: 1954802432}
+  - component: {fileID: 1954802431}
+  - component: {fileID: 1954802430}
+  m_Layer: 0
+  m_Name: Water (337)
+  m_TagString: MyMesh
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1954802429
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1954802428}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -49.57, y: 67.04, z: 0}
+  m_LocalScale: {x: 6, y: 6, z: 0.1}
+  m_Children: []
+  m_Father: {fileID: 1021140798}
+  m_RootOrder: 339
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1954802430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1954802428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc8fe3021cc5b4c5ab38c1eeeac8534b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upLeft: {x: 0, y: 0, z: 0}
+  upRight: {x: 0, y: 0, z: 0}
+  downLeft: {x: 0, y: 0, z: 0}
+  downRight: {x: 0, y: 0, z: 0}
+  type: Water
+--- !u!23 &1954802431
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1954802428}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1954802432
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1954802428}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1954965118
 GameObject:
   m_ObjectHideFlags: 0
@@ -49313,6 +51812,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1954965121
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -49407,6 +51907,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1964371271
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -49581,6 +52082,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1977044322
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -49675,6 +52177,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1978946463
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -49769,6 +52272,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1979066895
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -49863,6 +52367,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1980084686
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -49921,6 +52426,7 @@ GameObject:
   - component: {fileID: 1982202806}
   - component: {fileID: 1982202805}
   - component: {fileID: 1982202804}
+  - component: {fileID: 1982202809}
   m_Layer: 0
   m_Name: Wall3
   m_TagString: Obstacle
@@ -50016,6 +52522,22 @@ Transform:
   m_Father: {fileID: 1852938936}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1982202809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1982202803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2eb402c686a24e96ab685920d75f52b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upLeft: {x: 0, y: 0, z: 0}
+  upRight: {x: 0, y: 0, z: 0}
+  downLeft: {x: 0, y: 0, z: 0}
+  downRight: {x: 0, y: 0, z: 0}
 --- !u!1 &1992965848
 GameObject:
   m_ObjectHideFlags: 0
@@ -50065,6 +52587,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &1992965851
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -50159,6 +52682,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &2003725953
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -50253,6 +52777,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &2006245682
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -50347,6 +52872,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &2014688527
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -50441,6 +52967,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &2019506386
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -50541,6 +53068,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &2037651212
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -50635,6 +53163,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &2039734842
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -50729,6 +53258,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &2043272837
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -50823,6 +53353,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &2052668489
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -50895,8 +53426,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2067174374}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -57.64, y: 47.1, z: 0}
-  m_LocalScale: {x: 6, y: 7, z: 0.1}
+  m_LocalPosition: {x: -56.72, y: 47.28, z: 0}
+  m_LocalScale: {x: 8, y: 7, z: 0.1}
   m_Children: []
   m_Father: {fileID: 1021140798}
   m_RootOrder: 286
@@ -50917,6 +53448,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &2067174377
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -51011,6 +53543,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &2078012464
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -51105,6 +53638,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &2093941754
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -51199,6 +53733,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &2097292556
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -51293,6 +53828,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &2109570323
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -51387,6 +53923,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &2111719307
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -51481,6 +54018,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &2122011061
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -51575,6 +54113,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &2127889865
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -51669,6 +54208,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &2130323483
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -51763,6 +54303,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &2141847775
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -51857,6 +54398,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &2142331624
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -51951,6 +54493,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &2144080735
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -52045,6 +54588,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &2146567763
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -52139,6 +54683,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Earth
 --- !u!23 &2146658089
 MeshRenderer:
   m_ObjectHideFlags: 0

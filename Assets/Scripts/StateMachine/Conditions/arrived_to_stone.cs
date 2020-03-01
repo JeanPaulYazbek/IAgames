@@ -18,7 +18,7 @@ public class ArrivedToStone : Condition{
     public override bool Test(){
 
         Vector3 agentPos = agent.position;
-        agentPos.z = 0f;
+        
         return Vector3.Distance(items.Peek().transform.position, agentPos) < arrivalRadius;
 
     }

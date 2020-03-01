@@ -7,12 +7,14 @@ public class UpdateAStar : Action {
     Kinetics kinAgent;
     PathFindAStar aStar;
     Graph graph;
+    public string[] walkable;
 
-    public UpdateAStar(Stack<Kinetics> Pokemons, PathFindAStar AStar, Graph Graph, Kinetics KinAgent){
+    public UpdateAStar(Stack<Kinetics> Pokemons, PathFindAStar AStar, Graph Graph, Kinetics KinAgent, string[] Walkable){
         pokemons = Pokemons;
         aStar = AStar;
         graph = Graph;
         kinAgent = KinAgent;
+        walkable = Walkable;
     }
 
     public override void DoAction(){
@@ -23,9 +25,9 @@ public class UpdateAStar : Action {
         //ACTUALIZAMOS Astar
         Kinetics currentPokemon = pokemons.Peek();
         Vector3 targetPosition = currentPokemon.transform.position;
-        Node targetNode = graph.FindNode(targetPosition);
+        Node targetNode = graph.FindNode(targetPosition, walkable);
         aStar.goal = targetNode;
-        aStar.start = graph.FindNode(kinAgent.transform.position);
+        aStar.start = graph.FindNode(kinAgent.transform.position, walkable);
         aStar.heuristic = new Euclidean(targetNode);
     }
 }

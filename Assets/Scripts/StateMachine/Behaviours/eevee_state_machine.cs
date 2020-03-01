@@ -35,6 +35,7 @@ public class eevee_state_machine : MonoBehaviour {
     public static_graph graphComponent;//componente que tiene guardado el grafo
     Graph graph;
     PathFindAStar aStar;
+    string[] walkable = new string[]{"Earth"};//representa sobre que podemos caminar
 
 
     //DATOS MAQUINA DE ESTADOS
@@ -68,7 +69,7 @@ public class eevee_state_machine : MonoBehaviour {
 
         //Inicializamos grafo y A*
         graph = graphComponent.graph;
-        aStar = new PathFindAStar(graph,null ,null,null);
+        aStar = new PathFindAStar(graph,null ,null,null,walkable);
 
         //Inicializamos seek
         seek = new Seek(kineticsAgent, kineticsAgent, maxAccel);
@@ -88,15 +89,15 @@ public class eevee_state_machine : MonoBehaviour {
 
         //1. ACCIONES:
 
-        UpdateAStarGameObject updateAStar = new UpdateAStarGameObject(stonesStack, aStar, graph, kineticsAgent);
+        UpdateAStarGameObject updateAStar = new UpdateAStarGameObject(stonesStack, aStar, graph, kineticsAgent, walkable);
         FollowPathOfPoints followPath = new FollowPathOfPoints(steeringAgent, seek, null);
         PopGameObject popStone = new PopGameObject(stonesStack);
         DestroyGameObject destroyStone = new DestroyGameObject(stonesStack);
         UpdateFollowPathWithAstar updateFollow = new UpdateFollowPathWithAstar(followPath, aStar, obstaclesData);
-        UpdateAStarTarget updateAStar2 = new UpdateAStarTarget(aStar, graph, kineticsAgent, graph.GetNode(150));
+        UpdateAStarTarget updateAStar2 = new UpdateAStarTarget(aStar, graph, kineticsAgent, graph.GetNode(550), walkable);
         StopMoving stop = new StopMoving(kineticsAgent, steeringAgent);
         RunSprite showRunSprite = new RunSprite(pokemonData);
-        Evolve evolve = new Evolve(pokemonData, "Sun");
+        Evolve evolve = new Evolve(pokemonData, "Sun", updateAStar, updateAStar2, aStar);
         updateEvolveMethod updateEvolve = new updateEvolveMethod(evolve, stonesStack);
         ShowIcon showExclamation = new ShowIcon(this.gameObject, "Exclamation");
         DisableIcon disableExclamation = new DisableIcon(this.gameObject, "Exclamation");

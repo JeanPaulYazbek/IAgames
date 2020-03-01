@@ -43,11 +43,13 @@ public class static_shoot : MonoBehaviour
             Transform caught_poke = pokemons[pokemonIndex].transform;
             if(caught_poke.localScale.x > 0){//si no fue atrapado ya
 
+                Vector3 ballPos = transform.position;
+                ballPos.z = 0.1f;//esto es para que los personajes pasen por encima de la ball
                 //PONEMOS UNA BALL QUIETA
                 if(ultraBall){//si es una ultraball ponemos una ultra ball
-                    Instantiate(ultraBallPrefab, transform.position, Quaternion.identity);
+                    Instantiate(ultraBallPrefab, ballPos, Quaternion.identity);
                 }else{
-                    Instantiate(staticBallPrefab, transform.position, Quaternion.identity);
+                    Instantiate(staticBallPrefab, ballPos, Quaternion.identity);
                 }
                 //HACEMOS QUE EL POKEMON DESAPAREZCA
                 DisablePokemon(pokemonsObjs[pokemonIndex], caught_poke);

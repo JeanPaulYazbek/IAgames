@@ -9,11 +9,14 @@ public class PathFindAStar{
     public Node goal;//nodo de destino
     public Heuristic heuristic;//herustica a utilizar
 
-    public PathFindAStar(Graph Graph, Node Start, Node Goal, Heuristic Heuristic){
+    public string[] walkable;//arreglo con los tipos de nodos en los que podemos caminar
+
+    public PathFindAStar(Graph Graph, Node Start, Node Goal, Heuristic Heuristic, string[] Walkable ){
         graph = Graph;
         start = Start;
         goal = Goal;
         heuristic = Heuristic;
+        walkable = Walkable;
     }
 
     //Estructura que sera util para analizar los nodos
@@ -75,11 +78,16 @@ public class PathFindAStar{
         float endNodeCost;
         NodeRecord endNodeRecord = null;
         float endNodeHeuristic =0f;
+        bool is_walkable;
+        string endNodeType;
         //Datos utiles para iterar
         int k = 0;
         float newTotal;
         //Datos del goal
         NodeRecord goalRecord = null;
+
+        //Debug
+        //int count_open =0;
 
  
         while(open.Count > 0){
@@ -103,7 +111,25 @@ public class PathFindAStar{
                 //Buscamos el vecino
                 endNode = connection.GetToNode();
                 endNodeCost = current.costSoFar + connection.cost;
+                endNodeType = endNode.type;
 
+                is_walkable = false;
+
+                //REVISAMOS SI EL NODO AL QUE NOS MOVEREMOS ES ALGO SOBRE
+                //LO QUE EL PERSONAJE PUEDE CAMINAR
+                for(int i  = 0; i< walkable.Length; i++){
+                    if( endNodeType == walkable[i]){
+                        is_walkable = true;
+                        break;
+                    }
+                }
+
+                if(!is_walkable){//Ignoramos este vecino 
+                    continue;
+                }
+
+
+                //Si estaba cerrado
                 if(status[endNode.id]=='C'){
 
                     continue;
@@ -130,6 +156,7 @@ public class PathFindAStar{
                 
                 //Si no estaba abierto hay que insertarlo
                 if( status[endNode.id] == 'U'){
+                    status[endNode.id] = 'O';
                     open.Add(endNodeRecord);
                 }
 
@@ -154,7 +181,9 @@ public class PathFindAStar{
             
             
             //Descomentar esta linea si quieres debuggear 
-            //currentNode.DrawTriangle(40f);
+            
+            //count_open++;
+            //currentNode.DrawTriangle(10f);
            
 
         }
@@ -185,9 +214,16 @@ public class PathFindAStar{
         }
         path[0] = start.center;
 
-        
-        // start.DrawTriangle(40f);
-        // goal.DrawTriangle(40f);
+        //Descomentar para debuggeo
+        // Debug.Log("RESULT A*:");
+        // Debug.Log("Nodos abiertos");
+        // Debug.Log(count_open);
+        // Debug.Log(walkable.Length);
+        // Debug.Log("origin:");
+        // Debug.Log(start.center);
+        // Debug.Log("goal:");
+        // Debug.Log(goal.center);
+
         return path;
 
 

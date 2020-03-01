@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7432452970759017370}
   - component: {fileID: 5020232673275069337}
   m_Layer: 0
-  m_Name: PokeBall 1
+  m_Name: StaticBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

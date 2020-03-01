@@ -23,12 +23,14 @@ public class dugtrio_state_machine : MonoBehaviour {
     public static_graph graphComponent;//componente que tiene guardado el grafo
     Graph graph;
     PathFindAStar aStar;
+    string[] walkable = new string[]{"Earth"};//esto es para saber sobre que tipos de nodos podemos caminar
 
    
     //DATOS MAQUINA DE ESTADOS
     StateMachine dugtrioMachine;
     public float radiusHide = 30f;//radio para asustarse y meterse bajo tierra
     public float undergroundCoord = 5f;
+
     
 
     void Start(){
@@ -39,7 +41,7 @@ public class dugtrio_state_machine : MonoBehaviour {
         kineticsTrainer = trainer.kineticsAgent;
         kineticsRival = rival.kineticsAgent;
         graph = graphComponent.graph;
-        aStar = new PathFindAStar(graph,null ,null,null);
+        aStar = new PathFindAStar(graph,null ,null,null, walkable);
         seek = new Seek(kinDugtrio, kinDugtrio, dugtrio.maxspeed);
 
         Kinetics[] targets = new Kinetics[2];
@@ -58,7 +60,7 @@ public class dugtrio_state_machine : MonoBehaviour {
 
         //1. ACCIONES:
 
-        UpdateAStarRandom updateAStar = new UpdateAStarRandom(aStar, graph, kinDugtrio, null);
+        UpdateAStarRandom updateAStar = new UpdateAStarRandom(aStar, graph, kinDugtrio, null, walkable);
         ShowIcon showHole = new ShowIcon(this.gameObject, "Digging");
         DisableIcon disableHole  = new DisableIcon(this.gameObject, "Digging");
         FollowPathOfPoints followPath = new FollowPathOfPoints(steeringDugtrio, seek, null);

@@ -4,6 +4,7 @@ using UnityEngine;
 public class Node {
 
     public int id;//Este entero sera util para generar arreglos 
+    public string type;//Este string representa si el nodo es tierra agua etc..
 
     //Vertices de del triangulo
     public Vector3 vertexA;
@@ -24,9 +25,10 @@ public class Node {
     public Node prev = null;
 
 
-    public Node(int Id, Vector3 VertexA, Vector3 VertexB, Vector3 VertexC){
+    public Node(int Id, Vector3 VertexA, Vector3 VertexB, Vector3 VertexC, string Type){
 
         id = Id;
+        type = Type;
 
         vertexA = VertexA;
         vertexB = VertexB;

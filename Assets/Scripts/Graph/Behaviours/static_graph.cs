@@ -92,9 +92,9 @@ public class static_graph : MonoBehaviour
             target.downRight = target.corner(center, offsetX, -offsetY);
             
             // Generamos los dos triangulos a partir de un rectangulo
-            nodes[id]=new Node(id, target.upLeft, target.downLeft, target.downRight);
+            nodes[id]=new Node(id, target.upLeft, target.downLeft, target.downRight, target.type);
             id++;
-            nodes[id]=new Node(id, target.upLeft, target.downRight, target.upRight);
+            nodes[id]=new Node(id, target.upLeft, target.downRight, target.upRight, target.type);
             id++;
 
         }
@@ -195,6 +195,8 @@ public class static_graph : MonoBehaviour
 
         }
 
+        //descomentar para dibujar el grafo
+        //graph.DrawGraph(40f);
         return graph;
 
     }

@@ -15,6 +15,7 @@ public class static_mesh : MonoBehaviour
     [SerializeField] 
     public Vector3 downRight;
 
+    public string type = "Earth";
 
 
     // Funcion que toma el centro de un rectangulo y el largo de sus lados 
