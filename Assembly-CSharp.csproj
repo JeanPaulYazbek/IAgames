@@ -117,6 +117,10 @@
      <Compile Include="Assets\Scripts\Movement\path.cs" />
      <Compile Include="Assets\Scripts\Movement\proyectile_functions.cs" />
      <Compile Include="Assets\Scripts\Movement\steering_output.cs" />
+     <Compile Include="Assets\Scripts\Sense\modality.cs" />
+     <Compile Include="Assets\Scripts\Sense\regional_sense_manager.cs" />
+     <Compile Include="Assets\Scripts\Sense\sensor.cs" />
+     <Compile Include="Assets\Scripts\Sense\signal.cs" />
      <Compile Include="Assets\Scripts\Shooting\Behaviors\auto_shoot.cs" />
      <Compile Include="Assets\Scripts\Shooting\Behaviors\shoot.cs" />
      <Compile Include="Assets\Scripts\StateMachine\action.cs" />

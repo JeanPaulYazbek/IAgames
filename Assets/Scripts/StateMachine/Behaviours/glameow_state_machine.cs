@@ -41,6 +41,9 @@ public class glameow_state_machine : MonoBehaviour {
         kineticsTrainer = trainer.kineticsAgent;
         kineticsRival = rival.kineticsAgent;
 
+        Vector3 center = (kinGlameow.transform.position + kineticsTarget.transform.position) / 2;
+
+
         //COMENZAMOS A CONSTRUIR LA MAQUINA DE ESTADOS
 
         //1. ACCIONES:
@@ -103,13 +106,16 @@ public class glameow_state_machine : MonoBehaviour {
 
         //3. CONDICIONES:
 
+        TooCloseToPoint closeCenterTrainer = new TooCloseToPoint(center, kineticsTrainer, radiusAlert);
         TooClose closeTrainer = new TooClose(kinGlameow, kineticsTrainer, radiusAlert);
         TooClose veryCloseTrainer = new TooClose(kinGlameow, kineticsTrainer, radiusRun); 
+        TooCloseToPoint closeCenterRival = new TooCloseToPoint(center, kineticsRival, radiusAlert);
         TooClose closeRival = new TooClose(kinGlameow, kineticsRival, radiusAlert);
         TooClose veryCloseRival = new TooClose(kinGlameow, kineticsRival, radiusRun); 
        
 
         //Estas son las que de verdad necesitamos
+        OrCondition anyTargetCloseCenter = new OrCondition(closeCenterRival, closeCenterTrainer);
         OrCondition anyTargetClose = new OrCondition(closeTrainer, closeRival);
         OrCondition anyTargetVeryClose = new OrCondition(veryCloseRival, veryCloseTrainer);
         NotCondition noOneClose = new NotCondition(anyTargetClose);
@@ -117,7 +123,7 @@ public class glameow_state_machine : MonoBehaviour {
 
         List<Action> noActions = new List<Action>();
         //4. TRANSICIONES:
-        Transition anyHumanClose = new Transition(anyTargetClose, noActions, alert);
+        Transition anyHumanClose = new Transition(anyTargetCloseCenter, noActions, alert);
         Transition noHumanClose =  new Transition(noOneClose, noActions, stalkTrainer);
         Transition anyHumanVeryClose = new Transition(anyTargetVeryClose, noActions, stalkTrainer);
       

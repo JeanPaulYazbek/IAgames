@@ -41,6 +41,9 @@ public class meowth_state_machine : MonoBehaviour {
         kineticsTrainer = trainer.kineticsAgent;
         kineticsRival = rival.kineticsAgent;
 
+        // Centro de masa de glameow y meowth sera util pra cierta condicion
+        Vector3 center = (kinMeowth.transform.position + kineticsTarget.transform.position) / 2;
+
         //COMENZAMOS A CONSTRUIR LA MAQUINA DE ESTADOS
 
         //1. ACCIONES:
@@ -117,22 +120,27 @@ public class meowth_state_machine : MonoBehaviour {
 
         //3. CONDICIONES:
 
+        TooCloseToPoint closeCenterTrainer = new TooCloseToPoint(center, kineticsTrainer, radiusAlert);
         TooClose closeTrainer = new TooClose(kinMeowth, kineticsTrainer, radiusAlert);
-        TooClose veryCloseTrainer = new TooClose(kinMeowth, kineticsTrainer, radiusRun); 
+        TooClose veryCloseTrainer = new TooClose(kinMeowth, kineticsTrainer, radiusRun);
+        TooCloseToPoint closeCenterRival = new TooCloseToPoint(center, kineticsRival, radiusAlert);
         TooClose closeRival = new TooClose(kinMeowth, kineticsRival, radiusAlert);
         TooClose veryCloseRival = new TooClose(kinMeowth, kineticsRival, radiusRun); 
        
 
         //Estas son las que de verdad necesitamos
+        OrCondition anyTargetCloseCenter = new OrCondition(closeCenterRival, closeCenterTrainer);
         OrCondition anyTargetClose = new OrCondition(closeTrainer, closeRival);
         OrCondition anyTargetVeryClose = new OrCondition(veryCloseRival, veryCloseTrainer);
         NotCondition noOneClose = new NotCondition(anyTargetClose);
         NotCondition noOneVeryClose = new NotCondition(anyTargetVeryClose);
+        
         WasCaught targetCaught = new WasCaught(kineticsTarget);
 
 
         List<Action> noActions = new List<Action>();
         //4. TRANSICIONES:
+        Transition anyHumanCloseCenter = new Transition(anyTargetCloseCenter, noActions, alert);
         Transition anyHumanClose = new Transition(anyTargetClose, noActions, alert);
         Transition noHumanClose =  new Transition(noOneClose, noActions, stalk);
         Transition anyHumanVeryClose = new Transition(anyTargetVeryClose, noActions, runAway);
@@ -140,7 +148,7 @@ public class meowth_state_machine : MonoBehaviour {
         Transition targetWasCaught = new Transition(targetCaught, noActions, worry);
     
         //4.1 AGREGAMOS TRANSICIONES A ESTADOS
-        List<Transition> transitions = new List<Transition>() {anyHumanClose, targetWasCaught};
+        List<Transition> transitions = new List<Transition>() {anyHumanCloseCenter, targetWasCaught};
         stalkTarget.transitions = transitions;
 
         transitions = new List<Transition>() {noHumanClose, anyHumanVeryClose, targetWasCaught};

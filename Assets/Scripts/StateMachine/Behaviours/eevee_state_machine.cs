@@ -53,13 +53,13 @@ public class eevee_state_machine : MonoBehaviour {
         kineticsTrainer = trainer.kineticsAgent;
         kineticsRival = rival.kineticsAgent;
 
-        Vector3 center = Vector3.zero;//ncesitamos el centro de masa de los eevee
+        Vector3 center = Vector3.zero;// Necesitamos el centro de masa de los eevee
 
         for(int k = 0; k < allEevees.Length; k++){
             center += allEevees[k].transform.position;
         }
 
-        center  = center / allEevees.Length;
+        center  = center / allEevees.Length;// Centro de masas
         
         //pokemones
         stones = GameObject.FindGameObjectsWithTag("Stone");
