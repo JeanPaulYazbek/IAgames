@@ -56,7 +56,7 @@ public class RegionalSenseManager {
                 continue;
             }
 
-            if(!(signal.modality.extraChecks(signal, sensor))){
+            if(!(signal.modality.ExtraChecks(signal, sensor))){
                 continue;
             }
 
