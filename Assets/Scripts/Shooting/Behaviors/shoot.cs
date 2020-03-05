@@ -25,6 +25,7 @@ public class shoot : MonoBehaviour
     
     //Aqui guardaremos los pokemones que pueden ser atrapados
     GameObject[] pokemons;
+    pokemon_data[] pokemons_data;
     List<Kinetics> pokemons_list = new List<Kinetics>();
     Kinetics[] pokemons_kins;
 
@@ -32,6 +33,9 @@ public class shoot : MonoBehaviour
     //obstaculos que evadir
     List<Transform> obstacles_list = new List<Transform>();
     Transform[] obstacles;
+
+    //MANEJADOR DE PUNTOS
+    public point_manager manager;
     
     // Start is called before the first frame update
     void Start()
@@ -42,11 +46,14 @@ public class shoot : MonoBehaviour
 
         //POKEMONS
         pokemons = GameObject.FindGameObjectsWithTag("Pokemon");
+        List<pokemon_data> pokemonDataList = new List<pokemon_data>();
         for (int i = 0; i<pokemons.Length; i++){
             
             pokemons_list.Add(pokemons[i].GetComponent<static_data>().kineticsAgent);
+            pokemonDataList.Add(pokemons[i].GetComponent<pokemon_data>());
            
         }
+        pokemons_data = pokemonDataList.ToArray();
         pokemons_kins =  pokemons_list.ToArray();
 
         //OBSTACLES
@@ -54,6 +61,7 @@ public class shoot : MonoBehaviour
         for (int i = 0; i<obstaclesGo.Length; i++){
             
             obstacles_list.Add(obstaclesGo[i].GetComponent<Transform>());
+
            
         }
 
@@ -140,9 +148,11 @@ public class shoot : MonoBehaviour
         static_shoot ballStatic = pokeBall.GetComponent<static_shoot>();
         ballStatic.pokemons = pokemons_kins;
         ballStatic.pokemonsObjs = pokemons;
+        ballStatic.pokemonsData = pokemons_data;
         ballStatic.obstacles = obstacles;
         ballStatic.speed = ballSpeed;
         ballStatic.direction = agentVelocity;
+        ballStatic.pointManager = manager;
         return ballStatic;
 
     }

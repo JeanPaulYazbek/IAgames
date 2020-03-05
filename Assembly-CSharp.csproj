@@ -53,7 +53,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\eevee.cs" />
      <Compile Include="Assets\Scripts\Camera\follow_player.cs" />
      <Compile Include="Assets\Scripts\Graph\Behaviours\static_graph.cs" />
      <Compile Include="Assets\Scripts\Graph\Behaviours\Trainers\find_pokemons_Astar.cs" />
@@ -65,6 +64,10 @@
      <Compile Include="Assets\Scripts\Graph\node.cs" />
      <Compile Include="Assets\Scripts\Graph\Path_algorithms\pathfindAStar.cs" />
      <Compile Include="Assets\Scripts\Graph\Path_algorithms\smooth_path.cs" />
+     <Compile Include="Assets\Scripts\Manager\InstructionManager\InstructionManager.cs" />
+     <Compile Include="Assets\Scripts\Manager\LoseWinManager\PlayAgainManager.cs" />
+     <Compile Include="Assets\Scripts\Manager\MenuManager\MenuManager.cs" />
+     <Compile Include="Assets\Scripts\Manager\PointManger\point_manager.cs" />
      <Compile Include="Assets\Scripts\Movement\Algorithms\align.cs" />
      <Compile Include="Assets\Scripts\Movement\Algorithms\arrive.cs" />
      <Compile Include="Assets\Scripts\Movement\Algorithms\blended_steering.cs" />

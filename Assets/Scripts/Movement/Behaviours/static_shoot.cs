@@ -21,7 +21,10 @@ public class static_shoot : MonoBehaviour
     //EXTERNOS
     public Kinetics[] pokemons;//necesiitamos una lista de pokemons para saber si los podemos atrapar
     public GameObject[] pokemonsObjs;//estos sera utiles cuando queramos deshabilitar los pokemones 
+    public pokemon_data[] pokemonsData;//aqui esta cuanto vale cada pokemon
     public Transform[] obstacles;//necesitamos los obstaculos para cuando choquemos con ellos 
+
+    public point_manager pointManager;//a el le notificaremos si un pokemon es atrapado
 
     
     // Start is called before the first frame update
@@ -53,6 +56,9 @@ public class static_shoot : MonoBehaviour
                 }
                 //HACEMOS QUE EL POKEMON DESAPAREZCA
                 DisablePokemon(pokemonsObjs[pokemonIndex], caught_poke);
+                //ACTUALZAMOS PUNTUACION
+                UpdateScore(pokemonIndex);
+
                 
             }
             Object.Destroy(this.gameObject);
@@ -75,5 +81,15 @@ public class static_shoot : MonoBehaviour
         }
        
 
+    }
+
+    void UpdateScore(int pokemonIndex){
+        int value = pokemonsData[pokemonIndex].value;
+        // Si la bola la lanzo el jugador es el index 0
+        int ownerIndex = 0;//index para el manejador de quien lanzo la bola
+        if(ultraBall){//si la lanzo el rival
+            ownerIndex = 1;
+        }
+        pointManager.UpdateScore(ownerIndex, value);
     }
 }

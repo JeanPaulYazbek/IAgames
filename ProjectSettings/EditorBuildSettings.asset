@@ -4,5 +4,20 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: e32e23bbc085d48859e3be866477bf58
+  - enabled: 1
+    path: Assets/Scenes/Game.unity
+    guid: d1d6991183ac748f8a7743e434b1172a
+  - enabled: 1
+    path: Assets/Scenes/WinnerScreen.unity
+    guid: 8c95a923e4702418e994207f66739717
+  - enabled: 1
+    path: Assets/Scenes/LoserScreen.unity
+    guid: 4327fbfe3cb8d47e48cba6c5105cfbc8
+  - enabled: 1
+    path: Assets/Scenes/Instructions.unity
+    guid: ef8f5d526454e47bba26366cad78a652
   m_configObjects: {}

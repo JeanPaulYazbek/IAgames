@@ -39,7 +39,7 @@ public class KineticsShoot
     //funcion que calcula la nueva posicion de un proyectil
     //si devuelve [0,-1] es que no hay nada especial pasando y puede seguir
     //si devuelve [1,-1] es que el proyectil choco con algo y debe desaparecer
-    //si devuelve [2.n] es que la bola atrapo un pokemon y n es el indice del pokemon en el arreglo
+    //si devuelve [2,n] es que la bola atrapo un pokemon y n es el indice del pokemon en el arreglo
     public int[] UpdateKinetics(float time){
 
         int[] answer = new int[2];

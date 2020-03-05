@@ -5,6 +5,8 @@ public class pokemon_data : MonoBehaviour
 {
     SpriteRenderer mySprite;
     public Sprite runSprite;
+
+    public int value = 1;
     public bool evolved = false;//esto se volvera true si evolucionamos dentro del juego
     public Sprite[] evolution_sprites;//arreglo con los sprites de nuestras evoluciones 
     public string[] evolution_methods;//areglo con el nombre del metodo de evolucion
@@ -30,8 +32,12 @@ public class pokemon_data : MonoBehaviour
         if(!(evolSprite is null)){
             mySprite.sprite = evolSprite;
         }
+
+        value++;//si evolucionas tu valor aumenta en 1
     }
 
+    //Cuando un pokemon va a correr usa esto para cambiar su sprite a uno 
+    //de correr
     public void Run(){
         mySprite.sprite = runSprite;
     }
