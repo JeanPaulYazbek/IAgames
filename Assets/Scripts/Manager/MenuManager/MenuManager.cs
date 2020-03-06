@@ -5,11 +5,11 @@ public class MenuManager : MonoBehaviour
 {
     
     public void StartGame(){
-        SceneManager.LoadScene("Game", LoadSceneMode.Single);
+        SceneManager.LoadScene("Game");
     }
 
     public void ShowInstructions(){
-        SceneManager.LoadScene("Instructions", LoadSceneMode.Single);
+        SceneManager.LoadScene("Instructions");
 
     }
 }
