@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using System;
 using UnityEngine;
+
+// Esta clase se encarga de mandar y encolar sennales a 
+// quienes las puedan recibir
 public class RegionalSenseManager {
 
     class Notification {
@@ -10,9 +13,9 @@ public class RegionalSenseManager {
         public Signal signal;
 
         public Notification(DateTime Time, Sensor Sensor, Signal Signal){
-            time = Time;
-            sensor = Sensor;
-            signal = Signal;
+            time = Time;// Tiempo cuando se debe enviar esta sennal
+            sensor = Sensor;// Sensor al que se envia
+            signal = Signal;// Sennal a enviar
         }
     }
 
@@ -32,10 +35,12 @@ public class RegionalSenseManager {
         List<Sensor> validSensors = new List<Sensor>();
 
 
-        float distance;
-        float intensity;
-        DateTime time;
-        Notification notification;
+        float distance; // Distancia entre el origem de la sennal y  el sensor
+        float intensity; // Intensidad de la sennal
+        DateTime time; // Tiempo cuando se debe enviar la sennal
+        Notification notification; //  Notificacion en caso de que el sensor sea compatible
+
+        // Revisamos cada sensor para ver cual es compatible con la sennal
         foreach(var sensor in sensors){
 
             // Si el sensor no tiene el mismo tipo que la sennal que se encia
@@ -43,8 +48,10 @@ public class RegionalSenseManager {
                 continue;
             }
 
+            //Distancia entre el origen de la sennal y el sensor
             distance =  Vector3.Distance(signal.transform.position, sensor.transform.position);
-            // Si de donde viene la sennal es muy lejos como para que el sensor lo sienta
+
+            // Si la sennal esta demasiado lejos como para que llegue
             if(signal.modality.maximumRange < distance){
                 continue;
             }
@@ -92,9 +99,8 @@ public class RegionalSenseManager {
                 notificationQueue.Dequeue();
             }else{ // Recordando que la cola esta ordenada por fecha entonces
                    // si estamos aqui es que nadie mas en la cola podria tener el tiempo que buscmoas
-
-                // Salimos
-                break;
+                
+                break;// Salimos
             }
         }
     }

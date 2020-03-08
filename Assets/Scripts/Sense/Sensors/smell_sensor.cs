@@ -17,4 +17,9 @@ public class SmellSensor : Sensor {
         notified = true;
         smellType = signal.modality.description;
     }
+
+    public override void ResetSensor(){
+        notified = false;
+        smellType = "";
+    }
 }

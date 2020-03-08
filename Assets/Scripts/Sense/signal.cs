@@ -1,4 +1,6 @@
 using UnityEngine;
+
+// Esta case representa las sennales
 public class Signal{
 
     public float strength;//Intensidad inicial desde el origen de la sennal

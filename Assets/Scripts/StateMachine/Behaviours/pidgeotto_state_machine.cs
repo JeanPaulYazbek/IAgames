@@ -9,13 +9,6 @@ public class pidgeotto_state_machine : MonoBehaviour {
     Kinetics kinPidgeotto;
     SteeringOutput steeringPidgeotto;
 
-   
-    //DATOS DE LOS TRAINERS
-    // public static_data trainer;
-    // Kinetics kineticsTrainer;
-    // public static_data rival;
-    // Kinetics kineticsRival;
-
 
     //DATOS SEEK
     Seek seek;
@@ -29,8 +22,7 @@ public class pidgeotto_state_machine : MonoBehaviour {
    
     //DATOS MAQUINA DE ESTADOS
     StateMachine pidgeottoMachine;
-    // public float radiusHide = 30f;//radio para asustarse y meterse bajo tierra
-    // public float undergroundCoord = 5f;
+    
 
     
 
@@ -39,15 +31,11 @@ public class pidgeotto_state_machine : MonoBehaviour {
         //INICIALIZAMOS LA DATA DEL EXTERIOR
         kinPidgeotto = pidgeotto.kineticsAgent;
         steeringPidgeotto = pidgeotto.steeringAgent;
-        // kineticsTrainer = trainer.kineticsAgent;
-        // kineticsRival = rival.kineticsAgent;
+        
         graph = graphComponent.graph;
         aStar = new PathFindAStar(graph,null ,null,null, walkable);
         seek = new Seek(kinPidgeotto, kinPidgeotto, pidgeotto.maxspeed);
 
-        // Kinetics[] targets = new Kinetics[2];
-        // targets[0]=kineticsTrainer;
-        // targets[1]=kineticsRival;
 
         //obstaculos
         GameObject[] obstacles = GameObject.FindGameObjectsWithTag("Obstacle");
@@ -82,13 +70,8 @@ public class pidgeotto_state_machine : MonoBehaviour {
 
         //3. CONDICIONES:
 
-        // TooClose closeTrainer = new TooClose(kinPidgeotto, kineticsTrainer, radiusHide);
-        // TooClose closeRival = new TooClose(kinPidgeotto, kineticsRival, radiusHide);
         ArrivedToPosition arrived = new ArrivedToPosition(new Vector3(), transform, 10f);
         updateAStar.arrived = arrived;
-
-        // OrCondition anyTargetClose = new OrCondition(closeTrainer, closeRival);
-        // NotCondition noOneClose = new NotCondition(anyTargetClose);
         
         
         //4. TRANSICIONES:
@@ -96,10 +79,7 @@ public class pidgeotto_state_machine : MonoBehaviour {
         List<Action> noActions = new List<Action>();
         List<Action> transitionActions;
 
-        // transitionActions =  new List<Action>(){showHole, underground};
-        // Transition anyHumanClose = new Transition(closeAndNotUndeground, transitionActions, followPathState);
-        // transitionActions =  new List<Action>(){disableHole, getOutOfGround};
-        // Transition noHumanClose =  new Transition(notCloseAndUndeground, transitionActions, followPathState);
+
         transitionActions =  new List<Action>(){updateAStar, updateFollow};
         Transition pathEnd = new Transition(arrived,transitionActions , followPathState);
       

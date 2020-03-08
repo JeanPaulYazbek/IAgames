@@ -1,3 +1,5 @@
+//Esta clase contiene los datos necesarios para emitir 
+//sennales de un tipo de sentido
 public abstract class Modality {
 
     // Nombre del sentido de la modalidad

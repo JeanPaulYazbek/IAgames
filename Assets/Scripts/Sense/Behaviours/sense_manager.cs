@@ -4,12 +4,10 @@ public class sense_manager : MonoBehaviour {
 
     public RegionalSenseManager senseManager;
     public smell_sensor[] smellSensors;
+    public sound_sensor[] soundSensors;
+
+    
     void Awake(){
-
-    }
-
-    void Start(){
-
         List<Sensor> allSensors  = new List<Sensor>();
 
 
@@ -18,8 +16,18 @@ public class sense_manager : MonoBehaviour {
             allSensors.Add(smellSensors[i].sensor);
         }
 
+        // Agregamos los sensores de sonidos
+        for(int i = 0; i<soundSensors.Length; i++){
+            allSensors.Add(soundSensors[i].sensor);
+        }
+
         // Creamos el sense manager con los sensores dados
         senseManager = new RegionalSenseManager(allSensors);
+    }
+
+    void Start(){
+
+        
 
 
     }
