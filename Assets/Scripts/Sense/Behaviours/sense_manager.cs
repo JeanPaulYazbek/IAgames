@@ -7,7 +7,7 @@ public class sense_manager : MonoBehaviour {
     public sound_sensor[] soundSensors;
 
     
-    void Awake(){
+    void Start(){
         List<Sensor> allSensors  = new List<Sensor>();
 
 
@@ -25,10 +25,4 @@ public class sense_manager : MonoBehaviour {
         senseManager = new RegionalSenseManager(allSensors);
     }
 
-    void Start(){
-
-        
-
-
-    }
 }

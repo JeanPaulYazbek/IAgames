@@ -56,7 +56,7 @@ public class RegionalSenseManager {
                 continue;
             }
 
-            intensity = signal.strength * (float)Math.Pow(signal.modality.attenuation, distance);
+            intensity = signal.Intensity(distance);
 
             // Si cuando la sennal llega es muy pequenna como para que el sensor la sienta
             if(intensity < sensor.threshold){

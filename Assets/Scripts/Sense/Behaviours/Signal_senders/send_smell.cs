@@ -14,6 +14,7 @@ public class send_smell : MonoBehaviour {
     public float inverseTransmissionSpeed;// Cantidad de tiempo (si es tiempo no velocidad) que toma recorrer una unidad de distancia
 
     //DATOS MANEJADOR DE SENNALES
+    public sense_manager compManager;
     RegionalSenseManager manager;
 
     void Awake(){
@@ -22,16 +23,13 @@ public class send_smell : MonoBehaviour {
 
     }
 
-    void Start(){
-        // Hay un solo objeto de unity con el sense manager, lo buscamos y le sacamos el RegionalSenseManager 
-        manager = GameObject.Find("SenseManager").GetComponent<sense_manager>().senseManager;
-    }
 
     void Update(){
+
+        manager = compManager.senseManager;
         // Enviamos la sennal cada frame
         manager.AddSignal(signal);
     }
-
 
 
 }

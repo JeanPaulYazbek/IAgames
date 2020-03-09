@@ -9,11 +9,11 @@ public class FollowPathOfPoints : Action {
                 //steeringAgent
     Vector3[] path;//arreglo de puntos a seguir, al menos un punto es necesario
     int currentIndexPoint;//indice del punto que estamos siguiendo en este momento
-    Vector3 currentTargetPoint;//hacia donde vamos
+    public Vector3 currentTargetPoint;//hacia donde vamos
 
     bool underground;//esto solo debe ser true si el personaje que usea esta accion se va a mover bajo tierra como dugtrio
 
-    Vector3 oldTargetPoint;
+    public Vector3 oldTargetPoint;
 
     public FollowPathOfPoints(SteeringOutput SteeringAgent, Seek Seek, Vector3[] Path, bool Underground){
         steeringAgent = SteeringAgent;

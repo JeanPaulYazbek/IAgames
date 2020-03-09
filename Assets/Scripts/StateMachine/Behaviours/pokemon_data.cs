@@ -5,6 +5,8 @@ public class pokemon_data : MonoBehaviour
 {
     SpriteRenderer mySprite;
     public Sprite runSprite;
+    public Sprite flySprite;
+    public Sprite defaultSprite;
 
     public int value = 1;
     public bool evolved = false;//esto se volvera true si evolucionamos dentro del juego
@@ -40,6 +42,15 @@ public class pokemon_data : MonoBehaviour
     //de correr
     public void Run(){
         mySprite.sprite = runSprite;
+    }
+
+    //Cuando un pokemon tenga un sprite de vuelo
+    public void Fly(){
+        mySprite.sprite = flySprite;
+    }
+
+    public void DefaultSprite(){
+        mySprite.sprite = defaultSprite;
     }
 
 

@@ -6582,6 +6582,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runSprite: {fileID: 21300000, guid: f047428c552a94b9ca982045b494a9d3, type: 3}
+  flySprite: {fileID: 0}
+  defaultSprite: {fileID: 0}
   value: 1
   evolved: 0
   evolution_sprites:
@@ -8093,6 +8095,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runSprite: {fileID: 0}
+  flySprite: {fileID: 0}
+  defaultSprite: {fileID: 0}
   value: 3
   evolved: 0
   evolution_sprites: []
@@ -9471,7 +9475,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -69.99997, y: -24.49997}
+  m_AnchoredPosition: {x: -70, y: -24.5}
   m_SizeDelta: {x: 110, y: 110}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &452887019
@@ -12721,6 +12725,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runSprite: {fileID: 0}
+  flySprite: {fileID: 0}
+  defaultSprite: {fileID: 0}
   value: 1
   evolved: 0
   evolution_sprites: []
@@ -15109,6 +15115,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runSprite: {fileID: 0}
+  flySprite: {fileID: 0}
+  defaultSprite: {fileID: 0}
   value: 2
   evolved: 0
   evolution_sprites: []
@@ -18568,6 +18576,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runSprite: {fileID: 0}
+  flySprite: {fileID: 0}
+  defaultSprite: {fileID: 0}
   value: 2
   evolved: 0
   evolution_sprites: []
@@ -18579,7 +18589,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 841684855}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ea401a7344b748738cecc378f7d23d3, type: 3}
   m_Name: 
@@ -18589,6 +18599,7 @@ MonoBehaviour:
   maximumRange: 40
   attenuation: 0.93
   inverseTransmissionSpeed: 0.05
+  compManager: {fileID: 1004683626}
 --- !u!114 &841684861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18596,7 +18607,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 841684855}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f7bcfe0a8b874d00bb94f09ea517806, type: 3}
   m_Name: 
@@ -20588,6 +20599,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runSprite: {fileID: 21300000, guid: dff2693bc93cc45e38dc315ec9766a2f, type: 3}
+  flySprite: {fileID: 0}
+  defaultSprite: {fileID: 0}
   value: 1
   evolved: 0
   evolution_sprites:
@@ -21031,7 +21044,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 965224534}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a6d6212be679e424dbcf28c544602385, type: 3}
   m_Name: 
@@ -21051,6 +21064,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runSprite: {fileID: 0}
+  flySprite: {fileID: 0}
+  defaultSprite: {fileID: 0}
   value: 2
   evolved: 0
   evolution_sprites: []
@@ -21549,7 +21564,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   smellSensors:
   - {fileID: 1347758967}
-  soundSensors: []
+  soundSensors:
+  - {fileID: 1347758970}
 --- !u!4 &1004683627
 Transform:
   m_ObjectHideFlags: 0
@@ -43844,6 +43860,7 @@ GameObject:
   - component: {fileID: 1347758968}
   - component: {fileID: 1347758966}
   - component: {fileID: 1347758967}
+  - component: {fileID: 1347758970}
   - component: {fileID: 1347758969}
   m_Layer: 0
   m_Name: Trainer
@@ -44088,6 +44105,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 219646563}
+  - {fileID: 1663946766}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -44158,6 +44176,20 @@ MonoBehaviour:
   smellSensorScript: {fileID: 1347758967}
   poisonedSpeed: 2
   poisonTimer: 60
+--- !u!114 &1347758970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1347758952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe4bb1d20364f48378f8585f5e29abfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  threshold: 10
+  player: 1
 --- !u!1 &1348282142
 GameObject:
   m_ObjectHideFlags: 0
@@ -50213,6 +50245,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runSprite: {fileID: 21300000, guid: 24c1977e644ca4344817667df17d4a27, type: 3}
+  flySprite: {fileID: 0}
+  defaultSprite: {fileID: 0}
   value: 1
   evolved: 0
   evolution_sprites:
@@ -50539,6 +50573,85 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1661029116}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1663946765
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1663946766}
+  - component: {fileID: 1663946767}
+  m_Layer: 0
+  m_Name: Sleeping
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1663946766
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663946765}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 2.85, z: 0}
+  m_LocalScale: {x: 0.35, y: 0.38, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1347758965}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1663946767
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663946765}
+  m_Enabled: 0
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 6ac87313fe7234a4e9b2db5ee9762d00, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 7.86, y: 7}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1669299697
 GameObject:
   m_ObjectHideFlags: 0
@@ -51145,6 +51258,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runSprite: {fileID: 0}
+  flySprite: {fileID: 0}
+  defaultSprite: {fileID: 0}
   value: 1
   evolved: 0
   evolution_sprites: []
@@ -52353,6 +52468,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runSprite: {fileID: 21300000, guid: 24c1977e644ca4344817667df17d4a27, type: 3}
+  flySprite: {fileID: 0}
+  defaultSprite: {fileID: 0}
   value: 1
   evolved: 0
   evolution_sprites:
@@ -52690,8 +52807,11 @@ GameObject:
   - component: {fileID: 1734514022}
   - component: {fileID: 1734514026}
   - component: {fileID: 1734514025}
-  - component: {fileID: 1734514024}
+  - component: {fileID: 1734514027}
   - component: {fileID: 1734514023}
+  - component: {fileID: 1734514024}
+  - component: {fileID: 1734514028}
+  - component: {fileID: 1734514029}
   m_Layer: 0
   m_Name: Jigglypuff
   m_TagString: Pokemon
@@ -52774,6 +52894,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runSprite: {fileID: 0}
+  flySprite: {fileID: 21300000, guid: 7fe52312b7fe34b0195861d6b91cbc4e, type: 3}
+  defaultSprite: {fileID: 21300000, guid: 015cf40f9258f46e3b54410827204f40, type: 3}
   value: 2
   evolved: 0
   evolution_sprites: []
@@ -52814,6 +52936,137 @@ MonoBehaviour:
   maxspeed: 5
   flocker: 0
   jumper: 1
+--- !u!82 &1734514027
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734514021}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 7088371de01f74798a0a9f6c3f66d73f, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &1734514028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734514021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ecf69147fea04c8ea5aea7c9c1744c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strength: 80
+  audioToSend: {fileID: 1734514027}
+  description: Sleep
+  maximumRange: 45
+  attenuation: 0.98
+  inverseTransmissionSpeed: 0.001
+  compManager: {fileID: 1004683626}
+--- !u!114 &1734514029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734514021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3a694ae6242d427ba029bc5da72614b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jigglypuff: {fileID: 1734514026}
+  jigglypuffData: {fileID: 1734514024}
+  soundComp: {fileID: 1734514028}
+  graphComponent: {fileID: 1021140799}
 --- !u!1 &1737933455
 GameObject:
   m_ObjectHideFlags: 0
@@ -57173,6 +57426,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runSprite: {fileID: 21300000, guid: f047428c552a94b9ca982045b494a9d3, type: 3}
+  flySprite: {fileID: 0}
+  defaultSprite: {fileID: 0}
   value: 1
   evolved: 0
   evolution_sprites:
@@ -58358,6 +58613,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runSprite: {fileID: 0}
+  flySprite: {fileID: 0}
+  defaultSprite: {fileID: 0}
   value: 1
   evolved: 0
   evolution_sprites: []
