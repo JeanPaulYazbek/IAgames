@@ -76,10 +76,10 @@ public class dugtrio_state_machine : MonoBehaviour {
 
         //2.a estado para seguir camino
 
-        entryActions = new List<Action>() {};//al entrar al estado ponemos un corazon
-        actions= new List<Action>() {followPath};//durante el estado perseguimos al enamorado
-        exitActions= new List<Action>() {};//al salir quitamos el corazon
-
+        entryActions = new List<Action>() {};
+        actions= new List<Action>() {followPath};//durante el estado seguimos el camino
+        exitActions= new List<Action>() {};
+        
         State followPathState = new State(actions, entryActions, exitActions);
 
         //3. CONDICIONES:

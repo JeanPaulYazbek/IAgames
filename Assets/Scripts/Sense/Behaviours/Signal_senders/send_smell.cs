@@ -31,5 +31,9 @@ public class send_smell : MonoBehaviour {
         manager.AddSignal(signal);
     }
 
+    public void UpdateSignalDescription(string newDescription){
+        signal.modality.description = newDescription;
+    }
+
 
 }

@@ -7,6 +7,10 @@ public class trainer_status_machine : MonoBehaviour
 
     //DATOS TRAINER
     public static_data trainerStaticData;
+    public follow_mouse followMouse;
+    public Kinetics kinTrainer;
+    public SteeringOutput steeringTrainer;
+    public shoot shoot;
 
     //DATOS SENSORES
     public smell_sensor smellSensorScript;
@@ -30,6 +34,8 @@ public class trainer_status_machine : MonoBehaviour
         //DATOS EXTERNOS
         smellSensor = smellSensorScript.sensor;
         soundSensor = soundSensorScript.sensor;
+        kinTrainer = trainerStaticData.kineticsAgent;
+        steeringTrainer = trainerStaticData.steeringAgent;
 
         //COMENZAMOS A CONSTRUIR LA MAQUINA DE ESTADOS
 
@@ -42,9 +48,20 @@ public class trainer_status_machine : MonoBehaviour
         SetTimer setSleepClock;
         ResetSensor resetSmellSensor= new ResetSensor(smellSensor);
         ResetSensor resetSoundSensor = new ResetSensor(soundSensor);
+
+        List<ResetSensor> resets = new List<ResetSensor>(){resetSmellSensor, resetSoundSensor};
+        ResetSensorList resetAllSensor = new ResetSensorList(resets);
+
         UpdateMaxSpeed setOriginalSpeed = new UpdateMaxSpeed(trainerStaticData, trainerStaticData.maxspeed);
         UpdateMaxSpeed setSlowSpeed = new UpdateMaxSpeed(trainerStaticData, poisonedSpeed);
         UpdateMaxSpeed setZeroSpeed = new UpdateMaxSpeed(trainerStaticData, 0f);
+        SetAngularSpeed setAngularToZero = new SetAngularSpeed(kinTrainer, 0f);
+        SetAngularAccel setAngularAccelToZero = new SetAngularAccel(steeringTrainer, 0f);
+        DisableScript disableFollowMouse = new DisableScript(followMouse);
+        EnableScript enableFollowMouse = new EnableScript(followMouse);
+        DisableScript disableShoot = new DisableScript(shoot);
+        EnableScript enableShoot = new EnableScript(shoot);
+
         
         //2. ESTADOS:
 
@@ -64,20 +81,24 @@ public class trainer_status_machine : MonoBehaviour
 
         entryActions = new List<Action>() {showPoisoned, setSlowSpeed};//al entrar al estado ponemos un corazon
         actions= new List<Action>();//durante el estado perseguimos al enamorado
-        exitActions= new List<Action>() {disablePoisoned, resetSmellSensor, setOriginalSpeed};//al salir quitamos el corazon
+        exitActions= new List<Action>() {disablePoisoned, resetAllSensor, setOriginalSpeed};//al salir quitamos el corazon
 
         State poisonedState = new State(actions, entryActions, exitActions);
 
         //2.c estado donde estamos dormidos
 
-        entryActions = new List<Action>() {showSleep, setZeroSpeed};//al entrar al estado ponemos un corazon
+        entryActions = new List<Action>() {showSleep, setZeroSpeed, disableShoot, disableFollowMouse, setAngularAccelToZero, setAngularToZero};//al entrar al estado ponemos un corazon
         actions= new List<Action>();//durante el estado perseguimos al enamorado
-        exitActions= new List<Action>() {disableSleep, resetSoundSensor, setOriginalSpeed};//al salir quitamos el corazon
+        //al salir debemos:
+        // quitar el icono de dormir, resetear el sensor de sonido, reset el sensor de aroma porque puede haber un sweet 
+        // volver a habilitar lo que se deba
+        exitActions= new List<Action>() {disableSleep, resetAllSensor, setOriginalSpeed, enableShoot, enableFollowMouse};//al salir quitamos el corazon
 
         State sleepState = new State(actions, entryActions, exitActions);
 
         //3. CONDICIONES:
-        SmelledPoison smelledPoison = new SmelledPoison(smellSensor);
+        SmelledSomething smelledPoison = new SmelledSomething(smellSensor, "Poison");
+        SmelledSomething smelledSweet = new SmelledSomething(smellSensor, "Sweet");
         HeardSleepSong heardSong = new HeardSleepSong(soundSensor);
         TimeOut poisonClock = new TimeOut(poisonTimer);
         setPoisonClock = new SetTimer(poisonClock);
@@ -96,6 +117,7 @@ public class trainer_status_machine : MonoBehaviour
         transitionActions =  new List<Action>(){setPoisonClock};
         Transition gotPoisoned = new Transition(smelledPoison,transitionActions , poisonedState);
         Transition poisonTimeOut = new Transition(poisonClock,noActions , healthyState);
+        Transition sweetScent = new Transition(smelledSweet, noActions, healthyState);
 
         transitionActions = new List<Action>(){setSleepClock};
         Transition gotSlept = new Transition(heardSong, transitionActions, sleepState);
@@ -110,9 +132,9 @@ public class trainer_status_machine : MonoBehaviour
         transitions =  new List<Transition>() {gotPoisoned, gotSlept};;
         healthyState.transitions = transitions;
 
-        poisonedState.transitions = new List<Transition>(){poisonTimeOut};
+        poisonedState.transitions = new List<Transition>(){poisonTimeOut, sweetScent};
 
-        sleepState.transitions = new List<Transition>(){sleepTimeOut};
+        sleepState.transitions = new List<Transition>(){sleepTimeOut, sweetScent};
 
         //5 MAQUINA DE ESTADOS
         State[] states = new State[] {healthyState, poisonedState, sleepState};

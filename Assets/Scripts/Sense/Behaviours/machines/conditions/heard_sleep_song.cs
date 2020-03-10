@@ -9,7 +9,9 @@ public class HeardSleepSong : Condition {
 
     public HeardSleepSong(SoundSensor Sensor){
         sensor = Sensor;
-        minSongIntensity = Sensor.threshold + 3f;
+        //Solo nos dormiremos si la cancion es mas fuerte que el 
+        //threshold mas un offset
+        minSongIntensity = Sensor.threshold + 6f;
     }
 
     public override bool Test(){
