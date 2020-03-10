@@ -126,6 +126,7 @@
      <Compile Include="Assets\Scripts\Sense\Behaviours\machines\actions\reset_sensor.cs" />
      <Compile Include="Assets\Scripts\Sense\Behaviours\machines\actions\show_default_sprite.cs" />
      <Compile Include="Assets\Scripts\Sense\Behaviours\machines\actions\show_fly_sprite.cs" />
+     <Compile Include="Assets\Scripts\Sense\Behaviours\machines\conditions\heard_sleep_song.cs" />
      <Compile Include="Assets\Scripts\Sense\Behaviours\machines\conditions\smelled_poison.cs" />
      <Compile Include="Assets\Scripts\Sense\Behaviours\machines\conditions\target_point_air.cs" />
      <Compile Include="Assets\Scripts\Sense\Behaviours\machines\conditions\target_point_earth.cs" />

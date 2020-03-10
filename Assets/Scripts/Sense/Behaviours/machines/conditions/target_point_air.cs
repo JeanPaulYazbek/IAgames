@@ -12,7 +12,10 @@ public class TargetPointAir : Condition {
 
     public override bool Test(){
 
-        if(!wasOnAir && transform.position.z < -0.7){
+        
+        //Si no estaba en aire y ahora esta volando
+        if(!wasOnAir && transform.position.z < -0.5){
+            //Ahora esta en aire
             wasOnAir = true;
             return true;
         }

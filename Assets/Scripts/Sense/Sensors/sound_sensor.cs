@@ -5,8 +5,12 @@ public class SoundSensor : Sensor {
     public bool notified = false;
     // Representa el tipo de aroma que se sintion por ejemplo "Poison" para venenoso
     public string soundType;
+    // Representa la intensidad del sonido detectado
+    public float soundIntensity;
+
     // Representa true si el jugador esta usando el sensor
     public bool player;
+    
 
     public SoundSensor(Transform Transform, float Threshold, bool Player) : 
     base(Transform, Threshold){
@@ -31,8 +35,12 @@ public class SoundSensor : Sensor {
             float distance =  Vector3.Distance(signal.transform.position, transform.position);
             //Intensidad del sonido recibido
             float intensity = signal.Intensity(distance);
+
+            //Guardamos la intensidad para las notificaciones
+            soundIntensity = intensity;
+
             //Nuevo volumen
-            float newVolume = intensity/max;
+            float newVolume = intensity/(max);
 
             //Si estamos muy lejos para escuchar
             if(distance > signal.modality.maximumRange - 2){
@@ -49,5 +57,6 @@ public class SoundSensor : Sensor {
     public override void ResetSensor(){
         notified = false;
         soundType = "";
+        soundIntensity = 0f;
     }
 }

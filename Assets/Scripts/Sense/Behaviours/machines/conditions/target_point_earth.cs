@@ -12,13 +12,12 @@ public class TargetPointEarth : Condition {
 
     public override bool Test(){
 
-        if(!wasOnEarth && transform.position.z >= -0.7){
-            
+        //Si no estaba en tierra y ahora esta volando
+        if(!wasOnEarth && transform.position.z >= -0.5){
+            //Ahora esta en tierra
             wasOnEarth = true;
             return true;
         }
-
-        
 
         wasOnEarth = false;
         return false;

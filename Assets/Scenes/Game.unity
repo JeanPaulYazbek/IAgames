@@ -44174,8 +44174,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trainerStaticData: {fileID: 1347758963}
   smellSensorScript: {fileID: 1347758967}
+  soundSensorScript: {fileID: 1347758970}
   poisonedSpeed: 2
   poisonTimer: 60
+  sleepTimer: 10
 --- !u!114 &1347758970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44188,7 +44190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe4bb1d20364f48378f8585f5e29abfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  threshold: 10
+  threshold: 3
   player: 1
 --- !u!1 &1348282142
 GameObject:
@@ -53044,11 +53046,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ecf69147fea04c8ea5aea7c9c1744c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  strength: 80
+  strength: 20
   audioToSend: {fileID: 1734514027}
   description: Sleep
-  maximumRange: 45
-  attenuation: 0.98
+  maximumRange: 35
+  attenuation: 0.95
   inverseTransmissionSpeed: 0.001
   compManager: {fileID: 1004683626}
 --- !u!114 &1734514029
