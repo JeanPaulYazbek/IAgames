@@ -1,9 +1,27 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
-
+using System;
 
 public class Utilities 
 {
+
+    //funcion que convierte orientacion en vector
+    public Vector3 OrientationToVector(float orientation){
+
+        //hay que dividir entre 53 para convertir los angulos a radianes
+        return new Vector3(-(float)Math.Sin(orientation/57), (float)Math.Cos(orientation/57),0f);
+
+    }
+
+    //funcion que toma un vector y un angulo y devuelve el vector
+    //rotado esos angulos
+    public Vector3 RotateVector(Vector3 vector, float angle){
+        float newX = (float) (Math.Cos(angle/57)*vector.x - Math.Sin(angle/57)*vector.y);
+        float newY = (float) (Math.Sin(angle/57)*vector.x + Math.Cos(angle/57)*vector.y);
+        return new Vector3(newX, newY, 0f);
+
+
+    }   
 
     public void DrawTriangle(Vector3 vertexA, Vector3 vertexB, Vector3 vertexC, float duration){
 
