@@ -38,7 +38,8 @@ public class KineticsShoot
 
     //funcion que calcula la nueva posicion de un proyectil
     //si devuelve [0,-1] es que no hay nada especial pasando y puede seguir
-    //si devuelve [1,-1] es que el proyectil choco con algo y debe desaparecer
+    //si devuelve [1,-1] es que el proyectil choco con el suelo y debe desaparecer
+    //si devuelve [1,-2] es que el proyectil choco con un obstaculo y debe desaparecer
     //si devuelve [2,n] es que la bola atrapo un pokemon y n es el indice del pokemon en el arreglo
     public int[] UpdateKinetics(float time){
 
@@ -64,12 +65,14 @@ public class KineticsShoot
         if(newZ >= -0.1f && newZ > lastHeight){//si bajamos y estamos muy cerca del suelo
             
             answer[0]=1;
+            answer[1]=-1;
             return answer;
         }
 
         //--necesitamos revisar si chocamos con algo
         if(checkCollision()){
             answer[0]=1;
+            answer[1]=-2;
             return answer;
         }
 

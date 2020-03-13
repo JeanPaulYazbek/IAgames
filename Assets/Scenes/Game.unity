@@ -807,6 +807,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Tree1
 --- !u!1 &30629770
 GameObject:
   m_ObjectHideFlags: 0
@@ -1945,6 +1946,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Water
 --- !u!1 &72791537
 GameObject:
   m_ObjectHideFlags: 0
@@ -4519,6 +4521,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Tree1
 --- !u!1 &202012878
 GameObject:
   m_ObjectHideFlags: 0
@@ -6582,6 +6585,7 @@ GameObject:
   - component: {fileID: 299611519}
   - component: {fileID: 299611518}
   - component: {fileID: 299611530}
+  - component: {fileID: 299611531}
   m_Layer: 0
   m_Name: Jolteon
   m_TagString: Pokemon
@@ -6842,7 +6846,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 299611517}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f61e2ef075ba9432ea5c9d5a2d2bbc6c, type: 3}
   m_Name: 
@@ -6862,6 +6866,24 @@ MonoBehaviour:
   - {fileID: 1882082953}
   - {fileID: 1729241919}
   - {fileID: 949220010}
+--- !u!114 &299611531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299611517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72cb385744c5b469b8876c3d7c4511c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strength: 80
+  description: Pokemon
+  maximumRange: 100
+  attenuation: 1
+  inverseTransmissionSpeed: 0.001
+  compManager: {fileID: 1004683626}
 --- !u!1 &301003757
 GameObject:
   m_ObjectHideFlags: 0
@@ -7367,6 +7389,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Tree1
 --- !u!1 &342673045
 GameObject:
   m_ObjectHideFlags: 0
@@ -8212,6 +8235,7 @@ GameObject:
   - component: {fileID: 383919331}
   - component: {fileID: 383919333}
   - component: {fileID: 383919334}
+  - component: {fileID: 383919335}
   m_Layer: 0
   m_Name: Dugtrio
   m_TagString: Pokemon
@@ -8308,7 +8332,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 383919329}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4a3947b3d4f434364aa2d12f3be60511, type: 3}
   m_Name: 
@@ -8338,6 +8362,24 @@ MonoBehaviour:
   evolved: 0
   evolution_sprites: []
   evolution_methods: []
+--- !u!114 &383919335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383919329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72cb385744c5b469b8876c3d7c4511c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strength: 80
+  description: Pokemon
+  maximumRange: 100
+  attenuation: 1
+  inverseTransmissionSpeed: 0.001
+  compManager: {fileID: 1004683626}
 --- !u!1 &390029563
 GameObject:
   m_ObjectHideFlags: 0
@@ -8653,6 +8695,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Tree2
 --- !u!1 &410374045
 GameObject:
   m_ObjectHideFlags: 0
@@ -12923,6 +12966,7 @@ GameObject:
   - component: {fileID: 620668784}
   - component: {fileID: 620668783}
   - component: {fileID: 620668786}
+  - component: {fileID: 620668787}
   m_Layer: 0
   m_Name: Spoink
   m_TagString: Pokemon
@@ -13047,6 +13091,24 @@ MonoBehaviour:
   evolved: 0
   evolution_sprites: []
   evolution_methods: []
+--- !u!114 &620668787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 620668781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72cb385744c5b469b8876c3d7c4511c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strength: 80
+  description: Pokemon
+  maximumRange: 100
+  attenuation: 1
+  inverseTransmissionSpeed: 0.001
+  compManager: {fileID: 1004683626}
 --- !u!1 &621035402
 GameObject:
   m_ObjectHideFlags: 0
@@ -15394,6 +15456,7 @@ GameObject:
   - component: {fileID: 704580126}
   - component: {fileID: 704580128}
   - component: {fileID: 704580125}
+  - component: {fileID: 704580129}
   m_Layer: 0
   m_Name: Meowth
   m_TagString: Pokemon
@@ -15511,7 +15574,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 704580123}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cb5e60017865640b1aa5477dc297dc43, type: 3}
   m_Name: 
@@ -15526,6 +15589,24 @@ MonoBehaviour:
   MaxAccelerationArrive: 20
   radiusAlert: 20
   radiusRun: 15
+--- !u!114 &704580129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704580123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72cb385744c5b469b8876c3d7c4511c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strength: 80
+  description: Pokemon
+  maximumRange: 100
+  attenuation: 1
+  inverseTransmissionSpeed: 0.001
+  compManager: {fileID: 1004683626}
 --- !u!1 &709870476
 GameObject:
   m_ObjectHideFlags: 0
@@ -15841,6 +15922,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Tree1
 --- !u!1 &726824159
 GameObject:
   m_ObjectHideFlags: 0
@@ -17840,6 +17922,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Tree2
 --- !u!1 &790585314
 GameObject:
   m_ObjectHideFlags: 0
@@ -18791,6 +18874,7 @@ GameObject:
   - component: {fileID: 841684859}
   - component: {fileID: 841684861}
   - component: {fileID: 841684860}
+  - component: {fileID: 841684862}
   m_Layer: 0
   m_Name: Weezing
   m_TagString: Pokemon
@@ -18924,7 +19008,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 841684855}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f7bcfe0a8b874d00bb94f09ea517806, type: 3}
   m_Name: 
@@ -18933,6 +19017,24 @@ MonoBehaviour:
   pointA: {x: -59.8, y: 90.4, z: 0}
   pointB: {x: -30, y: 90.4, z: 0}
   maxSeekAccel: 2
+--- !u!114 &841684862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 841684855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72cb385744c5b469b8876c3d7c4511c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strength: 80
+  description: Pokemon
+  maximumRange: 100
+  attenuation: 1
+  inverseTransmissionSpeed: 0.001
+  compManager: {fileID: 1004683626}
 --- !u!1 &842651025
 GameObject:
   m_ObjectHideFlags: 0
@@ -19248,6 +19350,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Tree1
 --- !u!1 &859469451
 GameObject:
   m_ObjectHideFlags: 0
@@ -20307,6 +20410,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Tree1
 --- !u!1 &921494516
 GameObject:
   m_ObjectHideFlags: 0
@@ -20717,6 +20821,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Tree1
 --- !u!1 &949220003
 GameObject:
   m_ObjectHideFlags: 0
@@ -20737,6 +20842,7 @@ GameObject:
   - component: {fileID: 949220013}
   - component: {fileID: 949220014}
   - component: {fileID: 949220015}
+  - component: {fileID: 949220016}
   m_Layer: 0
   m_Name: Leafeon
   m_TagString: Pokemon
@@ -20979,7 +21085,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 949220003}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f61e2ef075ba9432ea5c9d5a2d2bbc6c, type: 3}
   m_Name: 
@@ -20999,6 +21105,24 @@ MonoBehaviour:
   - {fileID: 1882082953}
   - {fileID: 1729241919}
   - {fileID: 949220010}
+--- !u!114 &949220016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 949220003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72cb385744c5b469b8876c3d7c4511c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strength: 80
+  description: Pokemon
+  maximumRange: 100
+  attenuation: 1
+  inverseTransmissionSpeed: 0.001
+  compManager: {fileID: 1004683626}
 --- !u!1 &957328938
 GameObject:
   m_ObjectHideFlags: 0
@@ -21249,6 +21373,7 @@ GameObject:
   - component: {fileID: 965224535}
   - component: {fileID: 965224539}
   - component: {fileID: 965224540}
+  - component: {fileID: 965224541}
   m_Layer: 0
   m_Name: Pidgeotto
   m_TagString: Pokemon
@@ -21361,7 +21486,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 965224534}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a6d6212be679e424dbcf28c544602385, type: 3}
   m_Name: 
@@ -21387,6 +21512,24 @@ MonoBehaviour:
   evolved: 0
   evolution_sprites: []
   evolution_methods: []
+--- !u!114 &965224541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965224534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72cb385744c5b469b8876c3d7c4511c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strength: 80
+  description: Pokemon
+  maximumRange: 100
+  attenuation: 1
+  inverseTransmissionSpeed: 0.001
+  compManager: {fileID: 1004683626}
 --- !u!1 &969854847
 GameObject:
   m_ObjectHideFlags: 0
@@ -21885,6 +22028,7 @@ MonoBehaviour:
   - {fileID: 1347758970}
   sightSensors:
   - {fileID: 1839602607}
+  - {fileID: 1330056663}
 --- !u!4 &1004683627
 Transform:
   m_ObjectHideFlags: 0
@@ -27116,6 +27260,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Tree1
 --- !u!1 &1202260924
 GameObject:
   m_ObjectHideFlags: 0
@@ -43315,6 +43460,8 @@ GameObject:
   - component: {fileID: 1330056660}
   - component: {fileID: 1330056661}
   - component: {fileID: 1330056662}
+  - component: {fileID: 1330056664}
+  - component: {fileID: 1330056663}
   m_Layer: 0
   m_Name: Rocket
   m_TagString: Untagged
@@ -43637,7 +43784,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1330056644}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7c4234896a0484d03b885f99b336b236, type: 3}
   m_Name: 
@@ -43646,6 +43793,38 @@ MonoBehaviour:
   maxAccel: 3
   seek_or_flee: 1
   graphComponent: {fileID: 1021140799}
+--- !u!114 &1330056663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330056644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33436fadfab3f4f9fbdfd700073387ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  threshold: 50
+  widthAngle: 30
+--- !u!114 &1330056664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330056644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7530baaadc1bc45cdb1d384a0897c09b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agentStatic: {fileID: 1330056654}
+  pokeBallPrefab: {fileID: 4889270873690017871, guid: 23a09818db3444c6dafb5ec2d85c145a,
+    type: 3}
+  ballSpeed: 20
+  sensorComp: {fileID: 1330056663}
+  manager: {fileID: 1377215288}
 --- !u!1 &1333202015
 GameObject:
   m_ObjectHideFlags: 0
@@ -44044,6 +44223,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Water
 --- !u!1 &1342129683
 GameObject:
   m_ObjectHideFlags: 0
@@ -44500,7 +44680,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1347758952}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -26.1, y: 86.6, z: 0}
+  m_LocalPosition: {x: -26.1, y: -3.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 219646563}
@@ -44736,6 +44916,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Tree1
 --- !u!1 &1353015294
 GameObject:
   m_ObjectHideFlags: 0
@@ -44745,6 +44926,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1353015295}
+  - component: {fileID: 1353015296}
   m_Layer: 5
   m_Name: Inks
   m_TagString: Untagged
@@ -44775,6 +44957,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1353015296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1353015294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa91f43c9494b47ac9575a719fc88042, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  segs: 30
 --- !u!1 &1358909800
 GameObject:
   m_ObjectHideFlags: 0
@@ -46941,6 +47136,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Tree1
 --- !u!1 &1483626350
 GameObject:
   m_ObjectHideFlags: 0
@@ -47731,6 +47927,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Water
 --- !u!1 &1516207864
 GameObject:
   m_ObjectHideFlags: 0
@@ -50547,6 +50744,7 @@ GameObject:
   - component: {fileID: 1639065551}
   - component: {fileID: 1639065550}
   - component: {fileID: 1639065562}
+  - component: {fileID: 1639065563}
   m_Layer: 0
   m_Name: Flareon
   m_TagString: Pokemon
@@ -50807,7 +51005,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1639065549}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f61e2ef075ba9432ea5c9d5a2d2bbc6c, type: 3}
   m_Name: 
@@ -50827,6 +51025,24 @@ MonoBehaviour:
   - {fileID: 1882082953}
   - {fileID: 1729241919}
   - {fileID: 949220010}
+--- !u!114 &1639065563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639065549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72cb385744c5b469b8876c3d7c4511c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strength: 80
+  description: Pokemon
+  maximumRange: 100
+  attenuation: 1
+  inverseTransmissionSpeed: 0.001
+  compManager: {fileID: 1004683626}
 --- !u!1 &1641398523
 GameObject:
   m_ObjectHideFlags: 0
@@ -51758,6 +51974,7 @@ GameObject:
   - component: {fileID: 1686926487}
   - component: {fileID: 1686926486}
   - component: {fileID: 1686926490}
+  - component: {fileID: 1686926491}
   m_Layer: 0
   m_Name: Magikarp
   m_TagString: Pokemon
@@ -51882,6 +52099,24 @@ MonoBehaviour:
   evolved: 0
   evolution_sprites: []
   evolution_methods: []
+--- !u!114 &1686926491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686926485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72cb385744c5b469b8876c3d7c4511c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strength: 80
+  description: Pokemon
+  maximumRange: 100
+  attenuation: 1
+  inverseTransmissionSpeed: 0.001
+  compManager: {fileID: 1004683626}
 --- !u!1 &1691583796
 GameObject:
   m_ObjectHideFlags: 0
@@ -52371,6 +52606,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Tree1
 --- !u!1 &1704791992
 GameObject:
   m_ObjectHideFlags: 0
@@ -52849,6 +53085,7 @@ GameObject:
   - component: {fileID: 1729241910}
   - component: {fileID: 1729241920}
   - component: {fileID: 1729241922}
+  - component: {fileID: 1729241923}
   m_Layer: 0
   m_Name: Espeon
   m_TagString: Pokemon
@@ -53109,7 +53346,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1729241909}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f61e2ef075ba9432ea5c9d5a2d2bbc6c, type: 3}
   m_Name: 
@@ -53129,6 +53366,24 @@ MonoBehaviour:
   - {fileID: 1882082953}
   - {fileID: 1729241919}
   - {fileID: 949220010}
+--- !u!114 &1729241923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1729241909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72cb385744c5b469b8876c3d7c4511c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strength: 80
+  description: Pokemon
+  maximumRange: 100
+  attenuation: 1
+  inverseTransmissionSpeed: 0.001
+  compManager: {fileID: 1004683626}
 --- !u!1 &1731550577
 GameObject:
   m_ObjectHideFlags: 0
@@ -53424,12 +53679,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1734514022}
   - component: {fileID: 1734514026}
-  - component: {fileID: 1734514025}
   - component: {fileID: 1734514027}
   - component: {fileID: 1734514023}
   - component: {fileID: 1734514024}
   - component: {fileID: 1734514028}
   - component: {fileID: 1734514029}
+  - component: {fileID: 1734514030}
   m_Layer: 0
   m_Name: Jigglypuff
   m_TagString: Pokemon
@@ -53518,23 +53773,6 @@ MonoBehaviour:
   evolved: 0
   evolution_sprites: []
   evolution_methods: []
---- !u!114 &1734514025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1734514021}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1742567e2d5344e42b9a5021b035a3e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agent: {fileID: 1734514026}
-  pointA: {x: -11, y: -9, z: -2}
-  pointB: {x: 11, y: -9, z: -5}
-  maxSeekAccel: 10
-  minSize: 0.8
 --- !u!114 &1734514026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53685,6 +53923,24 @@ MonoBehaviour:
   jigglypuffData: {fileID: 1734514024}
   soundComp: {fileID: 1734514028}
   graphComponent: {fileID: 1021140799}
+--- !u!114 &1734514030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734514021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72cb385744c5b469b8876c3d7c4511c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strength: 80
+  description: Pokemon
+  maximumRange: 100
+  attenuation: 1
+  inverseTransmissionSpeed: 0.001
+  compManager: {fileID: 1004683626}
 --- !u!1 &1737933455
 GameObject:
   m_ObjectHideFlags: 0
@@ -56725,6 +56981,7 @@ GameObject:
   - component: {fileID: 1839602608}
   - component: {fileID: 1839602607}
   - component: {fileID: 1839602613}
+  - component: {fileID: 1839602614}
   m_Layer: 0
   m_Name: Octillery
   m_TagString: Pokemon
@@ -56795,7 +57052,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultSpeed: {x: 0, y: 0, z: 0}
-  defaultRotation: 6
+  defaultRotation: 10
   defaultLinear: {x: 0, y: 0, z: 0}
   defaultAngular: 0
   maxspeed: 50
@@ -56884,6 +57141,24 @@ MonoBehaviour:
     type: 3}
   inkSpeed: 30
   inkScreen: {fileID: 1353015294}
+--- !u!114 &1839602614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1839602606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72cb385744c5b469b8876c3d7c4511c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strength: 80
+  description: Pokemon
+  maximumRange: 100
+  attenuation: 1
+  inverseTransmissionSpeed: 0.001
+  compManager: {fileID: 1004683626}
 --- !u!1 &1840534766
 GameObject:
   m_ObjectHideFlags: 0
@@ -57981,6 +58256,7 @@ GameObject:
   - component: {fileID: 1882082944}
   - component: {fileID: 1882082954}
   - component: {fileID: 1882082956}
+  - component: {fileID: 1882082957}
   m_Layer: 0
   m_Name: Vaporeon
   m_TagString: Pokemon
@@ -58241,7 +58517,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1882082943}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f61e2ef075ba9432ea5c9d5a2d2bbc6c, type: 3}
   m_Name: 
@@ -58261,6 +58537,24 @@ MonoBehaviour:
   - {fileID: 1882082953}
   - {fileID: 1729241919}
   - {fileID: 949220010}
+--- !u!114 &1882082957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1882082943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72cb385744c5b469b8876c3d7c4511c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strength: 80
+  description: Pokemon
+  maximumRange: 100
+  attenuation: 1
+  inverseTransmissionSpeed: 0.001
+  compManager: {fileID: 1004683626}
 --- !u!1 &1883594476
 GameObject:
   m_ObjectHideFlags: 0
@@ -58757,6 +59051,7 @@ GameObject:
   - component: {fileID: 1905409997}
   - component: {fileID: 1905409996}
   - component: {fileID: 1905410001}
+  - component: {fileID: 1905410002}
   m_Layer: 0
   m_Name: Roselia
   m_TagString: Pokemon
@@ -58917,6 +59212,24 @@ MonoBehaviour:
   trainer: {fileID: 1347758963}
   rival: {fileID: 1330056654}
   radiusChange: 5
+--- !u!114 &1905410002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905409994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72cb385744c5b469b8876c3d7c4511c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strength: 80
+  description: Pokemon
+  maximumRange: 100
+  attenuation: 1
+  inverseTransmissionSpeed: 0.001
+  compManager: {fileID: 1004683626}
 --- !u!1 &1910385402
 GameObject:
   m_ObjectHideFlags: 0
@@ -59545,6 +59858,7 @@ GameObject:
   - component: {fileID: 1938216021}
   - component: {fileID: 1938216023}
   - component: {fileID: 1938216020}
+  - component: {fileID: 1938216024}
   m_Layer: 0
   m_Name: Glameow
   m_TagString: Pokemon
@@ -59662,7 +59976,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1938216018}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f767236a8698c42fd82f2a8eb73e2b42, type: 3}
   m_Name: 
@@ -59677,6 +59991,24 @@ MonoBehaviour:
   MaxAccelerationArrive: 20
   radiusAlert: 20
   radiusRun: 15
+--- !u!114 &1938216024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1938216018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72cb385744c5b469b8876c3d7c4511c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strength: 80
+  description: Pokemon
+  maximumRange: 100
+  attenuation: 1
+  inverseTransmissionSpeed: 0.001
+  compManager: {fileID: 1004683626}
 --- !u!1 &1953894185
 GameObject:
   m_ObjectHideFlags: 0
@@ -60642,6 +60974,7 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  type: Tree1
 --- !u!1 &1992965848
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,5 +1,7 @@
 using UnityEngine;
 using System;
+
+//este componente destruye al gameobject que lo use despues de los segundos que le pongas
 public class dissapear : MonoBehaviour {
 
     public float segs;//cuantoss segundos esperar antes de desaparecer

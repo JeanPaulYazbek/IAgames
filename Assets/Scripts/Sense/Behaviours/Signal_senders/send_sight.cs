@@ -7,7 +7,7 @@ public class send_sight : MonoBehaviour {
 
     //DATOS MODALIDAD
     //Modalidad para  la sennal
-    Modality modality;
+    SightModality modality;
     public string description;// Informacion util como el sub-tipo del sentido que se envia, por ejemplo un olor puede ser tipo Poison
     public float maximumRange;// Que tan lejos puede llegar a lo mas el olor por ejemplo
     public float attenuation; // Que tanto baja su intensidad a medida que se aleja
@@ -18,8 +18,23 @@ public class send_sight : MonoBehaviour {
     RegionalSenseManager manager;
 
     void Awake(){
-        modality = new SightModality(maximumRange,attenuation,inverseTransmissionSpeed, description);
+        modality = new SightModality(maximumRange,attenuation,inverseTransmissionSpeed, description, null);
         signal = new Signal(strength, transform, modality);
+
+    }
+
+
+    void Start(){
+
+        //obstaculos
+        GameObject[] obstacles = GameObject.FindGameObjectsWithTag("Obstacle");
+        obstacle_data[] obstaclesData =  new obstacle_data[obstacles.Length];
+
+        for(int k = 0; k < obstacles.Length; k++){
+            obstaclesData[k] = obstacles[k].GetComponent<obstacle_data>();
+        }
+
+        modality.obstacles = obstaclesData;
 
     }
 

@@ -79,6 +79,12 @@ public class static_shoot : MonoBehaviour
         {
             c.enabled = false;
         }
+
+        AudioSource[] audios = GameObject.Find(pokemonObject.name).GetComponents<AudioSource>();
+        foreach(AudioSource a in audios)
+        {
+            a.enabled = false;
+        }
        
 
     }

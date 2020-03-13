@@ -23,6 +23,11 @@ public class rival_machine : MonoBehaviour {
     //Movimientos
     public Seek seek; 
 
+    //DATOS LOOKWHEREYOUGOING
+
+    LookWhereYouAreGoing look;
+
+
 
     //DATOS GRAFO
     public static_graph graphComponent;//componente que tiene guardado el grafo
@@ -66,7 +71,8 @@ public class rival_machine : MonoBehaviour {
         //Inicializamos seek
         seek = new Seek(kineticsAgent, kineticsAgent, maxAccel);
 
-        
+        //Inicializamos lookwehereyougoing
+        look = new LookWhereYouAreGoing(kineticsAgent);
         
 
         //COMENZAMOS A CONSTRUIR LA MAQUINA DE ESTADOS
@@ -131,6 +137,8 @@ public class rival_machine : MonoBehaviour {
     void Update(){
 
         rivalMachine.RunMachine();
+
+        steeringAgent.angular = look.getSteering().angular;
 
     }
 

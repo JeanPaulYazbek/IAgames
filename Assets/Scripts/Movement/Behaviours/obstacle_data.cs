@@ -13,6 +13,9 @@ public class obstacle_data : MonoBehaviour
     [SerializeField] 
     public Vector3 downRight;
 
+    //String que representa el tipo de un obstaculo, por ejemplo tree1 si son arboles pequeños
+    public string type = "Tree1";
+
 
 
     // Funcion que toma el centro de un rectangulo y el largo de sus lados 

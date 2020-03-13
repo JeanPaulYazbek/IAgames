@@ -160,4 +160,50 @@ public class Utilities
 
     }
 
+    //Funcion que revisa si un segmento de linea choca con algun obstaculo
+    //en la lista dada, el segmento de linea viene dado por point1 y point2
+    //ademas solo considerara que intersecta si el obstaculo tiene alguno de
+    //los tipos en valid type
+    public bool LineSegmentIntersectionObstacleType(Vector3 point1, Vector3 point2, obstacle_data[] obstacles, string[] validObstacles){
+
+        obstacle_data obstacle;
+        bool intersectsSide;
+
+       
+        //Vemos si algun obstaculo colisiona con el segmento de recta
+        for(int i = 0; i < obstacles.Length; i++){
+            obstacle = obstacles[i];
+
+            //revisamos que el tipo del obstaculo sea valido, por ejemplo para octillery el agua no es un obstaculo
+            bool valid = false;
+            for(int j = 0; j<validObstacles.Length; j++){
+                //si alguno es valido lo marcamos y salimos
+                if(validObstacles[j] == obstacle.type){
+                    valid = true;
+                    break;
+                }
+            }
+
+            //si ninguno era valido estudiamos el siguiente obstaculo
+            if(!valid){
+                continue;
+            }
+            
+            //vemos si choca con algun lado del obstaculo
+            intersectsSide = LineSegmentIntersection(point1, point2, obstacle.upLeft , obstacle.upRight)
+            || LineSegmentIntersection(point1, point2, obstacle.upLeft, obstacle.downLeft )
+            || LineSegmentIntersection(point1, point2, obstacle.upRight, obstacle.downRight)
+            || LineSegmentIntersection(point1, point2, obstacle.downLeft, obstacle.downRight);
+
+            if(intersectsSide){//si choco con alguno dejamos de revisar 
+                return true;
+            }
+
+        }
+
+        //no hubo colisiones
+        return false;
+
+    }
+
 }

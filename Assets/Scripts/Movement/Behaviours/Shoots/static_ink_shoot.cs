@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 //ananlogo a static data pero esta hecha para datos de cosas que sean lanzadas(por ejemplo poke balls)
 public class static_ink_shoot : MonoBehaviour
 {
@@ -37,15 +38,18 @@ public class static_ink_shoot : MonoBehaviour
         int trainerIndex = destroy[1];
         if(option==1){//si pisamos el suelo
             
-            Vector3 ballPos = transform.position;//posicion donde ira la salpicadura
-            ballPos.z = 0.1f;//esto es para que los personajes pasen por encima de la tinta
-            Instantiate(inkSplashPrefab, ballPos, Quaternion.identity); //dejamos una salpicadura de tinta
+            if(destroy[1]==-1){//si chocamos con el suelo dejamos tinta
+                Vector3 ballPos = transform.position;//posicion donde ira la salpicadura
+                ballPos.z = 0.1f;//esto es para que los personajes pasen por encima de la tinta
+                Instantiate(inkSplashPrefab, ballPos, Quaternion.identity); //dejamos una salpicadura de tinta
+            }
+            
             Object.Destroy(this.gameObject); //desaparecemos completamente la pokeball
         }
         if(option==2){//si le pegamos a un trainer
             
             if(trainerIndex == 0){//si golpeamos al jugador
-                //ponemos tinta en la pantalla
+                //ponemos tinta en la pantalla 30 segs
                 inkScreen.SetActive(true);
                 
             }
@@ -54,6 +58,16 @@ public class static_ink_shoot : MonoBehaviour
         }
         
     }
+
+    //iterador para poner la tinta 30 segs en pantalla
+    IEnumerator WaitInk()
+    {
+        inkScreen.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        inkScreen.SetActive(false);
+    }
+
+    
 
 
 }

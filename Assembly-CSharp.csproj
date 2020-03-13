@@ -163,8 +163,10 @@
      <Compile Include="Assets\Scripts\Sense\Sensors\smell_sensor.cs" />
      <Compile Include="Assets\Scripts\Sense\Sensors\sound_sensor.cs" />
      <Compile Include="Assets\Scripts\Sense\signal.cs" />
-     <Compile Include="Assets\Scripts\Shooting\Behaviors\auto_shoot.cs" />
      <Compile Include="Assets\Scripts\Shooting\Behaviors\dissapear.cs" />
+     <Compile Include="Assets\Scripts\Shooting\Behaviors\ink_screen_timer.cs" />
+     <Compile Include="Assets\Scripts\Shooting\Behaviors\rival_hard_shoot.cs" />
+     <Compile Include="Assets\Scripts\Shooting\Behaviors\rival_shoot.cs" />
      <Compile Include="Assets\Scripts\Shooting\Behaviors\shoot.cs" />
      <Compile Include="Assets\Scripts\StateMachine\action.cs" />
      <Compile Include="Assets\Scripts\StateMachine\Actions\arrive_to_target.cs" />

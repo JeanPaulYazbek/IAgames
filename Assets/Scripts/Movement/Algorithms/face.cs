@@ -5,7 +5,7 @@ public class Face : Align {
 
     public Kinetics fTarget;//target del face
 
-    public Face(Kinetics Character ,Kinetics FTarget) : base(Character, FTarget, 10f, 50f, 2f, 30f, 0.1f){
+    public Face(Kinetics Character ,Kinetics FTarget) : base(Character, FTarget, 20f, 80f, 2f, 30f, 0.1f){
         fTarget = FTarget;
     }
 
