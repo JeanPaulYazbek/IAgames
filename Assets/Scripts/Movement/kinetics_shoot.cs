@@ -14,7 +14,7 @@ public class KineticsShoot
     const float capture_rate = 2f;//radio de la esfera que representa el pokemon
 
     //DATOS EXTERNOS
-    Kinetics[] pokemons;//lista de pokemons que podemos atrapar
+    Kinetics[] targets;//lista de targets que queremos golpear
     Transform[] obstacles;//lista de obstaculos con los que podriamos chocar
 
     //UTILIDADES
@@ -23,7 +23,7 @@ public class KineticsShoot
 
 
     //CONSTRUCTOR
-    public KineticsShoot(float Speed, Vector3 Direction, Vector3 Gravity, Transform Transform, Kinetics[] Pokemons, Transform[] Obstacles)
+    public KineticsShoot(float Speed, Vector3 Direction, Vector3 Gravity, Transform Transform, Kinetics[] Targets, Transform[] Obstacles)
     {
         
         speed = Speed;
@@ -31,7 +31,7 @@ public class KineticsShoot
         gravity = Gravity;
         transform = Transform;
         velocity = direction*speed;
-        pokemons = Pokemons;
+        targets = Targets;
         obstacles = Obstacles;
        
     }
@@ -91,11 +91,11 @@ public class KineticsShoot
     // en un arreglo que le pasen
     public bool CheckCatch(int[] arr){
         Vector3 pokemonPos;
-        for (int i = 0; i<pokemons.Length; i++){
-            pokemonPos = pokemons[i].transform.position;
+        for (int i = 0; i<targets.Length; i++){
+            pokemonPos = targets[i].transform.position;
             //revisamos si la poke ball esta dentro del radio de captura del pokemon y si 
             //el pokemon no fue atrapado ya
-            if (InsideSphere(pokemonPos, capture_rate) && pokemons[i].transform.localScale.x > 0f){
+            if (InsideSphere(pokemonPos, capture_rate) && targets[i].transform.localScale.x > 0f){
                 arr[1] = i;
                 return true;
             }

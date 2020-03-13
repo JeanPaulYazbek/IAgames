@@ -27,7 +27,7 @@ public class Face : Align {
             return new SteeringOutput(Vector3.zero, 0f);
         }
 
-        float targetOrientation = (float)Math.Atan2(-direction.x, direction.y)*53;
+        float targetOrientation = (float)Math.Atan2(-direction.x, direction.y)*57;
 
         return getSteering2(targetOrientation);
 
