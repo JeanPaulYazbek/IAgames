@@ -124,8 +124,10 @@
      <Compile Include="Assets\Scripts\Movement\steering_output.cs" />
      <Compile Include="Assets\Scripts\Sense\Behaviours\machines\actions\change_smell_sent.cs" />
      <Compile Include="Assets\Scripts\Sense\Behaviours\machines\actions\disable_script.cs" />
+     <Compile Include="Assets\Scripts\Sense\Behaviours\machines\actions\disable_script_list.cs" />
      <Compile Include="Assets\Scripts\Sense\Behaviours\machines\actions\disable_send_sound.cs" />
      <Compile Include="Assets\Scripts\Sense\Behaviours\machines\actions\enable_script.cs" />
+     <Compile Include="Assets\Scripts\Sense\Behaviours\machines\actions\enable_script_list.cs" />
      <Compile Include="Assets\Scripts\Sense\Behaviours\machines\actions\enable_send_sound.cs" />
      <Compile Include="Assets\Scripts\Sense\Behaviours\machines\actions\face_to_seen_target.cs" />
      <Compile Include="Assets\Scripts\Sense\Behaviours\machines\actions\reset_sensor.cs" />

@@ -91,7 +91,7 @@ public class rival_hard_shoot : MonoBehaviour
             Vector3 pokemonPos = sightSensor.detectedSignal.transform.position;//la posicion del pokemon que vimos
 
             //ahora calculamos a que direccion lanzar. 
-            Vector3 shootDirection = shootHandler.CalculateFiringSolution(rivalPos, pokemonPos, ballSpeed, gravity, Vector3.zero, false);
+            Vector3 shootDirection = shootHandler.CalculateFiringSolution(rivalPos, pokemonPos, ballSpeed, gravity, ballStatic.direction, false);
 
             ballStatic.direction = shootDirection;
            
@@ -108,7 +108,7 @@ public class rival_hard_shoot : MonoBehaviour
         ballStatic.pokemonsData = pokemons_data;
         ballStatic.obstacles = obstacles;
         ballStatic.speed = ballSpeed;
-        ballStatic.direction = new Vector3(0,0,0); // DIRECCION POR DEFECTO
+        ballStatic.direction = new Vector3(agentKinetics.velocity.x,agentKinetics.velocity.z,-1f); // DIRECCION POR DEFECTO
         ballStatic.pointManager = manager;
         ballStatic.ultraBall = true;
         return ballStatic;

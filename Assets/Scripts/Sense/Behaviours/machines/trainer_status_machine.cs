@@ -7,10 +7,9 @@ public class trainer_status_machine : MonoBehaviour
 
     //DATOS TRAINER
     public static_data trainerStaticData;
-    public follow_mouse followMouse;
+    public List<MonoBehaviour> scriptsToDisable;//scripts para deshabilitar cuando estemos dormidos
     public Kinetics kinTrainer;
     public SteeringOutput steeringTrainer;
-    public shoot shoot;
 
     //DATOS SENSORES
     public smell_sensor smellSensorScript;
@@ -57,10 +56,21 @@ public class trainer_status_machine : MonoBehaviour
         UpdateMaxSpeed setZeroSpeed = new UpdateMaxSpeed(trainerStaticData, 0f);
         SetAngularSpeed setAngularToZero = new SetAngularSpeed(kinTrainer, 0f);
         SetAngularAccel setAngularAccelToZero = new SetAngularAccel(steeringTrainer, 0f);
-        DisableScript disableFollowMouse = new DisableScript(followMouse);
-        EnableScript enableFollowMouse = new EnableScript(followMouse);
-        DisableScript disableShoot = new DisableScript(shoot);
-        EnableScript enableShoot = new EnableScript(shoot);
+
+
+        //accion para deshabilitar todos scripts de interes mientras dormimos
+        List<DisableScript> disables = new List<DisableScript>();
+        foreach(var script in scriptsToDisable){
+            disables.Add(new DisableScript(script));
+        }
+        DisableScriptList disableScripts = new DisableScriptList(disables);
+
+        //accion para habilitar todos los script de interes si despertamos
+        List<EnableScript> enables = new List<EnableScript>();
+        foreach(var script in scriptsToDisable){
+            enables.Add(new EnableScript(script));
+        }
+        EnableScriptList enableScripts = new EnableScriptList(enables);
 
         
         //2. ESTADOS:
@@ -87,12 +97,12 @@ public class trainer_status_machine : MonoBehaviour
 
         //2.c estado donde estamos dormidos
 
-        entryActions = new List<Action>() {showSleep, setZeroSpeed, disableShoot, disableFollowMouse, setAngularAccelToZero, setAngularToZero};//al entrar al estado ponemos un corazon
+        entryActions = new List<Action>() {showSleep, setZeroSpeed, disableScripts, setAngularAccelToZero, setAngularToZero};//al entrar al estado ponemos un corazon
         actions= new List<Action>();//durante el estado perseguimos al enamorado
         //al salir debemos:
         // quitar el icono de dormir, resetear el sensor de sonido, reset el sensor de aroma porque puede haber un sweet 
         // volver a habilitar lo que se deba
-        exitActions= new List<Action>() {disableSleep, resetAllSensor, setOriginalSpeed, enableShoot, enableFollowMouse};//al salir quitamos el corazon
+        exitActions= new List<Action>() {disableSleep, resetAllSensor, setOriginalSpeed, enableScripts};//al salir quitamos el corazon
 
         State sleepState = new State(actions, entryActions, exitActions);
 

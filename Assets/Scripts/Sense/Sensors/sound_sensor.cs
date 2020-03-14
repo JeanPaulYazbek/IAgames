@@ -28,16 +28,18 @@ public class SoundSensor : Sensor {
         notified = true;
         soundType = signal.modality.description;
 
+        float max = signal.strength;
+        //Distancia entre el origen de la sennal y el sensor
+        float distance =  Vector3.Distance(signal.transform.position, transform.position);
+        //Intensidad del sonido recibido
+        float intensity = signal.Intensity(distance);
+
+        //Guardamos la intensidad para las notificaciones
+        soundIntensity = intensity;
+
         //Si jugador editamos volumen de audio
         if(player){
-            float max = signal.strength;
-            //Distancia entre el origen de la sennal y el sensor
-            float distance =  Vector3.Distance(signal.transform.position, transform.position);
-            //Intensidad del sonido recibido
-            float intensity = signal.Intensity(distance);
-
-            //Guardamos la intensidad para las notificaciones
-            soundIntensity = intensity;
+            
 
             //Nuevo volumen
             float newVolume = intensity/(max);
