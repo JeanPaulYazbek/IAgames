@@ -2,7 +2,7 @@ using UnityEngine;
 public class SightModality : Modality {
 
     public obstacle_data[] obstacles;
-
+    
     public SightModality(float MaximumRange, float Attenuation, float InverseTransmissionSpeed, string Description, obstacle_data[] Obstacles) : 
     base(MaximumRange, Attenuation, InverseTransmissionSpeed, Description, "Sight"){
         obstacles = Obstacles;

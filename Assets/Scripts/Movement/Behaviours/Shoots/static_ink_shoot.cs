@@ -59,15 +59,7 @@ public class static_ink_shoot : MonoBehaviour
         
     }
 
-    //iterador para poner la tinta 30 segs en pantalla
-    IEnumerator WaitInk()
-    {
-        inkScreen.SetActive(true);
-        yield return new WaitForSeconds(3f);
-        inkScreen.SetActive(false);
-    }
 
-    
 
 
 }

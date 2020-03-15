@@ -4,12 +4,12 @@ using System;
 public class KineticsShoot
 {
 
-    //DATOS INTERNOS DE LA POKEBALL
-    public float speed = 0f;//velocidad con la que se lanza la pokeball
-    public Vector3 direction;//direccion hacia donde se lanzo la pokeball
+    //DATOS INTERNOS DE LA tinta
+    public float speed = 0f;//velocidad con la que se lanza la tinta
+    public Vector3 direction;//direccion hacia donde se lanzo la tinta
     public Vector3 gravity;//vector gravedad 
     public Vector3 velocity;//guardamos la velocidad completa
-    public Transform transform;//aqui esta la posicion de la pokeBall
+    public Transform transform;//aqui esta la posicion de la tinta
 
     const float capture_rate = 2f;//radio de la esfera que representa el pokemon
 
@@ -89,7 +89,7 @@ public class KineticsShoot
         
     }
 
-    //funcion que revisa si la pokeball esta tocando un pokemon
+    //funcion que revisa si la tinta esta tocando un pokemon
     //devuelve un bool si es asi, ademas guarda el indice del pokemon
     // en un arreglo que le pasen
     public bool CheckCatch(int[] arr){

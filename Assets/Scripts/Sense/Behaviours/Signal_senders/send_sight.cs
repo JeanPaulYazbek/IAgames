@@ -42,6 +42,7 @@ public class send_sight : MonoBehaviour {
     void Update(){
 
         manager = compManager.senseManager;
+
         // Enviamos la sennal cada frame
         manager.AddSignal(signal);
     }

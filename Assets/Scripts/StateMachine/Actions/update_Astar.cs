@@ -28,6 +28,7 @@ public class UpdateAStar : Action {
         Node targetNode = graph.FindNode(targetPosition, walkable);
         aStar.goal = targetNode;
         aStar.start = graph.FindNode(kinAgent.transform.position, walkable);
+
         aStar.heuristic = new Euclidean(targetNode);
     }
 }

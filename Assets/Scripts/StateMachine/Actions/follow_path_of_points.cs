@@ -34,10 +34,7 @@ public class FollowPathOfPoints : Action {
     //en este caso la accion es actualizar la acelaracion del usuario
     public override void DoAction(){
 
-        // Debug.Log("PATH");
-        // for( int i = 0;i< path.Length; i++){
-        //     Debug.Log(path[i]);
-        // }
+
         Vector3 agent = agentKin.transform.position;
         Vector3 target = currentTargetPoint;
         if(underground){
@@ -45,12 +42,12 @@ public class FollowPathOfPoints : Action {
         }
 
         float modifier = 1f;//este numero sera util para que el seek no se pase mucho de los puntos        
+        int n = path.Length;
 
-        //si nos acercamos mucho al punto actual pasamos al siguiente
+        //ACTUALIZAR PUNTO
         if(Vector3.Distance(target, agent)<4f){
 
             currentIndexPoint++;
-            int n = path.Length;
             oldTargetPoint = target;
             if(currentIndexPoint == n){//si nos pasamos del largo del path 
                 currentIndexPoint = n -1;//nos quedamos en el ultimo
@@ -58,8 +55,14 @@ public class FollowPathOfPoints : Action {
             currentTargetPoint = path[currentIndexPoint];//siguiente triangulo a seguir
         }
 
+        //ACELERAR MUCHO SI ESTAMOS CAMBIANDO DE PUNTO
         if(Vector3.Distance(oldTargetPoint, agent)<5f){//si estamos muy cerca del punto anterior
             modifier = 5f;//aceleraremos mas para cambiar de direccion al siguiente punto bien
+        }
+
+        //SI ESTAMOS EN EL ULTIMO PUNTO NO MODIFICAR ACELERACION
+        if(currentIndexPoint == n){
+            modifier = 1f;
         }
 
         

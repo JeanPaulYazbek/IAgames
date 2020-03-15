@@ -43625,6 +43625,7 @@ GameObject:
   - component: {fileID: 1330056666}
   - component: {fileID: 1330056665}
   - component: {fileID: 1330056667}
+  - component: {fileID: 1330056668}
   m_Layer: 0
   m_Name: Rocket
   m_TagString: Untagged
@@ -43864,7 +43865,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1330056644}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.3, y: 7.2, z: 0}
+  m_LocalPosition: {x: -16.1, y: 2.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 37316075}
@@ -43955,7 +43956,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 1330056654}
-  maxAccel: 8
+  maxAccel: 10
   seek_or_flee: 1
   graphComponent: {fileID: 1021140799}
 --- !u!114 &1330056663
@@ -43972,6 +43973,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   threshold: 50
   widthAngle: 30
+  careToSee:
+  - Pokemon
 --- !u!114 &1330056664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44038,6 +44041,24 @@ MonoBehaviour:
   poisonedSpeed: 2
   poisonTimer: 60
   sleepTimer: 10
+--- !u!114 &1330056668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330056644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72cb385744c5b469b8876c3d7c4511c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strength: 1000
+  description: Human
+  maximumRange: 1000
+  attenuation: 1
+  inverseTransmissionSpeed: 0.001
+  compManager: {fileID: 1004683626}
 --- !u!1 &1333202015
 GameObject:
   m_ObjectHideFlags: 0
@@ -44893,7 +44914,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1347758952}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.8, y: -0.8, z: 0}
+  m_LocalPosition: {x: 5.3, y: -0.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 219646563}
@@ -57217,6 +57238,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   threshold: 30
   widthAngle: 20
+  careToSee:
+  - Human
 --- !u!114 &1839602608
 MonoBehaviour:
   m_ObjectHideFlags: 0

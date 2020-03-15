@@ -13,7 +13,6 @@ public abstract class Sensor{
     //Funcion que debe dejar el sensor como si no hubiera sentido algo
     public abstract void ResetSensor();
 
-
     public Sensor(Transform Transform, float Threshold){
         transform = Transform;
         threshold = Threshold;
