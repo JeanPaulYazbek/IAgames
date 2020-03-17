@@ -71,7 +71,12 @@ public class FollowPathOfPoints : Action {
         //seguimos el punto actual
         steeringAgent.UpdateSteering(seek.getSteering2(target,1));
         steeringAgent.linear *= modifier;//ajustamos la aceleracion
-
        
+    }
+
+    //esta funcion retorna el ultimo punto del camino de follow
+    public Vector3 LastPoint(){
+
+        return (path[path.Length -1]);
     }
 }

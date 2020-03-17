@@ -6,8 +6,10 @@ public class sound_sensor : MonoBehaviour {
 
     public bool player;
 
+    public string[] careToHear;//que nos interesa oir
+
     void Awake(){
-        sensor = new SoundSensor(transform, threshold, player);
+        sensor = new SoundSensor(transform, threshold, player, careToHear);
     }
 
 }

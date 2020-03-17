@@ -206,4 +206,17 @@ public class Utilities
 
     }
 
+    //Funcion que toma un arreglo de gameObjects y lo barajea
+    public void Shuffle(GameObject[] gameObjects)
+    {
+        // Knuth shuffle algorithm :: courtesy of Wikipedia :)
+        for (int t = 0; t < gameObjects.Length; t++ )
+        {
+            GameObject tmp = gameObjects[t];
+            int r = UnityEngine.Random.Range(t, gameObjects.Length);
+            gameObjects[t] = gameObjects[r];
+            gameObjects[r] = tmp;
+        }
+    }
+
 }

@@ -47,16 +47,6 @@ public class static_graph : MonoBehaviour
             }
         }
 
-       
-        //PROBANDO A*
-        // int targetId = graph.numberNodes -1;
-        // Euclidean euclidean = new Euclidean(graph.GetNode(targetId));
-
-        // PathFindAStar pathFinder = new PathFindAStar(graph, graph.GetNode(0), graph.GetNode(targetId), euclidean); 
-        // Vector3[] path = pathFinder.GetPath();
-        // utilities.DrawPath(path, 50f);
-
-        
         
     }
 
@@ -95,8 +85,10 @@ public class static_graph : MonoBehaviour
             
             // Generamos los dos triangulos a partir de un rectangulo
             nodes[id]=new Node(id, target.upLeft, target.downLeft, target.downRight,zCoord, target.type);
+            target.id1 = id;
             id++;
             nodes[id]=new Node(id, target.upLeft, target.downRight, target.upRight,zCoord, target.type);
+            target.id2 = id;
             id++;
 
         }

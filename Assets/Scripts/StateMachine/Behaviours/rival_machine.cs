@@ -48,8 +48,12 @@ public class rival_machine : MonoBehaviour {
         kineticsAgent = agent.kineticsAgent;
         steeringAgent = agent.steeringAgent;
         
-        //pokemones
+        //POKEMONES
         pokemons = GameObject.FindGameObjectsWithTag("Pokemon");
+
+        //barajeamos lo pokemones
+        (new Utilities()).Shuffle(pokemons);
+
         pokemonKins = new Stack<Kinetics>();
         //creamos la pila de kinetics de los pokemones
         for(int i = 0; i < pokemons.Length; i++){

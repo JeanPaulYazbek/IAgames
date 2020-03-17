@@ -161,6 +161,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &30010
 MeshRenderer:
@@ -256,6 +258,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &3219246
 MeshRenderer:
@@ -351,6 +355,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &9210946
 MeshRenderer:
@@ -446,6 +452,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &23010851
 MeshRenderer:
@@ -541,6 +549,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &24046064
 MeshRenderer:
@@ -636,6 +646,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &26748549
 MeshRenderer:
@@ -769,8 +781,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 29679531}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -37.7, y: -5, z: 0}
-  m_LocalScale: {x: 3, y: 10, z: 2}
+  m_LocalPosition: {x: -37.7, y: -6.09, z: 0}
+  m_LocalScale: {x: 3, y: 8, z: 2}
   m_Children: []
   m_Father: {fileID: 1852938936}
   m_RootOrder: 9
@@ -857,6 +869,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &30629773
 MeshRenderer:
@@ -1031,6 +1045,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &32831816
 MeshRenderer:
@@ -1205,6 +1221,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &37455847
 MeshRenderer:
@@ -1300,6 +1318,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &38860337
 MeshRenderer:
@@ -1395,6 +1415,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &44023762
 MeshRenderer:
@@ -1490,6 +1512,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &47929609
 MeshRenderer:
@@ -1585,6 +1609,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &51033745
 MeshRenderer:
@@ -1680,6 +1706,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &51564359
 MeshRenderer:
@@ -1854,6 +1882,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &58851002
 MeshRenderer:
@@ -2075,6 +2105,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &72791540
 MeshRenderer:
@@ -2170,6 +2202,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &73622259
 MeshRenderer:
@@ -2265,6 +2299,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &73688917
 MeshRenderer:
@@ -2434,6 +2470,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &80298586
 MeshRenderer:
@@ -2529,6 +2567,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &84376265
 MeshRenderer:
@@ -2624,6 +2664,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Water
 --- !u!23 &93139081
 MeshRenderer:
@@ -2719,6 +2761,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &93957775
 MeshRenderer:
@@ -2814,6 +2858,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &96097244
 MeshRenderer:
@@ -2909,6 +2955,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &98058257
 MeshRenderer:
@@ -3004,6 +3052,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &99068257
 MeshRenderer:
@@ -3099,6 +3149,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &109034498
 MeshRenderer:
@@ -3194,6 +3246,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &114104647
 MeshRenderer:
@@ -3240,6 +3294,54 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 114104644}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &114780994
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 114780996}
+  - component: {fileID: 114780995}
+  m_Layer: 0
+  m_Name: StrategyManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &114780995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114780994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed1f9d6ba50a143f4b20f420fea32b6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 15
+  angle: 18
+  iterations: 100
+  randomized: 0
+  graphComponent: {fileID: 1021140799}
+--- !u!4 &114780996
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114780994}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.818515, y: 36.768623, z: -1139.73}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &120838673
 GameObject:
   m_ObjectHideFlags: 0
@@ -3289,6 +3391,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &120838676
 MeshRenderer:
@@ -3384,6 +3488,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &141176815
 MeshRenderer:
@@ -3479,6 +3585,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &146968020
 MeshRenderer:
@@ -3574,6 +3682,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &147019877
 MeshRenderer:
@@ -3669,6 +3779,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &156217474
 MeshRenderer:
@@ -3764,6 +3876,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &157337612
 MeshRenderer:
@@ -3859,6 +3973,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &160553918
 MeshRenderer:
@@ -3954,6 +4070,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &164459690
 MeshRenderer:
@@ -4049,6 +4167,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Water
 --- !u!23 &167464164
 MeshRenderer:
@@ -4144,6 +4264,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &169648575
 MeshRenderer:
@@ -4239,6 +4361,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &181610102
 MeshRenderer:
@@ -4334,6 +4458,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &183292747
 MeshRenderer:
@@ -4429,6 +4555,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &188652795
 MeshRenderer:
@@ -4650,6 +4778,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &202012881
 MeshRenderer:
@@ -4745,6 +4875,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &207998681
 MeshRenderer:
@@ -4840,6 +4972,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &219572978
 MeshRenderer:
@@ -5014,6 +5148,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &239764095
 MeshRenderer:
@@ -5109,6 +5245,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &240000805
 MeshRenderer:
@@ -5204,6 +5342,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &247607928
 MeshRenderer:
@@ -5299,6 +5439,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &255042080
 MeshRenderer:
@@ -5394,6 +5536,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &259527647
 MeshRenderer:
@@ -5489,6 +5633,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &266830910
 MeshRenderer:
@@ -5584,6 +5730,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &269924380
 MeshRenderer:
@@ -5679,6 +5827,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &271816372
 MeshRenderer:
@@ -5774,6 +5924,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &276255606
 MeshRenderer:
@@ -5869,6 +6021,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &277994964
 MeshRenderer:
@@ -6043,6 +6197,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Water
 --- !u!23 &284202509
 MeshRenderer:
@@ -6138,6 +6294,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &285904785
 MeshRenderer:
@@ -6233,6 +6391,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &293138676
 MeshRenderer:
@@ -6328,6 +6488,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Water
 --- !u!23 &294970800
 MeshRenderer:
@@ -6502,6 +6664,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &298187529
 MeshRenderer:
@@ -6597,6 +6761,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &298940747
 MeshRenderer:
@@ -6665,6 +6831,10 @@ GameObject:
   - component: {fileID: 299611518}
   - component: {fileID: 299611530}
   - component: {fileID: 299611531}
+  - component: {fileID: 299611532}
+  - component: {fileID: 299611533}
+  - component: {fileID: 299611534}
+  - component: {fileID: 299611535}
   m_Layer: 0
   m_Name: Jolteon
   m_TagString: Pokemon
@@ -6903,7 +7073,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runSprite: {fileID: 21300000, guid: f047428c552a94b9ca982045b494a9d3, type: 3}
   flySprite: {fileID: 0}
-  defaultSprite: {fileID: 0}
+  defaultSprite: {fileID: 21300000, guid: 89852cebdae504b6995c99c890a38c1c, type: 3}
   value: 1
   evolved: 0
   evolution_sprites:
@@ -6925,7 +7095,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 299611517}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f61e2ef075ba9432ea5c9d5a2d2bbc6c, type: 3}
   m_Name: 
@@ -6963,6 +7133,78 @@ MonoBehaviour:
   attenuation: 1
   inverseTransmissionSpeed: 0.001
   compManager: {fileID: 1004683626}
+--- !u!114 &299611532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299611517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33436fadfab3f4f9fbdfd700073387ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  threshold: 30
+  widthAngle: 30
+  careToSee:
+  - Stone
+  - Human
+--- !u!114 &299611533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299611517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe4bb1d20364f48378f8585f5e29abfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  threshold: 5
+  player: 0
+  careToHear:
+  - Human
+--- !u!114 &299611534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299611517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 519486ed7093d4f50bc7d805b8fe5269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 299611525}
+  pokemonData: {fileID: 299611529}
+  sightComponent: {fileID: 299611532}
+  sightComponentPokemon: {fileID: 299611535}
+  soundComponent: {fileID: 299611533}
+  trainer: {fileID: 1347758963}
+  rival: {fileID: 1330056654}
+  maxAccel: 7
+  seek_or_flee: 1
+  graphComponent: {fileID: 1021140799}
+  pointsComponent: {fileID: 114780995}
+--- !u!114 &299611535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299611517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33436fadfab3f4f9fbdfd700073387ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  threshold: 30
+  widthAngle: 30
+  careToSee:
+  - Pokemon
 --- !u!1 &301003757
 GameObject:
   m_ObjectHideFlags: 0
@@ -7012,6 +7254,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &301003760
 MeshRenderer:
@@ -7107,6 +7351,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &308100228
 MeshRenderer:
@@ -7202,6 +7448,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &310742132
 MeshRenderer:
@@ -7297,6 +7545,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &313845483
 MeshRenderer:
@@ -7590,6 +7840,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &346998681
 MeshRenderer:
@@ -7685,6 +7937,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &350098766
 MeshRenderer:
@@ -7780,6 +8034,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &351515412
 MeshRenderer:
@@ -7875,6 +8131,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &357581536
 MeshRenderer:
@@ -7970,6 +8228,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &368308989
 MeshRenderer:
@@ -8065,6 +8325,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &370971133
 MeshRenderer:
@@ -8160,6 +8422,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &371362399
 MeshRenderer:
@@ -8255,6 +8519,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &371779898
 MeshRenderer:
@@ -8508,6 +8774,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Water
 --- !u!23 &390029566
 MeshRenderer:
@@ -8603,6 +8871,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &395519582
 MeshRenderer:
@@ -8824,6 +9094,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &410374048
 MeshRenderer:
@@ -8919,6 +9191,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &415164138
 MeshRenderer:
@@ -9014,6 +9288,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &415339604
 MeshRenderer:
@@ -9109,6 +9385,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &417858342
 MeshRenderer:
@@ -9204,6 +9482,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &429348323
 MeshRenderer:
@@ -9299,6 +9579,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &431054017
 MeshRenderer:
@@ -9466,6 +9748,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &434934116
 MeshRenderer:
@@ -9561,6 +9845,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Water
 --- !u!23 &445504932
 MeshRenderer:
@@ -9656,6 +9942,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &449750975
 MeshRenderer:
@@ -9751,6 +10039,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &450524095
 MeshRenderer:
@@ -10000,6 +10290,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &457617486
 MeshRenderer:
@@ -10095,6 +10387,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &461885708
 MeshRenderer:
@@ -10190,6 +10484,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &464093103
 MeshRenderer:
@@ -10285,6 +10581,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &468817232
 MeshRenderer:
@@ -10380,6 +10678,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &469953456
 MeshRenderer:
@@ -10475,6 +10775,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &484000748
 MeshRenderer:
@@ -10570,6 +10872,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &502748598
 MeshRenderer:
@@ -10739,6 +11043,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &506152981
 MeshRenderer:
@@ -10834,6 +11140,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &506757357
 MeshRenderer:
@@ -10929,6 +11237,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &510977422
 MeshRenderer:
@@ -11024,6 +11334,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &514364620
 MeshRenderer:
@@ -11307,6 +11619,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &521551898
 MeshRenderer:
@@ -11402,6 +11716,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &521737622
 MeshRenderer:
@@ -11497,6 +11813,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &531395981
 MeshRenderer:
@@ -11592,6 +11910,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &535637868
 MeshRenderer:
@@ -11687,6 +12007,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &536005319
 MeshRenderer:
@@ -11782,6 +12104,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &543752832
 MeshRenderer:
@@ -11877,6 +12201,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &546776384
 MeshRenderer:
@@ -11972,6 +12298,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &556081054
 MeshRenderer:
@@ -12067,6 +12395,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &556152506
 MeshRenderer:
@@ -12162,6 +12492,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &560413172
 MeshRenderer:
@@ -12337,6 +12669,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &568246322
 MeshRenderer:
@@ -12511,6 +12845,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &590248884
 MeshRenderer:
@@ -12606,6 +12942,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &590656773
 MeshRenderer:
@@ -12701,6 +13039,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &599105623
 MeshRenderer:
@@ -12796,6 +13136,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &603504295
 MeshRenderer:
@@ -12891,6 +13233,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &603597862
 MeshRenderer:
@@ -12986,6 +13330,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &609429906
 MeshRenderer:
@@ -13237,6 +13583,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &621035405
 MeshRenderer:
@@ -13332,6 +13680,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &624720658
 MeshRenderer:
@@ -13427,6 +13777,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &626080586
 MeshRenderer:
@@ -13522,6 +13874,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &627024025
 MeshRenderer:
@@ -13691,6 +14045,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &635407681
 MeshRenderer:
@@ -13786,6 +14142,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &636682587
 MeshRenderer:
@@ -13881,6 +14239,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &651115258
 MeshRenderer:
@@ -13976,6 +14336,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &653472984
 MeshRenderer:
@@ -14071,6 +14433,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &657784439
 MeshRenderer:
@@ -14166,6 +14530,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &659623255
 MeshRenderer:
@@ -14261,6 +14627,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &660696536
 MeshRenderer:
@@ -14356,6 +14724,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &661740473
 MeshRenderer:
@@ -14451,6 +14821,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &673310679
 MeshRenderer:
@@ -14546,6 +14918,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &673499043
 MeshRenderer:
@@ -14641,6 +15015,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &676582944
 MeshRenderer:
@@ -14736,6 +15112,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &679750412
 MeshRenderer:
@@ -14831,6 +15209,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &680498817
 MeshRenderer:
@@ -14926,6 +15306,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &685823618
 MeshRenderer:
@@ -15021,6 +15403,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Water
 --- !u!23 &689662872
 MeshRenderer:
@@ -15116,6 +15500,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &692131198
 MeshRenderer:
@@ -15211,6 +15597,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Water
 --- !u!23 &692751680
 MeshRenderer:
@@ -15306,6 +15694,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &695072782
 MeshRenderer:
@@ -15401,6 +15791,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &696126434
 MeshRenderer:
@@ -15735,6 +16127,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &709870479
 MeshRenderer:
@@ -15830,6 +16224,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &713537898
 MeshRenderer:
@@ -16051,6 +16447,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &726824162
 MeshRenderer:
@@ -16146,6 +16544,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Water
 --- !u!23 &736172015
 MeshRenderer:
@@ -16202,6 +16602,7 @@ GameObject:
   m_Component:
   - component: {fileID: 741443543}
   - component: {fileID: 741443544}
+  - component: {fileID: 741443545}
   m_Layer: 0
   m_Name: Fire Stone
   m_TagString: Stone
@@ -16271,6 +16672,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &741443545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741443542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72cb385744c5b469b8876c3d7c4511c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strength: 1000
+  description: Stone
+  maximumRange: 100
+  attenuation: 1
+  inverseTransmissionSpeed: 0.001
+  compManager: {fileID: 1004683626}
 --- !u!1 &741723155
 GameObject:
   m_ObjectHideFlags: 0
@@ -16320,6 +16739,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &741723158
 MeshRenderer:
@@ -16415,6 +16836,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &745811664
 MeshRenderer:
@@ -16510,6 +16933,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &746145728
 MeshRenderer:
@@ -16605,6 +17030,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &746554019
 MeshRenderer:
@@ -16700,6 +17127,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &748727588
 MeshRenderer:
@@ -16896,6 +17325,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &758613545
 MeshRenderer:
@@ -16991,6 +17422,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &768190037
 MeshRenderer:
@@ -17086,6 +17519,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &768599511
 MeshRenderer:
@@ -17181,6 +17616,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &770527903
 MeshRenderer:
@@ -17276,6 +17713,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &772170607
 MeshRenderer:
@@ -17371,6 +17810,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &775495761
 MeshRenderer:
@@ -17545,6 +17986,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &777237636
 MeshRenderer:
@@ -17640,6 +18083,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &778204560
 MeshRenderer:
@@ -17735,6 +18180,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &781553510
 MeshRenderer:
@@ -17830,6 +18277,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &789305834
 MeshRenderer:
@@ -18051,6 +18500,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &790585317
 MeshRenderer:
@@ -18146,6 +18597,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &791641344
 MeshRenderer:
@@ -18241,6 +18694,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &799025919
 MeshRenderer:
@@ -18336,6 +18791,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &804278129
 MeshRenderer:
@@ -18431,6 +18888,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &807873134
 MeshRenderer:
@@ -18526,6 +18985,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &818175974
 MeshRenderer:
@@ -18700,6 +19161,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &826717134
 MeshRenderer:
@@ -18795,6 +19258,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &831436068
 MeshRenderer:
@@ -18972,6 +19437,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &838956582
 MeshRenderer:
@@ -19242,6 +19709,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &842651028
 MeshRenderer:
@@ -19337,6 +19806,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &844354864
 MeshRenderer:
@@ -19519,6 +19990,7 @@ GameObject:
   m_Component:
   - component: {fileID: 859469452}
   - component: {fileID: 859469453}
+  - component: {fileID: 859469454}
   m_Layer: 0
   m_Name: Leaf Stone
   m_TagString: Stone
@@ -19588,6 +20060,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &859469454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 859469451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72cb385744c5b469b8876c3d7c4511c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strength: 1000
+  description: Stone
+  maximumRange: 100
+  attenuation: 1
+  inverseTransmissionSpeed: 0.001
+  compManager: {fileID: 1004683626}
 --- !u!1 &866133912
 GameObject:
   m_ObjectHideFlags: 0
@@ -19637,6 +20127,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Water
 --- !u!23 &866133915
 MeshRenderer:
@@ -19732,6 +20224,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &875364347
 MeshRenderer:
@@ -19827,6 +20321,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &875621662
 MeshRenderer:
@@ -19922,6 +20418,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &879888977
 MeshRenderer:
@@ -20017,6 +20515,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &890352970
 MeshRenderer:
@@ -20112,6 +20612,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &891423127
 MeshRenderer:
@@ -20207,6 +20709,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &902090240
 MeshRenderer:
@@ -20302,6 +20806,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &905979544
 MeshRenderer:
@@ -20397,6 +20903,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &909073840
 MeshRenderer:
@@ -20530,8 +21038,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 912716102}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 32.2, y: -0.20000076, z: 0}
-  m_LocalScale: {x: 3, y: 10, z: 2}
+  m_LocalPosition: {x: 32.2, y: -0.9, z: 0}
+  m_LocalScale: {x: 3, y: 8, z: 2}
   m_Children: []
   m_Father: {fileID: 1852938936}
   m_RootOrder: 8
@@ -20618,6 +21126,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &921494519
 MeshRenderer:
@@ -20713,6 +21223,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &929044726
 MeshRenderer:
@@ -20808,6 +21320,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &931319860
 MeshRenderer:
@@ -21001,6 +21515,10 @@ GameObject:
   - component: {fileID: 949220014}
   - component: {fileID: 949220015}
   - component: {fileID: 949220016}
+  - component: {fileID: 949220017}
+  - component: {fileID: 949220018}
+  - component: {fileID: 949220019}
+  - component: {fileID: 949220020}
   m_Layer: 0
   m_Name: Leafeon
   m_TagString: Pokemon
@@ -21181,7 +21699,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runSprite: {fileID: 21300000, guid: dff2693bc93cc45e38dc315ec9766a2f, type: 3}
   flySprite: {fileID: 0}
-  defaultSprite: {fileID: 0}
+  defaultSprite: {fileID: 21300000, guid: 89852cebdae504b6995c99c890a38c1c, type: 3}
   value: 1
   evolved: 0
   evolution_sprites:
@@ -21243,7 +21761,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 949220003}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f61e2ef075ba9432ea5c9d5a2d2bbc6c, type: 3}
   m_Name: 
@@ -21281,6 +21799,78 @@ MonoBehaviour:
   attenuation: 1
   inverseTransmissionSpeed: 0.001
   compManager: {fileID: 1004683626}
+--- !u!114 &949220017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 949220003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33436fadfab3f4f9fbdfd700073387ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  threshold: 30
+  widthAngle: 30
+  careToSee:
+  - Stone
+  - Human
+--- !u!114 &949220018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 949220003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe4bb1d20364f48378f8585f5e29abfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  threshold: 5
+  player: 0
+  careToHear:
+  - Human
+--- !u!114 &949220019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 949220003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 519486ed7093d4f50bc7d805b8fe5269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 949220007}
+  pokemonData: {fileID: 949220012}
+  sightComponent: {fileID: 949220017}
+  sightComponentPokemon: {fileID: 949220020}
+  soundComponent: {fileID: 949220018}
+  trainer: {fileID: 1347758963}
+  rival: {fileID: 1330056654}
+  maxAccel: 9
+  seek_or_flee: 1
+  graphComponent: {fileID: 1021140799}
+  pointsComponent: {fileID: 114780995}
+--- !u!114 &949220020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 949220003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33436fadfab3f4f9fbdfd700073387ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  threshold: 30
+  widthAngle: 30
+  careToSee:
+  - Pokemon
 --- !u!1 &957328938
 GameObject:
   m_ObjectHideFlags: 0
@@ -21376,6 +21966,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &957662181
 MeshRenderer:
@@ -21471,6 +22063,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &958673614
 MeshRenderer:
@@ -21737,6 +22331,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &969854850
 MeshRenderer:
@@ -21838,6 +22434,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &987733682
 MeshRenderer:
@@ -21933,6 +22531,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &991800443
 MeshRenderer:
@@ -22105,6 +22705,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &1003929243
 MeshRenderer:
@@ -22186,9 +22788,24 @@ MonoBehaviour:
   soundSensors:
   - {fileID: 1347758970}
   - {fileID: 1330056665}
+  - {fileID: 1729241925}
+  - {fileID: 1639065565}
+  - {fileID: 299611533}
+  - {fileID: 949220018}
+  - {fileID: 1882082959}
   sightSensors:
   - {fileID: 1839602607}
   - {fileID: 1330056663}
+  - {fileID: 1729241924}
+  - {fileID: 1639065564}
+  - {fileID: 299611532}
+  - {fileID: 949220017}
+  - {fileID: 1882082958}
+  - {fileID: 1729241927}
+  - {fileID: 949220020}
+  - {fileID: 1882082961}
+  - {fileID: 299611535}
+  - {fileID: 1639065567}
 --- !u!4 &1004683627
 Transform:
   m_ObjectHideFlags: 0
@@ -22252,6 +22869,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1005012860
 MeshRenderer:
@@ -22347,6 +22966,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1008720889
 MeshRenderer:
@@ -22442,6 +23063,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1009238474
 MeshRenderer:
@@ -22537,6 +23160,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1013751665
 MeshRenderer:
@@ -23092,6 +23717,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1029594171
 MeshRenderer:
@@ -23187,6 +23814,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &1030060718
 MeshRenderer:
@@ -23282,6 +23911,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1030939352
 MeshRenderer:
@@ -23377,6 +24008,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1031309045
 MeshRenderer:
@@ -23585,6 +24218,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1037523225
 MeshRenderer:
@@ -23680,6 +24315,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1043357065
 MeshRenderer:
@@ -23775,6 +24412,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1049543783
 MeshRenderer:
@@ -23870,6 +24509,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1052744526
 MeshRenderer:
@@ -24045,6 +24686,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1067050611
 MeshRenderer:
@@ -24140,6 +24783,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1068031005
 MeshRenderer:
@@ -24235,6 +24880,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1072338812
 MeshRenderer:
@@ -24330,6 +24977,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1072489384
 MeshRenderer:
@@ -24425,6 +25074,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1077132525
 MeshRenderer:
@@ -24520,6 +25171,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1084638444
 MeshRenderer:
@@ -24615,6 +25268,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1094650128
 MeshRenderer:
@@ -25189,6 +25844,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1099895176
 MeshRenderer:
@@ -25284,6 +25941,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1107811619
 MeshRenderer:
@@ -25379,6 +26038,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1109776210
 MeshRenderer:
@@ -25474,6 +26135,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1111019400
 MeshRenderer:
@@ -25569,6 +26232,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1115044637
 MeshRenderer:
@@ -25664,6 +26329,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1115738817
 MeshRenderer:
@@ -25759,6 +26426,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1116846697
 MeshRenderer:
@@ -25854,6 +26523,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1118477948
 MeshRenderer:
@@ -25949,6 +26620,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1121433616
 MeshRenderer:
@@ -26044,6 +26717,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1125161243
 MeshRenderer:
@@ -26218,6 +26893,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1136964564
 MeshRenderer:
@@ -26392,6 +27069,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1149668088
 MeshRenderer:
@@ -26487,6 +27166,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1154238983
 MeshRenderer:
@@ -26582,6 +27263,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1156883122
 MeshRenderer:
@@ -26677,6 +27360,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1160329396
 MeshRenderer:
@@ -26772,6 +27457,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1160594332
 MeshRenderer:
@@ -26867,6 +27554,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &1172122273
 MeshRenderer:
@@ -26962,6 +27651,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1182532103
 MeshRenderer:
@@ -27154,6 +27845,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1183446328
 MeshRenderer:
@@ -27249,6 +27942,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1189964402
 MeshRenderer:
@@ -27470,6 +28165,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &1202260927
 MeshRenderer:
@@ -27565,6 +28262,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1203179547
 MeshRenderer:
@@ -27660,6 +28359,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1205723603
 MeshRenderer:
@@ -27755,6 +28456,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1218244849
 MeshRenderer:
@@ -27850,6 +28553,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1219572358
 MeshRenderer:
@@ -28094,6 +28799,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1221969127
 MeshRenderer:
@@ -28189,6 +28896,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &1225096121
 MeshRenderer:
@@ -28284,6 +28993,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1229286430
 MeshRenderer:
@@ -28379,6 +29090,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1232016481
 MeshRenderer:
@@ -28474,6 +29187,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1235592500
 MeshRenderer:
@@ -28569,6 +29284,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Water
 --- !u!23 &1235824566
 MeshRenderer:
@@ -28664,6 +29381,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1235853843
 MeshRenderer:
@@ -28759,6 +29478,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1239973881
 MeshRenderer:
@@ -28854,6 +29575,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1242412493
 MeshRenderer:
@@ -28949,6 +29672,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1245267199
 MeshRenderer:
@@ -29044,6 +29769,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1249175402
 MeshRenderer:
@@ -29139,6 +29866,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1249602024
 MeshRenderer:
@@ -29234,6 +29963,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1250825783
 MeshRenderer:
@@ -29398,6 +30129,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1261763295
 MeshRenderer:
@@ -42145,6 +42878,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1265626101
 MeshRenderer:
@@ -42240,6 +42975,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1270910327
 MeshRenderer:
@@ -42335,6 +43072,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1277439842
 MeshRenderer:
@@ -42519,6 +43258,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1289850844
 MeshRenderer:
@@ -42614,6 +43355,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1294960136
 MeshRenderer:
@@ -42709,6 +43452,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1306011363
 MeshRenderer:
@@ -42804,6 +43549,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1307248850
 MeshRenderer:
@@ -42899,6 +43646,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1309642113
 MeshRenderer:
@@ -42994,6 +43743,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1313030457
 MeshRenderer:
@@ -43089,6 +43840,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1317609844
 MeshRenderer:
@@ -43184,6 +43937,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1318215366
 MeshRenderer:
@@ -43279,6 +44034,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1319932777
 MeshRenderer:
@@ -43374,6 +44131,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &1321768425
 MeshRenderer:
@@ -43469,6 +44228,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1326578840
 MeshRenderer:
@@ -43525,6 +44286,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1329560111}
   - component: {fileID: 1329560112}
+  - component: {fileID: 1329560113}
   m_Layer: 0
   m_Name: Thunder Stone
   m_TagString: Stone
@@ -43594,6 +44356,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1329560113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1329560110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72cb385744c5b469b8876c3d7c4511c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strength: 1000
+  description: Stone
+  maximumRange: 100
+  attenuation: 1
+  inverseTransmissionSpeed: 0.001
+  compManager: {fileID: 1004683626}
 --- !u!1 &1330056644
 GameObject:
   m_ObjectHideFlags: 0
@@ -43619,13 +44399,14 @@ GameObject:
   - component: {fileID: 1330056659}
   - component: {fileID: 1330056660}
   - component: {fileID: 1330056661}
-  - component: {fileID: 1330056662}
   - component: {fileID: 1330056664}
   - component: {fileID: 1330056663}
   - component: {fileID: 1330056666}
   - component: {fileID: 1330056665}
-  - component: {fileID: 1330056667}
   - component: {fileID: 1330056668}
+  - component: {fileID: 1330056667}
+  - component: {fileID: 1330056662}
+  - component: {fileID: 1330056669}
   m_Layer: 0
   m_Name: Rocket
   m_TagString: Untagged
@@ -44007,6 +44788,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   threshold: 3
   player: 0
+  careToHear:
+  - Sleep
 --- !u!114 &1330056666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44057,6 +44840,24 @@ MonoBehaviour:
   description: Human
   maximumRange: 1000
   attenuation: 1
+  inverseTransmissionSpeed: 0.001
+  compManager: {fileID: 1004683626}
+--- !u!114 &1330056669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330056644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c63a20f3867fb4fe0a5304f91d863352, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character: {fileID: 1330056654}
+  description: Human
+  maximumRange: 20
+  attenuation: 0.98
   inverseTransmissionSpeed: 0.001
   compManager: {fileID: 1004683626}
 --- !u!1 &1333202015
@@ -44286,6 +45087,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1335850382
 MeshRenderer:
@@ -44507,6 +45310,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1342129686
 MeshRenderer:
@@ -44602,6 +45407,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1346059545
 MeshRenderer:
@@ -44675,6 +45482,7 @@ GameObject:
   - component: {fileID: 1347758970}
   - component: {fileID: 1347758969}
   - component: {fileID: 1347758971}
+  - component: {fileID: 1347758973}
   m_Layer: 0
   m_Name: Trainer
   m_TagString: Untagged
@@ -44914,7 +45722,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1347758952}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.3, y: -0.1, z: 0}
+  m_LocalPosition: {x: 7.6, y: 3.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 219646563}
@@ -45008,6 +45816,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   threshold: 3
   player: 1
+  careToHear:
+  - Sleep
 --- !u!114 &1347758971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45024,6 +45834,24 @@ MonoBehaviour:
   description: Human
   maximumRange: 1000
   attenuation: 1
+  inverseTransmissionSpeed: 0.001
+  compManager: {fileID: 1004683626}
+--- !u!114 &1347758973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1347758952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c63a20f3867fb4fe0a5304f91d863352, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character: {fileID: 1347758963}
+  description: Human
+  maximumRange: 20
+  attenuation: 0.98
   inverseTransmissionSpeed: 0.001
   compManager: {fileID: 1004683626}
 --- !u!1 &1348282142
@@ -45254,6 +46082,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &1358909803
 MeshRenderer:
@@ -45349,6 +46179,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1362710746
 MeshRenderer:
@@ -45444,6 +46276,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1364986767
 MeshRenderer:
@@ -45539,6 +46373,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1370563918
 MeshRenderer:
@@ -45634,6 +46470,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1370925835
 MeshRenderer:
@@ -45729,6 +46567,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1372244551
 MeshRenderer:
@@ -45824,6 +46664,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1375774772
 MeshRenderer:
@@ -45965,6 +46807,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1380859599
 MeshRenderer:
@@ -46060,6 +46904,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1385037394
 MeshRenderer:
@@ -46155,6 +47001,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1385513213
 MeshRenderer:
@@ -46250,6 +47098,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1388772768
 MeshRenderer:
@@ -46345,6 +47195,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1390337470
 MeshRenderer:
@@ -46440,6 +47292,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1400502585
 MeshRenderer:
@@ -46535,6 +47389,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1405274818
 MeshRenderer:
@@ -46630,6 +47486,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1422748845
 MeshRenderer:
@@ -46725,6 +47583,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1425623017
 MeshRenderer:
@@ -46820,6 +47680,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1429172972
 MeshRenderer:
@@ -46915,6 +47777,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1432370462
 MeshRenderer:
@@ -47010,6 +47874,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1433626320
 MeshRenderer:
@@ -47105,6 +47971,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1445517759
 MeshRenderer:
@@ -47200,6 +48068,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1455785063
 MeshRenderer:
@@ -47421,6 +48291,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1483626353
 MeshRenderer:
@@ -47516,6 +48388,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &1485004037
 MeshRenderer:
@@ -47611,6 +48485,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1498607891
 MeshRenderer:
@@ -47706,6 +48582,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &1500517022
 MeshRenderer:
@@ -47801,6 +48679,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1503000589
 MeshRenderer:
@@ -47896,6 +48776,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &1506530988
 MeshRenderer:
@@ -47991,6 +48873,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &1508126880
 MeshRenderer:
@@ -48212,6 +49096,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1516207867
 MeshRenderer:
@@ -48307,6 +49193,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1522299519
 MeshRenderer:
@@ -48402,6 +49290,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &1525904163
 MeshRenderer:
@@ -48497,6 +49387,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &1529429051
 MeshRenderer:
@@ -48592,6 +49484,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1530550412
 MeshRenderer:
@@ -48687,6 +49581,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1531350291
 MeshRenderer:
@@ -48782,6 +49678,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &1532483237
 MeshRenderer:
@@ -48877,6 +49775,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1534962885
 MeshRenderer:
@@ -48972,6 +49872,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1537759978
 MeshRenderer:
@@ -49067,6 +49969,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1548471872
 MeshRenderer:
@@ -49162,6 +50066,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &1551882093
 MeshRenderer:
@@ -49336,6 +50242,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Water
 --- !u!23 &1561833493
 MeshRenderer:
@@ -49431,6 +50339,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1574650827
 MeshRenderer:
@@ -49526,6 +50436,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1577350934
 MeshRenderer:
@@ -49695,6 +50607,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1586890852
 MeshRenderer:
@@ -49790,6 +50704,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1590148612
 MeshRenderer:
@@ -49885,6 +50801,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1593680461
 MeshRenderer:
@@ -49980,6 +50898,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Water
 --- !u!23 &1594220159
 MeshRenderer:
@@ -50075,6 +50995,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1595623810
 MeshRenderer:
@@ -50170,6 +51092,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1606814103
 MeshRenderer:
@@ -50265,6 +51189,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1609222268
 MeshRenderer:
@@ -50360,6 +51286,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1616162777
 MeshRenderer:
@@ -50532,6 +51460,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &1627638974
 MeshRenderer:
@@ -50627,6 +51557,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1628232942
 MeshRenderer:
@@ -50722,6 +51654,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Water
 --- !u!23 &1629354739
 MeshRenderer:
@@ -50817,6 +51751,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1630845115
 MeshRenderer:
@@ -50912,6 +51848,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1638784703
 MeshRenderer:
@@ -50980,6 +51918,10 @@ GameObject:
   - component: {fileID: 1639065550}
   - component: {fileID: 1639065562}
   - component: {fileID: 1639065563}
+  - component: {fileID: 1639065564}
+  - component: {fileID: 1639065565}
+  - component: {fileID: 1639065566}
+  - component: {fileID: 1639065567}
   m_Layer: 0
   m_Name: Flareon
   m_TagString: Pokemon
@@ -51218,7 +52160,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runSprite: {fileID: 21300000, guid: 24c1977e644ca4344817667df17d4a27, type: 3}
   flySprite: {fileID: 0}
-  defaultSprite: {fileID: 0}
+  defaultSprite: {fileID: 21300000, guid: 89852cebdae504b6995c99c890a38c1c, type: 3}
   value: 1
   evolved: 0
   evolution_sprites:
@@ -51240,7 +52182,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1639065549}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f61e2ef075ba9432ea5c9d5a2d2bbc6c, type: 3}
   m_Name: 
@@ -51278,6 +52220,78 @@ MonoBehaviour:
   attenuation: 1
   inverseTransmissionSpeed: 0.001
   compManager: {fileID: 1004683626}
+--- !u!114 &1639065564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639065549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33436fadfab3f4f9fbdfd700073387ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  threshold: 30
+  widthAngle: 30
+  careToSee:
+  - Stone
+  - Human
+--- !u!114 &1639065565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639065549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe4bb1d20364f48378f8585f5e29abfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  threshold: 5
+  player: 0
+  careToHear:
+  - Human
+--- !u!114 &1639065566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639065549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 519486ed7093d4f50bc7d805b8fe5269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 1639065557}
+  pokemonData: {fileID: 1639065561}
+  sightComponent: {fileID: 1639065564}
+  sightComponentPokemon: {fileID: 1639065567}
+  soundComponent: {fileID: 1639065565}
+  trainer: {fileID: 1347758963}
+  rival: {fileID: 1330056654}
+  maxAccel: 8
+  seek_or_flee: 1
+  graphComponent: {fileID: 1021140799}
+  pointsComponent: {fileID: 114780995}
+--- !u!114 &1639065567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639065549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33436fadfab3f4f9fbdfd700073387ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  threshold: 30
+  widthAngle: 30
+  careToSee:
+  - Pokemon
 --- !u!1 &1641398523
 GameObject:
   m_ObjectHideFlags: 0
@@ -51327,6 +52341,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1641398526
 MeshRenderer:
@@ -51422,6 +52438,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1641997400
 MeshRenderer:
@@ -51596,6 +52614,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &1661029119
 MeshRenderer:
@@ -51770,6 +52790,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1669299700
 MeshRenderer:
@@ -51865,6 +52887,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1678047202
 MeshRenderer:
@@ -51960,6 +52984,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1680908107
 MeshRenderer:
@@ -52055,6 +53081,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &1685244406
 MeshRenderer:
@@ -52150,6 +53178,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1685713961
 MeshRenderer:
@@ -52480,6 +53510,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1696122492
 MeshRenderer:
@@ -52575,6 +53607,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1700983053
 MeshRenderer:
@@ -52670,6 +53704,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1703649147
 MeshRenderer:
@@ -52891,6 +53927,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &1704791995
 MeshRenderer:
@@ -52986,6 +54024,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1714520142
 MeshRenderer:
@@ -53081,6 +54121,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1715981904
 MeshRenderer:
@@ -53176,6 +54218,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &1723642918
 MeshRenderer:
@@ -53321,6 +54365,10 @@ GameObject:
   - component: {fileID: 1729241920}
   - component: {fileID: 1729241922}
   - component: {fileID: 1729241923}
+  - component: {fileID: 1729241924}
+  - component: {fileID: 1729241925}
+  - component: {fileID: 1729241926}
+  - component: {fileID: 1729241927}
   m_Layer: 0
   m_Name: Espeon
   m_TagString: Pokemon
@@ -53559,7 +54607,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runSprite: {fileID: 21300000, guid: 24c1977e644ca4344817667df17d4a27, type: 3}
   flySprite: {fileID: 0}
-  defaultSprite: {fileID: 0}
+  defaultSprite: {fileID: 21300000, guid: 89852cebdae504b6995c99c890a38c1c, type: 3}
   value: 1
   evolved: 0
   evolution_sprites:
@@ -53581,7 +54629,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1729241909}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f61e2ef075ba9432ea5c9d5a2d2bbc6c, type: 3}
   m_Name: 
@@ -53619,6 +54667,78 @@ MonoBehaviour:
   attenuation: 1
   inverseTransmissionSpeed: 0.001
   compManager: {fileID: 1004683626}
+--- !u!114 &1729241924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1729241909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33436fadfab3f4f9fbdfd700073387ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  threshold: 30
+  widthAngle: 30
+  careToSee:
+  - Stone
+  - Human
+--- !u!114 &1729241925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1729241909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe4bb1d20364f48378f8585f5e29abfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  threshold: 5
+  player: 0
+  careToHear:
+  - Human
+--- !u!114 &1729241926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1729241909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 519486ed7093d4f50bc7d805b8fe5269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 1729241916}
+  pokemonData: {fileID: 1729241921}
+  sightComponent: {fileID: 1729241924}
+  sightComponentPokemon: {fileID: 1729241927}
+  soundComponent: {fileID: 1729241925}
+  trainer: {fileID: 1347758963}
+  rival: {fileID: 1330056654}
+  maxAccel: 10
+  seek_or_flee: 1
+  graphComponent: {fileID: 1021140799}
+  pointsComponent: {fileID: 114780995}
+--- !u!114 &1729241927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1729241909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33436fadfab3f4f9fbdfd700073387ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  threshold: 30
+  widthAngle: 30
+  careToSee:
+  - Pokemon
 --- !u!1 &1731550577
 GameObject:
   m_ObjectHideFlags: 0
@@ -53668,6 +54788,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1731550580
 MeshRenderer:
@@ -53763,6 +54885,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &1733343228
 MeshRenderer:
@@ -53858,6 +54982,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1734225466
 MeshRenderer:
@@ -54225,6 +55351,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1737933458
 MeshRenderer:
@@ -54320,6 +55448,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &1737969635
 MeshRenderer:
@@ -54415,6 +55545,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1743277731
 MeshRenderer:
@@ -54510,6 +55642,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1743358208
 MeshRenderer:
@@ -54605,6 +55739,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &1746923494
 MeshRenderer:
@@ -54700,6 +55836,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1749301445
 MeshRenderer:
@@ -54795,6 +55933,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1750549847
 MeshRenderer:
@@ -54890,6 +56030,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &1755587292
 MeshRenderer:
@@ -54985,6 +56127,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1766576906
 MeshRenderer:
@@ -55080,6 +56224,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1770562752
 MeshRenderer:
@@ -55175,6 +56321,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &1773276642
 MeshRenderer:
@@ -55270,6 +56418,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Water
 --- !u!23 &1778610283
 MeshRenderer:
@@ -55365,6 +56515,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1785386076
 MeshRenderer:
@@ -55460,6 +56612,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &1786908202
 MeshRenderer:
@@ -55555,6 +56709,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1788149988
 MeshRenderer:
@@ -55650,6 +56806,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Water
 --- !u!23 &1797007651
 MeshRenderer:
@@ -55745,6 +56903,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1797114799
 MeshRenderer:
@@ -55840,6 +57000,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &1797356747
 MeshRenderer:
@@ -55935,6 +57097,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1798300258
 MeshRenderer:
@@ -56030,6 +57194,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1798602369
 MeshRenderer:
@@ -56125,6 +57291,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1799023531
 MeshRenderer:
@@ -56220,6 +57388,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &1799813310
 MeshRenderer:
@@ -56315,6 +57485,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1801168857
 MeshRenderer:
@@ -56410,6 +57582,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1809023424
 MeshRenderer:
@@ -56505,6 +57679,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &1812873045
 MeshRenderer:
@@ -56680,6 +57856,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1816313107
 MeshRenderer:
@@ -56775,6 +57953,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1816789180
 MeshRenderer:
@@ -56870,6 +58050,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1817689427
 MeshRenderer:
@@ -56965,6 +58147,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1818543257
 MeshRenderer:
@@ -57060,6 +58244,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1829250898
 MeshRenderer:
@@ -57155,6 +58341,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1836797884
 MeshRenderer:
@@ -57445,6 +58633,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1840534769
 MeshRenderer:
@@ -57540,6 +58730,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1846436238
 MeshRenderer:
@@ -57635,6 +58827,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1846608171
 MeshRenderer:
@@ -57730,6 +58924,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1846748700
 MeshRenderer:
@@ -57786,6 +58982,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1850888573}
   - component: {fileID: 1850888574}
+  - component: {fileID: 1850888575}
   m_Layer: 0
   m_Name: Water Stone
   m_TagString: Stone
@@ -57855,6 +59052,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1850888575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1850888572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72cb385744c5b469b8876c3d7c4511c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strength: 1000
+  description: Stone
+  maximumRange: 100
+  attenuation: 1
+  inverseTransmissionSpeed: 0.001
+  compManager: {fileID: 1004683626}
 --- !u!1 &1851314504
 GameObject:
   m_ObjectHideFlags: 0
@@ -57904,6 +59119,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1851314507
 MeshRenderer:
@@ -58046,6 +59263,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1855980883
 MeshRenderer:
@@ -58141,6 +59360,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1867078287
 MeshRenderer:
@@ -58236,6 +59457,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1867296048
 MeshRenderer:
@@ -58331,6 +59554,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1871854321
 MeshRenderer:
@@ -58426,6 +59651,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1875987845
 MeshRenderer:
@@ -58494,6 +59721,10 @@ GameObject:
   - component: {fileID: 1882082954}
   - component: {fileID: 1882082956}
   - component: {fileID: 1882082957}
+  - component: {fileID: 1882082958}
+  - component: {fileID: 1882082959}
+  - component: {fileID: 1882082960}
+  - component: {fileID: 1882082961}
   m_Layer: 0
   m_Name: Vaporeon
   m_TagString: Pokemon
@@ -58732,7 +59963,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runSprite: {fileID: 21300000, guid: f047428c552a94b9ca982045b494a9d3, type: 3}
   flySprite: {fileID: 0}
-  defaultSprite: {fileID: 0}
+  defaultSprite: {fileID: 21300000, guid: 89852cebdae504b6995c99c890a38c1c, type: 3}
   value: 1
   evolved: 0
   evolution_sprites:
@@ -58754,7 +59985,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1882082943}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f61e2ef075ba9432ea5c9d5a2d2bbc6c, type: 3}
   m_Name: 
@@ -58792,6 +60023,78 @@ MonoBehaviour:
   attenuation: 1
   inverseTransmissionSpeed: 0.001
   compManager: {fileID: 1004683626}
+--- !u!114 &1882082958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1882082943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33436fadfab3f4f9fbdfd700073387ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  threshold: 30
+  widthAngle: 30
+  careToSee:
+  - Stone
+  - Human
+--- !u!114 &1882082959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1882082943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe4bb1d20364f48378f8585f5e29abfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  threshold: 5
+  player: 0
+  careToHear:
+  - Human
+--- !u!114 &1882082960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1882082943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 519486ed7093d4f50bc7d805b8fe5269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 1882082950}
+  pokemonData: {fileID: 1882082955}
+  sightComponent: {fileID: 1882082958}
+  sightComponentPokemon: {fileID: 1882082961}
+  soundComponent: {fileID: 1882082959}
+  trainer: {fileID: 1347758963}
+  rival: {fileID: 1330056654}
+  maxAccel: 9
+  seek_or_flee: 1
+  graphComponent: {fileID: 1021140799}
+  pointsComponent: {fileID: 114780995}
+--- !u!114 &1882082961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1882082943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33436fadfab3f4f9fbdfd700073387ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  threshold: 30
+  widthAngle: 30
+  careToSee:
+  - Pokemon
 --- !u!1 &1883594476
 GameObject:
   m_ObjectHideFlags: 0
@@ -58841,6 +60144,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1883594479
 MeshRenderer:
@@ -58936,6 +60241,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1884402997
 MeshRenderer:
@@ -59031,6 +60338,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1886179507
 MeshRenderer:
@@ -59126,6 +60435,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1886908466
 MeshRenderer:
@@ -59221,6 +60532,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Water
 --- !u!23 &1891038044
 MeshRenderer:
@@ -59516,6 +60829,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1910385405
 MeshRenderer:
@@ -59611,6 +60926,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1915210921
 MeshRenderer:
@@ -59751,6 +61068,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1928190532
 MeshRenderer:
@@ -59846,6 +61165,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1929018730
 MeshRenderer:
@@ -59941,6 +61262,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1929511615
 MeshRenderer:
@@ -60036,6 +61359,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1933247953
 MeshRenderer:
@@ -60295,6 +61620,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &1953894188
 MeshRenderer:
@@ -60390,6 +61717,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Water
 --- !u!23 &1954802431
 MeshRenderer:
@@ -60485,6 +61814,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1954965121
 MeshRenderer:
@@ -60580,6 +61911,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1964371271
 MeshRenderer:
@@ -60755,6 +62088,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1977044322
 MeshRenderer:
@@ -60850,6 +62185,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1978946463
 MeshRenderer:
@@ -60945,6 +62282,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1979066895
 MeshRenderer:
@@ -61040,6 +62379,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1980084686
 MeshRenderer:
@@ -61261,6 +62602,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &1992965851
 MeshRenderer:
@@ -61356,6 +62699,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &2003725953
 MeshRenderer:
@@ -61451,6 +62796,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &2006245682
 MeshRenderer:
@@ -61546,6 +62893,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &2014688527
 MeshRenderer:
@@ -61641,6 +62990,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &2019506386
 MeshRenderer:
@@ -61742,6 +63093,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &2037651212
 MeshRenderer:
@@ -61837,6 +63190,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &2039734842
 MeshRenderer:
@@ -61932,6 +63287,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &2043272837
 MeshRenderer:
@@ -62027,6 +63384,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &2052668489
 MeshRenderer:
@@ -62122,6 +63481,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &2067174377
 MeshRenderer:
@@ -62217,6 +63578,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &2078012464
 MeshRenderer:
@@ -62312,6 +63675,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &2093941754
 MeshRenderer:
@@ -62407,6 +63772,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &2097292556
 MeshRenderer:
@@ -62502,6 +63869,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &2109570323
 MeshRenderer:
@@ -62597,6 +63966,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &2111719307
 MeshRenderer:
@@ -62692,6 +64063,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &2122011061
 MeshRenderer:
@@ -62787,6 +64160,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &2127889865
 MeshRenderer:
@@ -62882,6 +64257,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &2130323483
 MeshRenderer:
@@ -62977,6 +64354,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &2136495931
 MeshRenderer:
@@ -63072,6 +64451,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &2141847775
 MeshRenderer:
@@ -63167,6 +64548,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &2142331624
 MeshRenderer:
@@ -63262,6 +64645,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Tree1
 --- !u!23 &2142745179
 MeshRenderer:
@@ -63357,6 +64742,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &2144080735
 MeshRenderer:
@@ -63452,6 +64839,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &2146567763
 MeshRenderer:
@@ -63547,6 +64936,8 @@ MonoBehaviour:
   upRight: {x: 0, y: 0, z: 0}
   downLeft: {x: 0, y: 0, z: 0}
   downRight: {x: 0, y: 0, z: 0}
+  id1: 0
+  id2: 0
   type: Earth
 --- !u!23 &2146658089
 MeshRenderer:

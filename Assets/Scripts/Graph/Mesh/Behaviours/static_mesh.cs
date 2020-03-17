@@ -15,6 +15,13 @@ public class static_mesh : MonoBehaviour
     [SerializeField] 
     public Vector3 downRight;
 
+    [SerializeField] 
+    public int id1;
+
+    [SerializeField] 
+    public int id2;
+
+
     public string type = "Earth";
 
 

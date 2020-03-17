@@ -138,6 +138,7 @@
      <Compile Include="Assets\Scripts\Sense\Behaviours\machines\actions\show_default_sprite.cs" />
      <Compile Include="Assets\Scripts\Sense\Behaviours\machines\actions\show_fly_sprite.cs" />
      <Compile Include="Assets\Scripts\Sense\Behaviours\machines\conditions\heard_sleep_song.cs" />
+     <Compile Include="Assets\Scripts\Sense\Behaviours\machines\conditions\heard_something.cs" />
      <Compile Include="Assets\Scripts\Sense\Behaviours\machines\conditions\no_in_sight_cone.cs" />
      <Compile Include="Assets\Scripts\Sense\Behaviours\machines\conditions\saw_something.cs" />
      <Compile Include="Assets\Scripts\Sense\Behaviours\machines\conditions\smelled_poison.cs" />
@@ -155,6 +156,7 @@
      <Compile Include="Assets\Scripts\Sense\Behaviours\Signal_senders\send_sight.cs" />
      <Compile Include="Assets\Scripts\Sense\Behaviours\Signal_senders\send_smell.cs" />
      <Compile Include="Assets\Scripts\Sense\Behaviours\Signal_senders\send_sound.cs" />
+     <Compile Include="Assets\Scripts\Sense\Behaviours\Signal_senders\send_walk_sound.cs" />
      <Compile Include="Assets\Scripts\Sense\Modalities\sight_modality.cs" />
      <Compile Include="Assets\Scripts\Sense\Modalities\smell_modality.cs" />
      <Compile Include="Assets\Scripts\Sense\Modalities\sound_modality.cs" />
@@ -178,6 +180,7 @@
      <Compile Include="Assets\Scripts\StateMachine\Actions\evolve.cs" />
      <Compile Include="Assets\Scripts\StateMachine\Actions\follow_path_of_points.cs" />
      <Compile Include="Assets\Scripts\StateMachine\Actions\follow_target.cs" />
+     <Compile Include="Assets\Scripts\StateMachine\Actions\look_where_going.cs" />
      <Compile Include="Assets\Scripts\StateMachine\Actions\move_on_z.cs" />
      <Compile Include="Assets\Scripts\StateMachine\Actions\pop_gameObject.cs" />
      <Compile Include="Assets\Scripts\StateMachine\Actions\remove_pokemon.cs" />
@@ -222,6 +225,17 @@
      <Compile Include="Assets\Scripts\StateMachine\state.cs" />
      <Compile Include="Assets\Scripts\StateMachine\state_machine.cs" />
      <Compile Include="Assets\Scripts\StateMachine\transition.cs" />
+     <Compile Include="Assets\Scripts\StrategicPoints\Behaviours\cover_quality_for_nodes.cs" />
+     <Compile Include="Assets\Scripts\StrategicPoints\Behaviours\Machines\Actions\evolve2.cs" />
+     <Compile Include="Assets\Scripts\StrategicPoints\Behaviours\Machines\Actions\remove_action.cs" />
+     <Compile Include="Assets\Scripts\StrategicPoints\Behaviours\Machines\Actions\remove_state_transition.cs" />
+     <Compile Include="Assets\Scripts\StrategicPoints\Behaviours\Machines\Actions\update_Astar_best_cover_point.cs" />
+     <Compile Include="Assets\Scripts\StrategicPoints\Behaviours\Machines\Actions\update_Astar_seen_stone.cs" />
+     <Compile Include="Assets\Scripts\StrategicPoints\Behaviours\Machines\Conditions\follow_arrived.cs" />
+     <Compile Include="Assets\Scripts\StrategicPoints\Behaviours\Machines\Conditions\pokemon_in_cover_point.cs" />
+     <Compile Include="Assets\Scripts\StrategicPoints\Behaviours\Machines\Conditions\touched_game_object.cs" />
+     <Compile Include="Assets\Scripts\StrategicPoints\Behaviours\Machines\eevee_state_machine2.cs" />
+     <Compile Include="Assets\Scripts\StrategicPoints\cover_node.cs" />
      <Compile Include="Assets\Scripts\utilities.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>/Users/capi/Desktop/mini_desktop/Universidad/Inteligencia Video Juegos/Pratica/Project Unity A/New Unity Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

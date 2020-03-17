@@ -61,8 +61,9 @@ public class eevee_state_machine : MonoBehaviour {
 
         center  = center / allEevees.Length;// Centro de masas
         
-        //pokemones
+        //piedras
         stones = GameObject.FindGameObjectsWithTag("Stone");
+
 
         Stack<GameObject> stonesStack = new Stack<GameObject>(stones);
     

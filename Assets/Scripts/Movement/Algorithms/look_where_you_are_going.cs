@@ -3,7 +3,7 @@ using System;
 public class LookWhereYouAreGoing : Align
 {
 
-    public LookWhereYouAreGoing(Kinetics Character) : base(Character, Character, 10f, 50f, 2f, 30f, 0.1f){
+    public LookWhereYouAreGoing(Kinetics Character) : base(Character, Character, 40f, 70f, 2f, 30f, 0.1f){
 
     }
 

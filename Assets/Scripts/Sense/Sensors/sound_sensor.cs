@@ -8,17 +8,32 @@ public class SoundSensor : Sensor {
     // Representa la intensidad del sonido detectado
     public float soundIntensity;
 
+    // Tipos de cosas que nos importan si oimos
+    public string[] careToHear;
+
     // Representa true si el jugador esta usando el sensor
     public bool player;
     
 
-    public SoundSensor(Transform Transform, float Threshold, bool Player) : 
+    public SoundSensor(Transform Transform, float Threshold, bool Player, string[] CareToHear) : 
     base(Transform, Threshold){
         player = Player;
+        careToHear = CareToHear;
     }
 
     public override bool DetectsModality(Modality modality){
-        return (modality.senseType == "Sound");
+        
+        if(modality.senseType != "Sound"){//si no es una sennal de sonido es rechazada
+            return false;
+        }
+
+        //Solamente nos interessa una sennal si lo que vemos es de nuestro interes
+        foreach(var name in careToHear){
+            if(modality.description == name){
+                return true;
+            }
+        }
+        return false;
     }
 
     // El sensor de sonido ademas de marcar los que se oyo algo

@@ -1,6 +1,5 @@
 using UnityEngine;
-//Condicion para saber si para un sensor dado
-//detecta un olor venenoso
+//condicion para saber si escuchamos cancion de cuna
 public class HeardSleepSong : Condition {
 
     SoundSensor sensor;
