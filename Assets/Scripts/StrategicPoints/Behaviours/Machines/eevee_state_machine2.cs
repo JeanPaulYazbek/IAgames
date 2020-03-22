@@ -180,7 +180,7 @@ public class eevee_state_machine2 : MonoBehaviour {
 
         //2.d estado para perseguir punto de encuentro
         //durante este estado eevee buscara donde esconderse, puede verse interrumpido si accidentalmente toca una piedra o se comprometio su escondite
-        entryActions = new List<Action>() {updateAstarCover, updateFollow, showSweat, showRunSprite};//al entrar al estado debemos actualizar el a* y luego el camino
+        entryActions = new List<Action>() {updateAstarCover, updateFollow, showSweat, showRunSprite, resetSensors};//al entrar al estado debemos actualizar el a* y luego el camino
         removeRunSpriteAction = new RemoveAction(showRunSprite, entryActions);
         actions= new List<Action>() {followPath, lookAction};//durante la accion seguimos el camino
         exitActions= new List<Action>() { disableSweat};//al salir no hacemos nada
@@ -265,7 +265,7 @@ public class eevee_state_machine2 : MonoBehaviour {
         evolveState2.transitions = transitions;
 
 
-        transitions = new List<Transition>() {touchStone1, sawAstone, pokemonInMyCover ,arrivedFollowEnd};
+        transitions = new List<Transition>() {touchStone1, sawAstone, pokemonInMyCover ,arrivedFollowEnd, sawAhuman};
         followCoverPoint.transitions =  transitions;
 
         transitions = new List<Transition>() {touchStone2, arrivedFollowEnd, pokemonInMyCover};

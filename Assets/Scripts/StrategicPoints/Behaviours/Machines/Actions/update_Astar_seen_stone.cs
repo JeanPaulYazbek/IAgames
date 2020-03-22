@@ -21,7 +21,12 @@ public class UpdateAStarSeenStone : Action {
     public override void DoAction(){
 
         //ACTUALIZAMOS ASTAR
-        Vector3 targetPosition = sensor.detectedSignal.transform.position;
+        Vector3 targetPosition;
+        if(sensor.detectedSignal.transform == null){//esto es por si acaso de casualidad alguien agarra la piedra justo despues de que la vimos
+            targetPosition = character.position;
+        }else{
+            targetPosition = sensor.detectedSignal.transform.position;
+        }
         Node targetNode = graph.FindNode(targetPosition, walkable);
         aStar.goal = targetNode;
         aStar.start = graph.FindNode(character.position, walkable);

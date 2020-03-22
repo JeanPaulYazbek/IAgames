@@ -7202,7 +7202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   threshold: 30
-  widthAngle: 30
+  widthAngle: 50
   careToSee:
   - Pokemon
 --- !u!1 &301003757
@@ -21868,7 +21868,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   threshold: 30
-  widthAngle: 30
+  widthAngle: 50
   careToSee:
   - Pokemon
 --- !u!1 &957328938
@@ -52289,7 +52289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   threshold: 30
-  widthAngle: 30
+  widthAngle: 50
   careToSee:
   - Pokemon
 --- !u!1 &1641398523
@@ -54736,7 +54736,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   threshold: 30
-  widthAngle: 30
+  widthAngle: 50
   careToSee:
   - Pokemon
 --- !u!1 &1731550577
@@ -60092,7 +60092,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   threshold: 30
-  widthAngle: 30
+  widthAngle: 50
   careToSee:
   - Pokemon
 --- !u!1 &1883594476
